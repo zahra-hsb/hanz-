@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Sidebar from "./Sidebar";
+import Header from "./Header";
 
 const Layout = ({ children }) => {
   return (
@@ -13,9 +14,7 @@ const Layout = ({ children }) => {
 
         <div className="w-full flex flex-col">
 
-          <header className="w-full h-[50px] flex justify-start items-center">
-            Header
-          </header>
+          <Header />
 
           <div className="flex-1 h-[500px]">{children}</div>
 
