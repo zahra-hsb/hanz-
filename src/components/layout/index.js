@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -18,9 +19,7 @@ const Layout = ({ children }) => {
 
           <div className="flex-1 h-[500px]">{children}</div>
 
-          <footer className="w-full h-[100px] flex justify-center items-center">
-            footer
-          </footer>
+          <Footer />
 
         </div>
 
