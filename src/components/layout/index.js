@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 
       <div className="flex">
 
-        <aside className="flex flex-col justify-between basis-[15%] w-[200px] h-[90vh]">
+        <aside className="hidden lg:flex flex-col justify-between basis-[15%] w-[200px] h-[90vh]">
           {/* <div>
             <Link href="/">Home</Link>
           </div>
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
 
         <div className="w-full flex flex-col">
 
-          <header className="w-full h-[100px] flex justify-center items-center">
+          <header className="w-full h-[50px] flex justify-start items-center">
             Header
           </header>
 
