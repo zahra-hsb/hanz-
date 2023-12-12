@@ -13,7 +13,7 @@
 }
 *{
   border: 1px solid blue;
-  padding: 5px;
+  /* padding: 5px; */
   direction: rtl;
   box-sizing: border-box;
 }

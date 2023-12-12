@@ -7,8 +7,8 @@ import Footer from "./Footer";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="flex">
         <Sidebar />
+      <div className="flex relative lg:mr-[15%]">
 
         <div className="w-full flex flex-col">
           <Header />
@@ -17,7 +17,6 @@ const Layout = ({ children }) => {
 
           <Footer />
         </div>
-        
       </div>
 
     </>
