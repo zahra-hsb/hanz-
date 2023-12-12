@@ -3,7 +3,7 @@ const Footer = () => {
         <>
             <footer className="flex flex-col w-full">
 
-                <div className="flex justify-around">
+                <div className="flex justify-around flex-wrap">
                     <div>
                         <div>111</div>
                         <div>112</div>
