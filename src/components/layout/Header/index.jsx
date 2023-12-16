@@ -2,7 +2,10 @@ const Header = () => {
     return (
         <>
             <header className="w-full h-[50px] flex justify-start items-center">
-                Header
+                <div className="flex justify-around w-1/4 items-center">
+                    <div>|||</div>
+                    <div>Header</div>
+                </div>
             </header>
         </>
     )
