@@ -1,9 +1,12 @@
-const Header = () => {
+const Header = ({ show, setShow }) => {
     return (
         <>
             <header className="flex justify-start items-center w-full h-[50px]">
                 <div className="flex justify-start items-center">
-                    <div className="lg:hidden mr-4">|||</div>
+                    <div
+                        className="lg:hidden mr-4"
+                    onClick={() => setShow(!show)}
+                    >|||</div>
                     <div className="mr-4">Header</div>
                 </div>
             </header>

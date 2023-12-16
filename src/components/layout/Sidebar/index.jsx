@@ -1,7 +1,8 @@
-const Sidebar = () => {
+const Sidebar = ({ show, setShow }) => {
+    // console.log(show);
     return (
         <>
-            <aside className="hidden lg:flex flex-col justify-between w-[15%] h-[100vh] fixed">
+            <aside className={`${show ? "hidden" : "lg:flex"} flex flex-col justify-between w-[15%] h-[100vh] fixed bg-white z-10`}>
                 {/* <div>
             <Link href="/">Home</Link>
           </div>
@@ -23,7 +24,7 @@ const Sidebar = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="flex">
+                    <div className="flex justify-between">
                         <div>41</div>
                         <div>42</div>
                         <div>43</div>
