@@ -1,7 +1,7 @@
 const Sidebar = () => {
     return (
         <>
-            <aside className="hidden lg:flex flex-col justify-between w-[15%] h-[90vh] fixed">
+            <aside className="hidden lg:flex flex-col justify-between w-[15%] h-[100vh] fixed">
                 {/* <div>
             <Link href="/">Home</Link>
           </div>
