@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
-  const [ show, setShow ] = useState(true)
+  const [ show, setShow ] = useState(false)
   // console.log(show);
   
   return (
