@@ -6,7 +6,7 @@ const Sidebar = () => {
         <>
             {/* <div className={`${show && "hidden"} fixed w-full h-full`} onClick={() => setShow(!show)}> */}
             {/* <aside className={`${show && "hidden"} lg:flex flex-col justify-between w-[100%] lg:w-[15%] h-[100vh] fixed bg-white z-10`}> */}
-            <aside className="hidden lg:flex flex-col justify-between w-[100%] lg:w-[15%] h-[100vh] fixed bg-white z-10">
+            <aside className="hidden lg:flex flex-col justify-between w-[100%] lg:w-[15%] h-[100vh] fixed bg-white z-10 p-5 border-2">
                 {/* <div>
             <Link href="/">Home</Link>
           </div>
@@ -17,11 +17,11 @@ const Sidebar = () => {
                     <div className="flex justify-center">
                         <Image src={hanzIcon} alt="#" />
                     </div>
-                    <div className="flex">
+                    <div className="flex p-5">
                         <div className="basis-[50%]">21</div>
                         <div className="basis-[50%]">22</div>
                     </div>
-                    <div className="">
+                    <div className="p-5">
                         <div>خانه</div>
                         <div>معرفی محصول</div>
                         <div>گالری تصاویر</div>
