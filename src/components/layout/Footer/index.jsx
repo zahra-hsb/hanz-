@@ -3,7 +3,7 @@ import Logo from '../.../../../../../public/icons/logo.svg'
 const Footer = () => {
     return (
         <>
-            <footer className="flex flex-col w-full">
+            <footer className="flex flex-col w-full bg-green">
                 <div className="flex justify-between flex-wrap w-[90%] m-auto">
                     <div className="flex justify-between flex-wrap basis-[70%]">
                         <div>
@@ -44,7 +44,7 @@ const Footer = () => {
                                 </ul></div>
                         </div>
                     </div>
-                    <div className="bg-red basis-[15%]">
+                    <div className="basis-[15%]">
                         <div>
                             <div>
                                 <Image src={Logo} alt="logo" />

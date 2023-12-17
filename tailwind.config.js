@@ -7,8 +7,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-       
+
       },
+      colors: {
+        green: 'var(--primary-green)'
+      }
+
     },
   },
   plugins: [],

@@ -37,11 +37,11 @@ const Layout = ({ children }) => {
       )}  */}
 
 
-      <Sidebar show={show} setShow={setShow} />
+      {/* <Sidebar show={show} setShow={setShow} /> */}
       <div className="flex relative lg:mr-[15%]">
 
         <div className="w-full flex flex-col">
-          <Header toggle={toggle} setToggle={setToggle} />
+          {/* <Header toggle={toggle} setToggle={setToggle} /> */}
 
           <div className="flex-1 h-[500px]">{children}</div>
 

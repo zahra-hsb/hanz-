@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  
+@layer base {
+  :root {
+    --primary-green: #00AE8E;
+  }
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-   
+  
   }
 }
 *{
