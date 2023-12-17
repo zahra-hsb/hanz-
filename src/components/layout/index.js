@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
       )}  */}
 
 
-      {/* <Sidebar show={show} setShow={setShow} /> */}
+      <Sidebar/>
       <div className="flex relative lg:mr-[15%]">
 
         <div className="w-full flex flex-col">
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
 
           <div className="flex-1 h-[500px]">{children}</div>
 
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
 
