@@ -2,8 +2,9 @@ const Sidebar = ({ show, setShow }) => {
     // console.log(show);
     return (
         <>
-            <div className={`${show && "hidden"} fixed w-full h-full`} onClick={() => setShow(!show)}>
-                <aside className={`${show && "hidden"} lg:flex flex-col justify-between w-[100%] lg:w-[15%] h-[100vh] fixed bg-white z-10`}>
+            {/* <div className={`${show && "hidden"} fixed w-full h-full`} onClick={() => setShow(!show)}> */}
+                {/* <aside className={`${show && "hidden"} lg:flex flex-col justify-between w-[100%] lg:w-[15%] h-[100vh] fixed bg-white z-10`}> */}
+                <aside className="hidden lg:flex flex-col justify-between w-[100%] lg:w-[15%] h-[100vh] fixed bg-white z-10">
                     {/* <div>
             <Link href="/">Home</Link>
           </div>
@@ -37,7 +38,7 @@ const Sidebar = ({ show, setShow }) => {
                         </div>
                     </div>
                 </aside>
-            </div>
+            {/* </div> */}
         </>
     )
 }
