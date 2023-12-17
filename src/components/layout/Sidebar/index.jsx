@@ -1,4 +1,4 @@
-const Sidebar = ({ show, setShow }) => {
+const Sidebar = ({ toggle, setToggle }) => {
     // console.log(show);
     return (
         <>
