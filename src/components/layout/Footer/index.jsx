@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Logo from '../.../../../../../public/image/logo.png'
 const Footer = () => {
     return (
         <>
@@ -6,7 +8,7 @@ const Footer = () => {
                     <div className="flex justify-around flex-wrap basis-[70%]">
                         <div>
                             <div>
-                                <h2>محصولات</h2>
+                                <h2 className="font-extrabold text-lg">محصولات</h2>
                             </div>
                             <div>
                                 <ul>
@@ -19,7 +21,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <div>
-                                <h2>تماس با ما</h2>
+                                <h2 className="font-extrabold  text-lg">تماس با ما</h2>
                             </div>
                             <div>
                                 <ul>
@@ -31,7 +33,9 @@ const Footer = () => {
                     </div>
                     <div className="bg-red basis-[30%]">
                         <div>
-                            <div>311</div>
+                            <div>
+                                <Image src={Logo} alt="logo"/>
+                            </div>
                             <div>312</div>
                         </div>
                     </div>
