@@ -2,17 +2,17 @@ import Link from 'next/link'
 const Main = () => {
     return (
         <>
-            <main className="w-full h-[350px] relative p-8 bg-mainSection bg-center text-white">
+            <main className="w-full h-[350px] relative p-8 lg:pr-20 bg-mainSection bg-center text-white">
                 <div className="flex flex-col">
                     <div className="p-4 mt-5">
-                        <h3 className="absolute z-50 text-3xl py-4 px-2 border-y-4 border-r-4 border-green">
+                        <h3 className="absolute z-50 text-3xl py-4 px-2 ml-4 border-y-4 border-r-4 border-green">
                             سیستم های نوین درب و پنجره
                         </h3>
                     </div>
                     <div className="p-1">
-                        <Link href={'/products'} className="absolute z-50 mt-20 mr-3 px-2">
+                        <Link href={'/products'} className="absolute z-50 mt-32 lg:mt-20 mr-3 px-2 w-[200px]">
                             مشاهده بیشتر
-                            <span className='translate-x-0 hover:translate-x-3'> ←</span>
+                            <span className='transform hover:translate-x-3'> ←</span>
                         </Link>
                     </div>
                 </div>
