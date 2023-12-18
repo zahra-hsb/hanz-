@@ -2,10 +2,9 @@ import Link from 'next/link';
 import hanzIcon from '../../../../public/icons/hanz-icon.svg'
 import Image from 'next/image'
 const Sidebar = () => {
-    // console.log(show);
     return (
         <>
-            <aside id="default-sidebar" className="hidden lg:flex flex-col justify-between w-[100%] lg:w-[240px] h-[100vh] fixed top-0 right-0 z-40 transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+            <aside id="default-sidebar" className="hidden lg:flex flex-col justify-between w-[100%] lg:w-[15%] h-[100vh] fixed top-0 right-0 z-40 transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                 <div>
                     <div className="flex justify-center pt-4">
                         <Image src={hanzIcon} alt="#" />
