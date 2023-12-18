@@ -11,7 +11,8 @@ const Main = () => {
                     </div>
                     <div className="p-1">
                         <Link href={'/products'} className="absolute z-50 mt-20 mr-3 px-2">
-                        مشاهده بیشتر ← 
+                            مشاهده بیشتر
+                            <span className='translate-x-0 hover:translate-x-3'> ←</span>
                         </Link>
                     </div>
                 </div>
