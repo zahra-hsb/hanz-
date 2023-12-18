@@ -7,7 +7,7 @@ const CategorySection = () => {
                         دسته بندی محصولات
                     </h4>
                 </div>
-                <div className="flex flex-row w-full items-center justify-around flex-wrap">
+                <div className="flex flex-row w-full gap-3 items-center justify-around flex-wrap">
                     <div className="flex flex-col items-center justify-between">
                         <div className="w-[200px] h-[200px] flex items-center justify-center bg-green rounded-2xl">
                             <svg width="135" height="135" viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg">
