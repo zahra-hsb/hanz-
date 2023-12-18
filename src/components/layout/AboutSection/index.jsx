@@ -1,5 +1,6 @@
 import Image from "next/image"
 import picture from '../../../../public/image/Shayco-Ghorfe.png'
+import Picture2 from '../../../../public/image/image4.png'
 
 const AboutSection = () => {
     return (
@@ -37,15 +38,17 @@ const AboutSection = () => {
                     </div>
                     <div>
                         <p className="py-5 w-5/6 text-justify opacity-50 text-base">
-                        شرکت شایکو افتخار دارد در این واحد به کمک مهندسین مجرب و جوان و کار آزموده
-                         و با تکیه بر بررسی نیازهای بازار اقدام به طراحی و ساخت سیستم 
-                        های مدرن و نوین در بخش صنعت ساختمان به خصوص نماهای مدرن و نوین ساختمانی
-                         جهت پاسخگویی به انواع سلیقه های مشتریان و معماران عزیز می نماید.
+                            شرکت شایکو افتخار دارد در این واحد به کمک مهندسین مجرب و جوان و کار آزموده
+                            و با تکیه بر بررسی نیازهای بازار اقدام به طراحی و ساخت سیستم
+                            های مدرن و نوین در بخش صنعت ساختمان به خصوص نماهای مدرن و نوین ساختمانی
+                            جهت پاسخگویی به انواع سلیقه های مشتریان و معماران عزیز می نماید.
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full items-center justify-around flex-wrap">
-                    <div className="h-full">1111111111111</div>
+                <div className="flex w-full items-center justify-between flex-wrap">
+                    <div className="h-full">
+                        <Image src={Picture2} alt="hanz" />
+                    </div>
                     <div className="p-2">
                         <div>212222222222</div>
                         <div>223333333333</div>
