@@ -1,9 +1,14 @@
+import Image from "next/image"
+import picture from '../../../../public/image/Shayco-Ghorfe.png'
+
 const AboutSection = () => {
     return (
         <>
-            <section className="flex flex-col p-1 w-full h-[60vh]">
-                <div className="flex w-full items-center justify-around flex-wrap">
-                    <div className="h-full">1</div>
+            <section className="flex flex-col pt-5 w-full">
+                <div className="flex w-full items-center justify-between flex-wrap">
+                    <div className="h-full">
+                        <Image src={picture} alt="hanz" />
+                    </div>
                     <div className="p-2">
                         <div>11</div>
                         <div>22</div>
