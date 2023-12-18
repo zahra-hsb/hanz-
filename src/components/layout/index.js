@@ -42,11 +42,11 @@ const Layout = ({ children }) => {
       <div className="flex relative lg:mr-[15%]">
 
         <div className="w-full flex flex-col">
-          {/* <Header toggle={toggle} setToggle={setToggle} /> */}
+          <Header />
 
           <div className="flex-1 h-[500px]">{children}</div>
 
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </div>
 
