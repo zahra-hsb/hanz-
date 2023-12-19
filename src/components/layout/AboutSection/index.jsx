@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import picture from '../../../../public/image/Shayco-Ghorfe.png'
 import Picture2 from '../../../../public/image/image4.png'
 
@@ -6,11 +7,11 @@ const AboutSection = () => {
     return (
         <>
             <section className="flex flex-col pt-5 w-full">
-                <div className="flex w-full items-center justify-between gap-5 flex-wrap">
-                    <div className="lg:mr-5 w-full lg:w-[40%] p-5">
+                <div className="flex w-full flex-col lg:flex-row items-center justify-between gap-5">
+                    <div className="lg:mr-10">
                         <Image src={picture} alt="hanz" />
                     </div>
-                    <div className="p-2 lg:w-[50%]">
+                    <div className="p-8 lg:p-auto lg:w-[50%]">
                         <div>
                             <h4 className="text-2xl font-bold opacity-[76%]">
                                 گروه صنعتی
@@ -18,7 +19,7 @@ const AboutSection = () => {
                             </h4>
                         </div>
                         <div>
-                            <p className="py-5 lg:w-5/6 text-justify opacity-50 text-base">
+                            <p className="py-5 lg:w-5/6 text-justify opacity-50 text-lg">
                                 از معتبرترین شرکت های طراحی و تولید کننده سیستم های نوین درب و پنجره و
                                 نمای ساختمان است که با استفاده از دانش روز و تکنولوژی برتر در کشور از سال 1384 ،
                                 با ظرفیت اولیه 11000 تن در شهر تهران و در زمینی به مساحت 15000 متر مربع ...
@@ -26,18 +27,18 @@ const AboutSection = () => {
                             </p>
                         </div>
                         <div>
-                            <button className="text-green text-sm px-4 py-1 border-2 border-green rounded-3xl">درباره ما ←</button>
+                            <Link href={'/about'} className="text-green text-lg px-4 py-1 border-2 border-green rounded-3xl">درباره ما ←</Link>
                         </div>
                     </div>
                 </div>
                 <div className="lg:w-1/2 p-5 m-5 lg:m-10">
                     <div>
-                        <h4 className="text-base font-bold">
+                        <h4 className="text-lg font-bold">
                             واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
                         </h4>
                     </div>
                     <div>
-                        <p className="py-5 lg:w-5/6 text-justify opacity-50 text-base">
+                        <p className="py-5 lg:w-5/6 text-justify opacity-50 text-lg">
                             شرکت شایکو افتخار دارد در این واحد به کمک مهندسین مجرب و جوان و کار آزموده
                             و با تکیه بر بررسی نیازهای بازار اقدام به طراحی و ساخت سیستم
                             های مدرن و نوین در بخش صنعت ساختمان به خصوص نماهای مدرن و نوین ساختمانی
@@ -45,18 +46,18 @@ const AboutSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full items-center justify-between gap-5 flex-wrap">
-                    <div className="mx-28 lg:mr-5">
+                <div className="flex w-full flex-col lg:flex-row items-center justify-between gap-5">
+                    <div className="lg:mr-10">
                         <Image src={Picture2} alt="hanz" />
                     </div>
-                    <div className="p-2">
+                    <div className="p-8 lg:p-auto lg:w-[50%]">
                         <div>
-                            <h4 className="text-base font-bold">
+                            <h4 className="text-lg font-bold">
                                 واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
                             </h4>
                         </div>
                         <div>
-                            <p className="py-5 lg:w-2/6 text-justify opacity-50 text-base">
+                            <p className="py-5 lg:w-5/6 text-justify opacity-50 text-lg">
                                 شرکت شایکو افتخار دارد در این واحد به کمک مهندسین مجرب و جوان و کار آزموده
                                 و با تکیه بر بررسی نیازهای بازار اقدام به طراحی و ساخت سیستم
                                 های مدرن و نوین در بخش صنعت ساختمان به خصوص نماهای مدرن و نوین ساختمانی
