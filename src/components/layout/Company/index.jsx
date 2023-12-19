@@ -1,9 +1,10 @@
 import Button from "../Main/button"
+import BigSlider from "../Slider/BigSlider"
 
 const Company = () => {
     return (
         <>
-            <section className="flex flex-col w-full p-3">
+            <section className="flex flex-col w-full">
                 <div className="flex items-center justify-between px-5">
                     <div>
                         <h3 className="text-2xl font-bold">
@@ -15,7 +16,7 @@ const Company = () => {
                     </div>
                 </div>
                 <div>
-                    
+                    <BigSlider />
                 </div>
             </section>
             <section className="flex w-full items-center justify-around flex-wrap p-3">
