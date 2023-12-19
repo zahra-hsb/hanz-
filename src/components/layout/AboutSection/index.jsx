@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import picture from '../../../../public/image/Shayco-Ghorfe.png'
 import Picture2 from '../../../../public/image/image4.png'
+import Button from '../Main/button'
 
 const AboutSection = () => {
     return (
@@ -27,7 +28,8 @@ const AboutSection = () => {
                             </p>
                         </div>
                         <div>
-                            <Link href={'/about'} className="text-green text-lg px-4 py-1 border-2 border-green rounded-3xl">درباره ما ←</Link>
+                            <Button title={'درباره ما'} url={'/about'}/>
+
                         </div>
                     </div>
                 </div>
