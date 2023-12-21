@@ -7,7 +7,7 @@ import Slider from "@/components/layout/Slider";
 
 export default function Home() {
   return (
-    <main className="lg:w-full flex flex-col justify-center items-center w-full h-full border-lime-500 border-2">
+    <main>
       <Main />
       <CategorySection />
       <AboutSection />
