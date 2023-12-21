@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
 
 
       <Sidebar/>
-      <div className="flex relative lg:mr-[15%]">
+      <div className="flex relative lg:w-[calc(100%-256px)] lg:mr-64">
 
         <div className="w-full flex flex-col">
           <Header />
