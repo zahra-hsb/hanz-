@@ -5,39 +5,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import './layout.module.css';
 
-const windowC = () => {
-  return window
-}
-
 const Layout = ({ children }) => {
-  // const [toggle, setToggle] = useState(false)
-  // const [windowSize, setWindowSize] = useState(() => windowC.innerWidth)
-  // // useEffect(() => {
-  //   console.log(windowC);
-  // // })
-  // useEffect(() => {
-  //   const windowsizeHandler = (event) => {
-  //     setWindowSize(windowC.innerWidth)
-  //   }
-  //   windowC.addEventListener("resize", windowsizeHandler)
-
-  //   return () => windowC.removeEventListener("resize", windowsizeHandler)
-  // }, [windowSize])
-
-  // console.log(show);
 
   return (
     <>
-
-      {/* {windowSize > 1024 ? (
-        <Sidebar />
-
-      ) : (
-       <Sidebar show={show} setShow={setShow} /> 
-
-      )}  */}
-
-
       <Sidebar/>
       <div className="flex relative lg:w-[calc(100%-256px)] lg:mr-64">
 
