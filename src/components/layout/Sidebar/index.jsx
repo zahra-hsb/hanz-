@@ -6,34 +6,31 @@ import { useRouter } from 'next/router';
 const Sidebar = () => {
 
     const router = useRouter();
-    const [selectedTab, setSelectedTab] = useState('');
-  
-    const handleTabClick = (tabName, path) => {
-      setSelectedTab(tabName);
-      router.push(path);
+    const [selectedTab, setSelectedTab] = useState(null);
+
+    const handleTabClick = (tabName) => {
+        setSelectedTab(tabName);
     };
 
-    useEffect(() => {
-        // بر اساس مسیر فعلی، رنگ tab مربوطه را تنظیم کنید
-        if (router.pathname === '/') {
-          setSelectedTab('home');
-        } else if (router.pathname === '/products') {
-          setSelectedTab('products');
-        } // سایر مسیرها
-      }, [router.pathname]);
+    // const [selectedTab, setSelectedTab] = useState('');
+
+    // const handleTabClick = (tabName, path) => {
+    //     setSelectedTab(tabName);
+    //     router.push(path);
+    // };
+
+
+    // useEffect(() => {
+    //     if (router.pathname === '/') {
+    //         setSelectedTab('home');
+    //     } else if (router.pathname === '/products') {
+    //         setSelectedTab('products');
+    //     } 
+    // }, [router.pathname]);
 
     return (
         <>
-
-
-            {/* <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                <span class="sr-only">Open sidebar</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-                </svg>
-            </button> */}
-
-            <aside id="sidebar-multi-level-sidebar" class="flex flex-col justify-between fixed top-0 right-0 z-40 w-64 h-screen transform translate-x-full lg:transform-none transition-transform shadow" aria-label="Sidebar">
+            <aside class="flex flex-col justify-between fixed top-0 right-0 z-40 w-64 h-screen transform translate-x-full lg:transform-none transition-transform shadow" aria-label="Sidebar">
                 <div className="flex justify-start pt-4 pr-6">
                     <div className='w-[150px] pt-5'>
                         <Image src={hanzIcon} alt="#" />
@@ -66,7 +63,7 @@ const Sidebar = () => {
                             <Link
                                 href="/"
                                 className={`${selectedTab === 'home' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
-                                onClick={() => { handleTabClick('home')}}
+                                onClick={() => { handleTabClick('home') }}
                             >
 
                                 <span class="nav-link ms-3">خانه</span>
@@ -95,7 +92,7 @@ const Sidebar = () => {
                         <li>
                             <Link href="/products"
                                 className={`${selectedTab === 'products' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
-                                onClick={() => { handleTabClick('products')}}
+                                onClick={() => { handleTabClick('products') }}
                             >
 
                                 <span class="nav-link flex-1 ms-3 whitespace-nowrap">معرفی محصول</span>
@@ -104,7 +101,7 @@ const Sidebar = () => {
                         <li>
                             <Link href="/galleryImage"
                                 className={`${selectedTab === 'galleryImage' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
-                                onClick={() => { handleTabClick('galleryImage')}}
+                                onClick={() => { handleTabClick('galleryImage') }}
                             >
 
                                 <span class="nav-link flex-1 ms-3 whitespace-nowrap">گالری تصاویر</span>
@@ -113,7 +110,7 @@ const Sidebar = () => {
                         <li>
                             <Link href="/about"
                                 className={`${selectedTab === 'about' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
-                                onClick={() => { handleTabClick('about')}}
+                                onClick={() => { handleTabClick('about') }}
                             >
 
                                 <span class="nav-link flex-1 ms-3 whitespace-nowrap">درباره ما</span>
@@ -122,7 +119,7 @@ const Sidebar = () => {
                         <li>
                             <Link href="/callUs"
                                 className={`${selectedTab === 'callUs' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
-                                onClick={() => { handleTabClick('callUs')}}
+                                onClick={() => { handleTabClick('callUs') }}
                             >
 
                                 <span class="nav-link flex-1 ms-3 whitespace-nowrap">تماس با ما</span>
