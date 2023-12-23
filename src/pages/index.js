@@ -12,8 +12,8 @@ export default function Home() {
       <CategorySection />
       <AboutSection />
       <Company />
-      <FaQ />
-      <Slider />
+      {/* <FaQ />
+      <Slider /> */}
     </main>
   );
 }
