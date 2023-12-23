@@ -22,7 +22,7 @@ const Company = () => {
                 </div>
             </section>
             <section className="flex w-full flex-col lg:flex-row items-center justify-between gap-5 pt-20">
-                <div className="h-full">
+                <div className="h-full lg:mr-10">
                     <Image src={Pic} alt='hanz' />
                 </div>
                 <div className="p-2 lg:w-1/2 p-5 m-5 lg:m-10">
