@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         <MenuHamber setSidebarShow={setSidebarShow} />
       ) : (<Sidebar />)}
 
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div className="flex relative lg:w-[calc(100%-256px)] lg:mr-64">
 

@@ -4,7 +4,7 @@ import { toggleOverflow } from "@/components/utils";
 const Header = ({ setSidebarShow }) => {
     return (
         <>
-            <header className="flex justify-start items-center w-full h-[50px] drop-shadow">
+            <header className="fixed bg-white z-30 flex justify-start items-center w-full h-[50px] border-b">
                 <div className="flex justify-start items-center">
                     <div
                         className="lg:hidden mr-4">
