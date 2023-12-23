@@ -11,7 +11,7 @@ const MenuHamber = ({ setSidebarShow }) => {
                     setSidebarShow((s) => !s)
                     toggleOverflow()
                 }}
-                className="bg-black bg-opacity-25 fixed top-0 right-0 z-20 w-full h-screen">
+                className="bg-black bg-opacity-25 fixed top-0 right-0 z-20 w-full h-screen lg:hidden">
 
             </div>
             <SidebarComponents />

@@ -34,7 +34,6 @@ const SidebarComponents = () => {
     return (
         <div className='flex flex-col justify-between fixed top-0 right-0 z-50 w-64 h-screen bg-white'>
             <Logo />
-
             <div className="flex px-5 mt-[-70px]">
                 <Search />
             </div>
@@ -45,7 +44,6 @@ const SidebarComponents = () => {
 
             <div>
                 <Social />
-
                 <Login />
             </div>
         </div>
