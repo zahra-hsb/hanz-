@@ -3,14 +3,14 @@ import Button from "../Main/button"
 const FaQ = () => {
     return (
         <>
-            <section className="flex flex-col w-full items-center justify-around gap-3 p-5 bg-green text-white">
+            <section className="flex flex-col w-full items-center justify-around gap-3 py-10 bg-green text-white">
                 <div>
                     <h3 className="text-xl font-bold">چرا آلومینیوم؟</h3>
                 </div>
                 <div>
-                    <h4 className="text-md">مهمترین دلایل برای در نظر گرفتن آلومینیوم برای پروژه بعدی</h4>
+                    <h4 className="text-md text-center">مهمترین دلایل برای در نظر گرفتن آلومینیوم برای پروژه بعدی</h4>
                 </div>
-                <div className="flex flex-wrap items-center justify-center w-full p-4">
+                <div className="flex flex-wrap items-center justify-center w-full p-4 lg:px-[34%]">
                     <div className="p-5">
 
                         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
