@@ -28,7 +28,7 @@ const AboutSection = () => {
                             </p>
                         </div>
                         <div>
-                            <Button title={'درباره ما'} url={'/about'}/>
+                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'}/>
 
                         </div>
                     </div>

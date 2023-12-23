@@ -14,7 +14,7 @@ const Company = () => {
                         </h3>
                     </div>
                     <div>
-                        <Button url={'/about'} title={'درباره ما'} />
+                        <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'}/>
                     </div>
                 </div>
                 <div>

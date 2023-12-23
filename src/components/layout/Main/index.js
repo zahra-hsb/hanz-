@@ -11,7 +11,7 @@ const Main = () => {
                         </h3>
                     </div>
                     <div className="p-1 absolute z-10 mt-[26vh] lg:mt-32 mr-3 px-2 w-[200px]">
-                        <Button title={' مشاهده بیشتر'} url={'/products'} border={'border-0'} color={'text-white'}/>
+                        <Button title={' مشاهده بیشتر'} url={'/products'} color={'text-white'}/>
                     </div>
                 </div>
                 <div className="absolute top-0 left-0 bg-black opacity-20 w-full h-full"></div>
