@@ -7,7 +7,7 @@ import Social from './Social';
 import Login from './Login';
 import { toggleOverflow } from '@/components/utils';
 
-const SidebarComponents = () => {
+const SidebarComponents = ({setSidebarShow}) => {
 
     // const router = useRouter();
     const [selectedTab, setSelectedTab] = useState(null);
@@ -37,7 +37,10 @@ const SidebarComponents = () => {
             <div className='flex justify-between items-end'>
                 <Logo />
 
-                <div className='text-4xl ml-6 pb-1 lg:hidden text-gray-400' onClick={() => toggleOverflow()}>+</div>
+                <div className='text-4xl ml-6 pb-1 lg:hidden text-gray-400 rotate-45' onClick={() => {
+                    setSidebarShow((s) => !s)
+                    toggleOverflow()
+                    }}>+</div>
             </div>
             <div className="flex px-5 mt-[-70px] w-full">
                 <Search />
