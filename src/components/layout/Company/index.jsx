@@ -1,5 +1,7 @@
 import Button from "../Main/button"
 import BigSlider from "../Slider/BigSlider"
+import Pic from '../../../../public/image/image5.png'
+import Image from 'next/image'
 
 const Company = () => {
     return (
@@ -12,19 +14,34 @@ const Company = () => {
                         </h3>
                     </div>
                     <div>
-                            <Button url={'/about'} title={'درباره ما'}/>
+                        <Button url={'/about'} title={'درباره ما'} />
                     </div>
                 </div>
                 <div>
                     <BigSlider />
                 </div>
             </section>
-            <section className="flex w-full items-center justify-around flex-wrap p-3">
-                <div className="h-full">wwwwwwwww</div>
-                <div className="p-2">
-                    <div>11</div>
-                    <div>22</div>
-                    <div>33</div>
+            <section className="flex w-full flex-col lg:flex-row items-center justify-between gap-5 pt-10">
+                <div className="h-full">
+                    <Image src={Pic} alt='hanz' />
+                </div>
+                <div className="p-2 lg:w-1/2 p-5 m-5 lg:m-10">
+                    <div>
+                        <h3 className="text-xl font-bold opacity-80">
+                            واحد اکستروژن <span className="opacity-50">(EXTRUSION LINE):</span>
+                        </h3>
+                    </div>
+                    <div>
+                        <p className="py-5 lg:w-5/6 text-justify opacity-50 text-lg">
+                        شرکت شایکو مجهز به یک دستگاه پرس 2500 تن اکستروژن با دبل پولر 
+                        هوایی فول اتوماتیک از شرکت زیمنس آلمان و میز فول
+                         اتوماتیک انتقال پروفیل و قسمت استرج و دستگاه ایجینگ القایی با
+                         قابلیت سختکاری پروفیل باآلیاژ 6063 تا 14 وبستر سختی را داراست.
+                        </p>
+                    </div>
+                    <div>
+                        <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} />
+                    </div>
                 </div>
             </section>
         </>
