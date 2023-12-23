@@ -21,7 +21,7 @@ const Company = () => {
                     <BigSlider />
                 </div>
             </section>
-            <section className="flex w-full flex-col lg:flex-row items-center justify-between gap-5 pt-10">
+            <section className="flex w-full flex-col lg:flex-row items-center justify-between gap-5 pt-20">
                 <div className="h-full">
                     <Image src={Pic} alt='hanz' />
                 </div>
