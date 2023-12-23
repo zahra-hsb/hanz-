@@ -10,11 +10,10 @@
 
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  
-  }
+  :root {}
 }
-*{
+
+* {
   /* border: 1px solid blue; */
   /* padding: 5px; */
   direction: rtl;
@@ -22,9 +21,14 @@
 }
 
 body {
-    font-family: 'IranSans';
+  font-family: 'IranSans';
 }
+
 @font-face {
   font-family: IranSans;
   src: url('/fonts/IRANSansX-Medium.woff');
+}
+
+.menu-open {
+  overflow: hidden;
 }
