@@ -7,7 +7,7 @@ import Social from './Social';
 import Login from './Login';
 import { toggleOverflow } from '@/components/utils';
 
-const SidebarComponents = ({setSidebarShow}) => {
+const SidebarComponents = ({ setSidebarShow }) => {
 
     // const router = useRouter();
     const [selectedTab, setSelectedTab] = useState(null);
@@ -34,20 +34,22 @@ const SidebarComponents = ({setSidebarShow}) => {
 
     return (
         <div className='flex flex-col justify-between fixed top-0 right-0 z-50 w-full lg:w-64 h-screen bg-white'>
-            <div className='flex justify-between items-end'>
-                <Logo />
+            <div>
+                <div className='flex justify-between items-end'>
+                    <Logo />
 
-                <div className='text-4xl ml-6 pb-1 lg:hidden text-gray-400 rotate-45 cursor-pointer' onClick={() => {
-                    setSidebarShow((s) => !s)
-                    toggleOverflow()
+                    <div className='text-4xl ml-6 pb-1 lg:hidden text-gray-400 rotate-45 cursor-pointer' onClick={() => {
+                        setSidebarShow((s) => !s)
+                        toggleOverflow()
                     }}>+</div>
-            </div>
-            <div className="flex px-5 mt-[-70px] w-full">
-                <Search />
-            </div>
+                </div>
+                <div className="flex px-5 mt-6 w-full">
+                    <Search />
+                </div>
 
-            <div class="px-3 pb-4 mt-[-70px] overflow-y-auto">
-                <Menu selectedTab={selectedTab} setSelectedTab={setSelectedTab} handleTabClick={handleTabClick} />
+                <div class="px-3 pb-4 mt-4 overflow-y-auto">
+                    <Menu selectedTab={selectedTab} setSelectedTab={setSelectedTab} handleTabClick={handleTabClick} />
+                </div>
             </div>
 
             <div>
