@@ -37,7 +37,7 @@ const SidebarComponents = ({setSidebarShow}) => {
             <div className='flex justify-between items-end'>
                 <Logo />
 
-                <div className='text-4xl ml-6 pb-1 lg:hidden text-gray-400 rotate-45' onClick={() => {
+                <div className='text-4xl ml-6 pb-1 lg:hidden text-gray-400 rotate-45 cursor-pointer' onClick={() => {
                     setSidebarShow((s) => !s)
                     toggleOverflow()
                     }}>+</div>
