@@ -1,9 +1,8 @@
-import Link from 'next/link'
 import Button from './button'
 const Main = () => {
     return (
         <>
-            <main className="w-full h-[500px] relative lg:p-20 px-[5%] pt-16 lg:pr-20 bg-mainSection bg-center text-white">
+            <main className="w-full h-[500px] relative sm:p-20 px-[5%] pt-[100px] mt-[45px] lg:pr-20 bg-mainSection bg-center text-white">
                 <div className="flex flex-col">
                     <div className="lg:p-4 p-2 mt-5">
                         <h3 className="absolute z-10 lg:text-4xl sm:text-2xl text-xl py-4 px-2 ml-4 mt-5 border-y-4 border-r-4 border-green">
