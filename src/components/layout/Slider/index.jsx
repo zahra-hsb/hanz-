@@ -4,13 +4,15 @@ import BigSlider from "./BigSlider"
 const Slider = () => {
     return (
         <>
+
             <section className="flex flex-col w-full p-5 mb-36 mt-16">
                 <div className="flex items-center justify-between p-3 my-4">
                     <div>
+
                         <h3>پروژه های انجام شده</h3>
                     </div>
                     <div>
-                        <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} color={'text-green'} />
+                        <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} color={'text-green text-sm'} />
 
                     </div>
                 </div>
