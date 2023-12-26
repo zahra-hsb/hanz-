@@ -18,14 +18,14 @@ const Company = () => {
                     </div>
                 </div>
                 <div>
-                    <BigSlider />
+                    <BigSlider slidesPerView={1} textSlider={false} />
                 </div>
             </section>
             <section className="flex w-full flex-col lg:flex-row items-center justify-between gap-5 pt-20">
                 <div className="h-full lg:m-10">
                     <Image src={Pic} alt='hanz' />
                 </div>
-                <div className="p-2 lg:w-1/2 p-5 m-5 lg:m-10">
+                <div className="lg:w-1/2 p-5 m-5 lg:m-10">
                     <div>
                         <h3 className="text-xl font-bold opacity-80">
                             واحد اکستروژن <span className="opacity-50">(EXTRUSION LINE):</span>
