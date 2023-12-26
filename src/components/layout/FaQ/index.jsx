@@ -111,7 +111,7 @@ const FaQ = () => {
                     </div>
                 </div>
                 <div>
-                    <Button border={'border-2 border-white'} title={'معرفی محصول'} url={'/products'} color={'text-white'} />
+                    <Button border={'border-2 border-white'} title={'معرفی محصول'} url={'/products'} color={'text-white '} />
                 </div>
             </section>
         </>
