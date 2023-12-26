@@ -1,10 +1,17 @@
+import Button from "../Main/button"
+
 const Slider = () => {
     return (
         <>
             <section className="flex flex-col w-full p-5">
                 <div className="flex items-center justify-between p-3">
-                    <div>1</div>
-                    <div>2</div>
+                    <div>
+                        <h3>پروژه های انجام شده</h3>
+                    </div>
+                    <div>
+                        <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} color={'text-green'} />
+
+                    </div>
                 </div>
                 <div className="p-2">
                     <span>2</span>
@@ -21,7 +28,7 @@ const Slider = () => {
                     </div>
                     <div>
                         <div>2</div>
-                       <div className="p-3">2</div>
+                        <div className="p-3">2</div>
                     </div>
                 </div>
             </section>
