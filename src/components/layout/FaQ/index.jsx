@@ -110,7 +110,7 @@ const FaQ = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="mt-4 lg:mt-1">
                     <Button border={'border-2 border-white'} title={'معرفی محصول'} url={'/products'} color={'text-white '} />
                 </div>
             </section>
