@@ -14,6 +14,9 @@ module.exports = {
       },
       backgroundImage: {
         mainSection: 'url(../../public/image/cuh_banner.png)'
+      },
+      boxShadow: {
+        'shadow0' : '0 30px 0 0 #00AE8E'
       }
     },
   },
