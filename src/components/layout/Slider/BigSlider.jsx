@@ -16,19 +16,18 @@ function createElem(image6, textSlider1) {
     return (
         <>
             <Image src={image6} className='w-full pb-4' />
-            <p className='text-sm text-gray-600'>{textSlider1}</p>
+            <p className='text-xs sm:text-sm text-gray-600'>{textSlider1}</p>
         </>
     )
 }
 
 const BigSlider = ({ slidesPerView, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
+    
     const [textShow, setTextShow] = useState(textSlider)
-    // SwiperCore.use([Autoplay]);
     let breakpoints = {}
 
     if (textShow) {
         breakpoints = {
-            0: {
                 0: {
                     slidesPerView: 1.7,
                 },
@@ -38,7 +37,6 @@ const BigSlider = ({ slidesPerView, textSlider, textSlider1, textSlider2, textSl
                 768: {
                     slidesPerView: 3,
                 },
-            },
         };
     } else {
         breakpoints = {
@@ -54,7 +52,7 @@ const BigSlider = ({ slidesPerView, textSlider, textSlider1, textSlider2, textSl
                 spaceBetween={20}
                 breakpoints={breakpoints}
                 slidesPerView={slidesPerView}
-                // navigation
+                navigation
                 // pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
