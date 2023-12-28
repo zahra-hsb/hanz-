@@ -3,8 +3,8 @@ import Logo from '../.../../../../../public/icons/hanz-logo-white.png'
 const Footer = () => {
     return (
         <>
-            <footer className="flex flex-col w-full bg-green text-white pt-12 pb-6 px-10 lg:px-[110px] leading-8">
-                <div className="flex justify-between flex-wrap m-auto">
+            <footer className="flex flex-col w-full bg-green text-white pt-12 pb-6 px-10 leading-8">
+                <div className="flex justify-between flex-wrap lg:w-[80%] m-auto">
                     <div className='w-[130px] mb-12'>
                         <div>
                             <Image src={Logo} alt="logo" />
