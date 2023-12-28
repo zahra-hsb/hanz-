@@ -7,7 +7,7 @@ const Company = () => {
     return (
         <>
             <section className="flex flex-col w-full">
-                <div className="flex items-center justify-between p-10">
+                <div className="flex items-center justify-between px-20 py-14">
                     <div>
                         <h3 className="text-2xl font-bold">
                             گروه صنعتی هانز
