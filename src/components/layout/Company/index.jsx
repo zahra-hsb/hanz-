@@ -1,6 +1,7 @@
 import Button from "../Main/button"
 import BigSlider from "../Slider/BigSlider"
 import Pic from '../../../../public/image/image5.png'
+import banner from '../../../../public/image/cuh_banner.png'
 import Image from 'next/image'
 
 const Company = () => {
@@ -18,7 +19,7 @@ const Company = () => {
                     </div>
                 </div>
                 <div>
-                    <BigSlider slidesPerView={1} textSlider={false} />
+                    <BigSlider slidesPerView={1} textSlider={false} banner={banner} />
                 </div>
             </section>
             <section className="flex w-full flex-col lg:flex-row items-center justify-between gap-5 pt-20">
