@@ -14,7 +14,7 @@ const AboutSection = () => {
                     </div>
                     <div className="p-8 lg:p-auto lg:w-[50%]">
                         <div>
-                            <h4 className="text-2xl font-bold opacity-[76%]">
+                            <h4 className="text-2xl opacity-[76%]">
                                 گروه صنعتی
                                 <span className="text-5xl text-green opacity-1"> هانز</span>
                             </h4>
@@ -35,7 +35,7 @@ const AboutSection = () => {
                 </div>
                 <div className="lg:w-1/2 p-5 m-5 lg:m-16">
                     <div>
-                        <h4 className="text-lg font-bold">
+                        <h4 className="text-lg opacity-83">
                             واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
                         </h4>
                     </div>
@@ -48,14 +48,14 @@ const AboutSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-5">
-                    <div className="flex items-center justify-between xl:w-[95%]">
+                <div className="flex w-full items-center justify-center gap-5">
+                    <div className="flex flex-col lg:flex-row  items-center justify-between xl:w-[95%]">
                         <div className="lg:mr-10">
                             <Image src={Picture2} alt="hanz" />
                         </div>
                         <div className="p-8 lg:p-auto lg:w-[50%]">
                             <div>
-                                <h4 className="text-lg font-bold">
+                                <h4 className="text-lg opacity-83">
                                     واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
                                 </h4>
                             </div>

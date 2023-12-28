@@ -8,9 +8,9 @@ const Company = () => {
     return (
         <>
             <section className="flex flex-col w-full">
-                <div className="flex items-center justify-between p-10">
+                <div className="flex items-center justify-between px-20 py-14">
                     <div>
-                        <h3 className="text-2xl font-bold">
+                        <h3 className="text-2xl opacity-[76%]">
                             گروه صنعتی هانز
                         </h3>
                     </div>
@@ -22,15 +22,15 @@ const Company = () => {
                     <BigSlider slidesPerView={1} textSlider={false} banner={banner} />
                 </div>
             </section>
-            <section className="flex w-full flex-col lg:flex-row items-center justify-center gap-5 pt-20">
-                <div className="flex justify-between items-center xl:w-[95%]">
+            <section className="flex w-full items-center justify-center gap-5 pt-20">
+                <div className="flex flex-col lg:flex-row justify-between items-center xl:w-[95%]">
 
                     <div className="h-full lg:m-10">
                         <Image src={Pic} alt='hanz' />
                     </div>
                     <div className="lg:w-1/2 p-5 m-5 lg:m-10">
                         <div>
-                            <h3 className="text-xl font-bold opacity-80">
+                            <h3 className="text-xl opacity-80">
                                 واحد اکستروژن <span className="opacity-50">(EXTRUSION LINE):</span>
                             </h3>
                         </div>
