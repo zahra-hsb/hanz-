@@ -13,7 +13,7 @@ const Slider = () => {
                             <h3>پروژه های انجام شده</h3>
                         </div>
                         <div>
-                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} color={'text-green text-sm'} />
+                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} color={'text-green text-sm'} hover={'hover:bg-green hover:text-white'} />
 
                         </div>
                     </div>

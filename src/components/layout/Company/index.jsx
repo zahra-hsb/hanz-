@@ -14,7 +14,7 @@ const Company = () => {
                         </h3>
                     </div>
                     <div>
-                        <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} />
+                        <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'}/>
                     </div>
                 </div>
                 <div>
@@ -42,7 +42,7 @@ const Company = () => {
                             </p>
                         </div>
                         <div>
-                            <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} />
+                            <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
                         </div>
                     </div>
                 </div>
