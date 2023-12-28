@@ -42,6 +42,12 @@ body {
   border-radius: 100% !important;
 }
 
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #00ae8e !important;
+  color: #ffffff !important;
+}
+
 div.swiper-button-prev::after,
 div.swiper-button-next::after {
   font-size: 15px !important;
