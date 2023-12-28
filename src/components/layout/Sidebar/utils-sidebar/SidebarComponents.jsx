@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import Logo from './Logo'
 import Search from './Search';
 import Menu from './Menu';
@@ -9,28 +9,27 @@ import { toggleOverflow } from '@/components/utils';
 
 const SidebarComponents = ({ setSidebarShow }) => {
 
-    // const router = useRouter();
     const [selectedTab, setSelectedTab] = useState(null);
+
+    const router = useRouter();
 
     const handleTabClick = (tabName) => {
         setSelectedTab(tabName);
     };
 
-    // const [selectedTab, setSelectedTab] = useState('');
-
-    // const handleTabClick = (tabName, path) => {
-    //     setSelectedTab(tabName);
-    //     router.push(path);
-    // };
-
-
-    // useEffect(() => {
-    //     if (router.pathname === '/') {
-    //         setSelectedTab('home');
-    //     } else if (router.pathname === '/products') {
-    //         setSelectedTab('products');
-    //     } 
-    // }, [router.pathname]);
+    useEffect(() => {
+        if (router.pathname === '/') {
+            setSelectedTab('home');
+        } else if (router.pathname === '/products') {
+            setSelectedTab('products');
+        } else if (router.pathname === '/galleryImage') {
+            setSelectedTab('galleryImage');
+        } else if (router.pathname === '/about') {
+            setSelectedTab('about');
+        } else if (router.pathname === '/callUs') {
+            setSelectedTab('callUs');
+        }
+    }, [router.pathname]);
 
     return (
         <div className='flex flex-col justify-between fixed top-0 right-0 z-50 w-full lg:w-64 h-screen bg-white'>
