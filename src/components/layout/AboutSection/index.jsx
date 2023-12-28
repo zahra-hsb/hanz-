@@ -8,7 +8,7 @@ const AboutSection = () => {
     return (
         <>
             <section className="flex flex-col pt-5 w-full lg:m-auto">
-                <div className="flex w-full flex-col lg:flex-row items-center justify-between gap-5">
+                <div className="flex w-full xl:w-[95%] xl:m-auto flex-col lg:flex-row items-center justify-between gap-5">
                     <div className="lg:mr-10">
                         <Image src={picture} alt="hanz" />
                     </div>
@@ -28,12 +28,12 @@ const AboutSection = () => {
                             </p>
                         </div>
                         <div>
-                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'}/>
+                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
 
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2 p-5 m-5 lg:m-10">
+                <div className="lg:w-1/2 p-5 m-5 lg:m-16">
                     <div>
                         <h4 className="text-lg font-bold">
                             واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
@@ -48,24 +48,27 @@ const AboutSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full flex-col lg:flex-row items-center justify-between gap-5">
-                    <div className="lg:mr-10">
-                        <Image src={Picture2} alt="hanz" />
-                    </div>
-                    <div className="p-8 lg:p-auto lg:w-[50%]">
-                        <div>
-                            <h4 className="text-lg font-bold">
-                                واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
-                            </h4>
+                <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-5">
+                    <div className="flex items-center justify-between xl:w-[95%]">
+                        <div className="lg:mr-10">
+                            <Image src={Picture2} alt="hanz" />
                         </div>
-                        <div>
-                            <p className="py-5 lg:w-5/6 text-justify opacity-50 text-lg">
-                                شرکت شایکو افتخار دارد در این واحد به کمک مهندسین مجرب و جوان و کار آزموده
-                                و با تکیه بر بررسی نیازهای بازار اقدام به طراحی و ساخت سیستم
-                                های مدرن و نوین در بخش صنعت ساختمان به خصوص نماهای مدرن و نوین ساختمانی
-                                جهت پاسخگویی به انواع سلیقه های مشتریان و معماران عزیز می نماید.
-                            </p>
+                        <div className="p-8 lg:p-auto lg:w-[50%]">
+                            <div>
+                                <h4 className="text-lg font-bold">
+                                    واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
+                                </h4>
+                            </div>
+                            <div>
+                                <p className="py-5 lg:w-5/6 text-justify opacity-50 text-lg">
+                                    شرکت شایکو افتخار دارد در این واحد به کمک مهندسین مجرب و جوان و کار آزموده
+                                    و با تکیه بر بررسی نیازهای بازار اقدام به طراحی و ساخت سیستم
+                                    های مدرن و نوین در بخش صنعت ساختمان به خصوص نماهای مدرن و نوین ساختمانی
+                                    جهت پاسخگویی به انواع سلیقه های مشتریان و معماران عزیز می نماید.
+                                </p>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
