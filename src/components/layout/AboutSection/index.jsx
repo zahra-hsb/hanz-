@@ -48,8 +48,8 @@ const AboutSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full flex-col lg:flex-row items-center justify-center gap-5">
-                    <div className="flex items-center justify-between xl:w-[95%]">
+                <div className="flex w-full items-center justify-center gap-5">
+                    <div className="flex flex-col lg:flex-row  items-center justify-between xl:w-[95%]">
                         <div className="lg:mr-10">
                             <Image src={Picture2} alt="hanz" />
                         </div>

@@ -21,8 +21,8 @@ const Company = () => {
                     <BigSlider slidesPerView={1} textSlider={false} />
                 </div>
             </section>
-            <section className="flex w-full flex-col lg:flex-row items-center justify-center gap-5 pt-20">
-                <div className="flex justify-between items-center xl:w-[95%]">
+            <section className="flex w-full items-center justify-center gap-5 pt-20">
+                <div className="flex flex-col lg:flex-row justify-between items-center xl:w-[95%]">
 
                     <div className="h-full lg:m-10">
                         <Image src={Pic} alt='hanz' />
