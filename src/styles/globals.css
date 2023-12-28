@@ -33,6 +33,25 @@ body {
   overflow: hidden;
 }
 
-.swiper-button-prev, .swiper-button-next {
-  color: #00ae8e!important;
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #ffffff93 !important;
+  color: #00ae8e !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 100% !important;
+}
+
+div.swiper-button-prev::after,
+div.swiper-button-next::after {
+  font-size: 15px !important;
+  font-weight: 900 !important;
+}
+
+@media (max-width: 768px) {
+
+  div.swiper-button-prev,
+  div.swiper-button-next {
+    display: none;
+  }
 }
