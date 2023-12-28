@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Logo from './Logo'
 import Search from './Search';
 import Menu from './Menu';
@@ -7,11 +6,11 @@ import Social from './Social';
 import Login from './Login';
 import { toggleOverflow } from '@/components/utils';
 
-const SidebarComponents = ({ setSidebarShow }) => {
+const SidebarComponents = ({ setSidebarShow, router }) => {
 
     const [selectedTab, setSelectedTab] = useState(null);
 
-    const router = useRouter();
+    
 
     const handleTabClick = (tabName) => {
         setSelectedTab(tabName);
