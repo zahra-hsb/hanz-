@@ -7,7 +7,7 @@ import Button from '../Main/button'
 const AboutSection = () => {
     return (
         <>
-            <section className="flex flex-col pt-5 w-full">
+            <section className="flex flex-col pt-5 w-full lg:m-auto">
                 <div className="flex w-full flex-col lg:flex-row items-center justify-between gap-5">
                     <div className="lg:mr-10">
                         <Image src={picture} alt="hanz" />
