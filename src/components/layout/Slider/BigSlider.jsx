@@ -54,7 +54,7 @@ const BigSlider = ({ slidesPerView, textSlider, textSlider1, textSlider2, textSl
                 spaceBetween={20}
                 breakpoints={breakpoints}
                 slidesPerView={slidesPerView}
-                // navigation
+                navigation
                 // pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
