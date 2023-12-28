@@ -8,7 +8,7 @@ const CategorySection = () => {
                     </h4>
                 </div>
                 <div className="flex flex-row w-full gap-3 items-center justify-around flex-wrap">
-                    <div className="flex flex-col items-center justify-between cursor-pointer shadow-shadow0">
+                    <div className="flex flex-col items-center justify-between cursor-pointer">
                         <div className="lg:w-[200px] w-[180px] lg:h-[200px] h-[180px] flex items-center justify-center bg-green rounded-2xl hover:shadow-2xl">
                             <svg width="115" height="115" viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.04541 0V77.9579V135H132.954V77.9579V0H2.04541ZM85.016 51.338H49.9839V5.70421H85.016V51.338ZM7.57677 5.70421H44.4526V57.0421V77.9579H7.57677V5.70421ZM7.57677 83.662H44.4526V129.296H7.57677V83.662ZM49.9839 129.296V77.9579V57.0421H85.016V77.9579V129.296H49.9839ZM127.423 129.296H90.5473V83.662H127.423V129.296ZM90.5473 77.9579V57.0421V5.70421H127.423V77.9579H90.5473Z" fill="white" />
