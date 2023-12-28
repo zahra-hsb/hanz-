@@ -2,6 +2,7 @@ import Button from "../Main/button"
 import BigSlider from "../Slider/BigSlider"
 
 import banner from '../../../../public/image/cuh_banner.png'
+import AboutSection2 from "../AboutSection2"
 
 
 const Company = () => {
@@ -22,6 +23,7 @@ const Company = () => {
                     <BigSlider slidesPerView={1} textSlider={false} banner={banner} />
                 </div>
             </section>
+            <AboutSection2 />
         </>
     )
 }
