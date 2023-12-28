@@ -6,7 +6,7 @@ const Menu = ({ selectedTab, setSelectedTab, handleTabClick }) => {
             <li>
                 <Link
                     href="/"
-                    className={`${selectedTab === 'home' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
+                    className={`${selectedTab === 'home' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green`}
                     onClick={() => { handleTabClick('home') }}
                 >
 
@@ -15,7 +15,7 @@ const Menu = ({ selectedTab, setSelectedTab, handleTabClick }) => {
             </li>
             <li>
                 <Link href="/products"
-                    className={`${selectedTab === 'products' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
+                    className={`${selectedTab === 'products' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green`}
                     onClick={() => { handleTabClick('products') }}
                 >
 
@@ -24,7 +24,7 @@ const Menu = ({ selectedTab, setSelectedTab, handleTabClick }) => {
             </li>
             <li>
                 <Link href="/galleryImage"
-                    className={`${selectedTab === 'galleryImage' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
+                    className={`${selectedTab === 'galleryImage' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green`}
                     onClick={() => { handleTabClick('galleryImage') }}
                 >
 
@@ -33,7 +33,7 @@ const Menu = ({ selectedTab, setSelectedTab, handleTabClick }) => {
             </li>
             <li>
                 <Link href="/about"
-                    className={`${selectedTab === 'about' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
+                    className={`${selectedTab === 'about' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green`}
                     onClick={() => { handleTabClick('about') }}
                 >
 
@@ -42,7 +42,7 @@ const Menu = ({ selectedTab, setSelectedTab, handleTabClick }) => {
             </li>
             <li>
                 <Link href="/callUs"
-                    className={`${selectedTab === 'callUs' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group`}
+                    className={`${selectedTab === 'callUs' ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green`}
                     onClick={() => { handleTabClick('callUs') }}
                 >
 
