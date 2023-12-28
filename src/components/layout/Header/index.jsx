@@ -1,7 +1,23 @@
-import Image from "next/image";
-import Logo from "../../../../public/image/logo.png"
+import { useEffect, useState } from "react";
 import { toggleOverflow } from "@/components/utils";
-const Header = ({ setSidebarShow }) => {
+
+const Header = ({ setSidebarShow, router }) => {
+    const [pageName, setPageName] = useState('ohki');
+
+    useEffect(() => {
+        if (router.pathname === '/') {
+            setPageName('خانه');
+        } else if (router.pathname === '/products') {
+            setPageName('محصولات');
+        } else if (router.pathname === '/galleryImage') {
+            setPageName('گالری محصولات');
+        } else if (router.pathname === '/about') {
+            setPageName('درباره ما');
+        } else if (router.pathname === '/callUs') {
+            setPageName('تماس با ما');
+        }
+    }, [router.pathname]);
+
     return (
         <>
             <header className="fixed bg-white z-30 flex justify-start items-center w-full h-[50px] border-b">
@@ -23,7 +39,7 @@ const Header = ({ setSidebarShow }) => {
                         </button>
                     </div>
                     <div className="mr-4">
-                        <p>خانه</p>
+                        <p>{pageName}</p>
                     </div>
                 </div>
                 <div>
