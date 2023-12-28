@@ -14,7 +14,7 @@ const AboutSection = () => {
                     </div>
                     <div className="p-8 lg:p-auto lg:w-[50%]">
                         <div>
-                            <h4 className="text-2xl font-bold opacity-[76%]">
+                            <h4 className="text-2xl opacity-[76%]">
                                 گروه صنعتی
                                 <span className="text-5xl text-green opacity-1"> هانز</span>
                             </h4>
@@ -35,7 +35,7 @@ const AboutSection = () => {
                 </div>
                 <div className="lg:w-1/2 p-5 m-5 lg:m-16">
                     <div>
-                        <h4 className="text-lg font-bold">
+                        <h4 className="text-lg opacity-83">
                             واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
                         </h4>
                     </div>
@@ -55,7 +55,7 @@ const AboutSection = () => {
                         </div>
                         <div className="p-8 lg:p-auto lg:w-[50%]">
                             <div>
-                                <h4 className="text-lg font-bold">
+                                <h4 className="text-lg opacity-83">
                                     واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
                                 </h4>
                             </div>

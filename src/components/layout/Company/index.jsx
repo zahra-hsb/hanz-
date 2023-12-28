@@ -9,7 +9,7 @@ const Company = () => {
             <section className="flex flex-col w-full">
                 <div className="flex items-center justify-between px-20 py-14">
                     <div>
-                        <h3 className="text-2xl font-bold">
+                        <h3 className="text-2xl opacity-[76%]">
                             گروه صنعتی هانز
                         </h3>
                     </div>
@@ -29,7 +29,7 @@ const Company = () => {
                     </div>
                     <div className="lg:w-1/2 p-5 m-5 lg:m-10">
                         <div>
-                            <h3 className="text-xl font-bold opacity-80">
+                            <h3 className="text-xl opacity-80">
                                 واحد اکستروژن <span className="opacity-50">(EXTRUSION LINE):</span>
                             </h3>
                         </div>

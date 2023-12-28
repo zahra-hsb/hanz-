@@ -2,10 +2,10 @@ const CategorySection = () => {
     return (
         <>
             <section className="flex flex-col w-full items-center py-10">
-                <div className="flex flex-col lg:w-[80%] items-center ">
+                <div className="flex flex-col lg:w-[80%] w-full items-center ">
 
                     <div className="p-10">
-                        <h4 className="lg:text-xl text-lg font-bold opacity-[76%]">
+                        <h4 className="lg:text-xl text-lg opacity-[76%]">
                             دسته بندی محصولات
                         </h4>
                     </div>
