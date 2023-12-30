@@ -4,7 +4,7 @@ const CategorySection = () => {
     return (
         <>
             <section className="flex flex-col w-full items-center mt-10">
-                <div className="flex flex-col lg:w-[80%] w-full items-center ">
+                <div className="flex flex-col lg:w-[90%] lg:m-auto w-full items-center ">
 
                     <div className="p-10">
                         <h4 className="lg:text-xl text-lg opacity-[76%]">

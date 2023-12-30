@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Logo from '../.../../../../../public/icons/hanz-logo-white.png'
+import Link from 'next/link';
 const Footer = () => {
     return (
         <>
@@ -17,10 +18,10 @@ const Footer = () => {
                             </div>
                             <div className='pt-4 text-sm sm:text-lg'>
                                 <ul>
-                                    <li className='py-2'>پنجره</li>
-                                    <li className='py-2'>کشویی و تاشو</li>
-                                    <li className='py-2'>درب</li>
-                                    <li className='py-2'>درب</li>
+                                    <li className='py-2'><Link href='/'>پنجره</Link></li>
+                                    <li className='py-2'><Link href='/'>درب</Link></li>
+                                    <li className='py-2'><Link href='/'>اسلاید و کشویی</Link></li>
+                                    <li className='py-2'><Link href='/'>نما</Link></li>
                                 </ul>
                             </div>
                         </div>
