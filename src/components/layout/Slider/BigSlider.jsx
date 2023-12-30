@@ -7,11 +7,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-function createElem(image6, textSlider1) {
+function createElem(image, textSlider) {
     return (
         <>
-            <Image src={image6} className='w-full pb-4' />
-            <p className='text-xs sm:text-sm text-gray-600'>{textSlider1}</p>
+            <Image src={image} className='w-full pb-4' />
+            <p className='text-xs sm:text-sm text-gray-600'>{textSlider}</p>
         </>
     )
 }
