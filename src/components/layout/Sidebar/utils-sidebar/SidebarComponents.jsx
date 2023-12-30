@@ -7,10 +7,7 @@ import Login from './Login';
 import { toggleOverflow } from '@/components/utils';
 
 const SidebarComponents = ({ setSidebarShow, router }) => {
-
     const [selectedTab, setSelectedTab] = useState(null);
-
-    
 
     const handleTabClick = (tabName) => {
         setSelectedTab(tabName);
@@ -46,7 +43,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
                 </div>
 
                 <div class="px-3 pb-4 mt-4 overflow-y-auto">
-                    <Menu selectedTab={selectedTab} setSelectedTab={setSelectedTab} handleTabClick={handleTabClick} />
+                    <Menu selectedTab={selectedTab} handleTabClick={handleTabClick} setSidebarShow={setSidebarShow} />
                 </div>
             </div>
 

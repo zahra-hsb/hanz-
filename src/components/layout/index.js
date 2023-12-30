@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
 
       {sidebarShow ? (
         <MenuHamber setSidebarShow={setSidebarShow} router={router} />
-      ) : (<Sidebar router={router} />)}
+      ) : (<Sidebar setSidebarShow={setSidebarShow} router={router} />)}
 
       {/* <Sidebar /> */}
 

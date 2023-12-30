@@ -1,42 +1,44 @@
 import { useState } from 'react';
 import Image from 'next/image'
-import image6 from '../../../../public/image/image 6.svg'
-import image7 from '../../../../public/image/image 7.svg'
-import image8 from '../../../../public/image/image 8.svg'
-
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-function createElem(image6, textSlider1) {
+function createElem(image, textSlider) {
     return (
         <>
-            <Image src={image6} className='w-full pb-4' />
-            <p className='text-xs sm:text-sm text-gray-600'>{textSlider1}</p>
+            <Image src={image} className='w-full pb-4' />
+            <p className='text-xs sm:text-sm text-gray-600'>{textSlider}</p>
         </>
     )
 }
 
-const BigSlider = ({ slidesPerView, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
-    
+const BigSlider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
     const [textShow, setTextShow] = useState(textSlider)
+
+    const slides = [
+        { image: image1, text: textSlider1 },
+        { image: image2, text: textSlider2 },
+        { image: image3, text: textSlider3 },
+        { image: image2, text: textSlider4 }
+    ]
+
     let breakpoints = {}
 
     if (textShow) {
         breakpoints = {
-                0: {
-                    slidesPerView: 1.7,
-                },
-                576: {
-                    slidesPerView: 2.3,
-                },
-                768: {
-                    slidesPerView: 3,
-                },
+            0: {
+                slidesPerView: 1.7,
+            },
+            576: {
+                slidesPerView: 2.3,
+            },
+            768: {
+                slidesPerView: 3,
+            },
         };
     } else {
         breakpoints = {
@@ -63,39 +65,15 @@ const BigSlider = ({ slidesPerView, textSlider, textSlider1, textSlider2, textSl
                 }}
                 loop={true}
             >
-                <SwiperSlide>
-                    {textShow ? (
-                        createElem(image6, textSlider1)
-                    ) : (
-                        createElem(banner)
-                    )}
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    {textShow ? (
-                        createElem(image7, textSlider2)
-                    ) : (
-                        createElem(banner)
-                    )}
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    {textShow ? (
-                        createElem(image8, textSlider3)
-                    ) : (
-                        createElem(banner)
-                    )}
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    {textShow ? (
-                        createElem(image7, textSlider4)
-                    ) : (
-                        createElem(banner)
-                    )}
-                </SwiperSlide>
-
-
+                {slides.map((slide, index) => (
+                    <SwiperSlide key={index}>
+                        {textShow ? (
+                            createElem(slide.image, slide.text)
+                        ) : (
+                            createElem(banner)
+                        )}
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </section >
     )
