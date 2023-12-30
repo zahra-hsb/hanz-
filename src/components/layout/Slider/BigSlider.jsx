@@ -68,7 +68,7 @@ const BigSlider = ({ slidesPerView, image1, image2, image3, textSlider, textSlid
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         {textShow ? (
-                            createElem(slide.image, slide.textSlider)
+                            createElem(slide.image, slide.text)
                         ) : (
                             createElem(banner)
                         )}
