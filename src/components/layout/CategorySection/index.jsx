@@ -1,7 +1,7 @@
 const CategorySection = () => {
     return (
         <>
-            <section className="flex flex-col w-full items-center py-10">
+            <section className="flex flex-col w-full items-center mt-10">
                 <div className="flex flex-col lg:w-[80%] w-full items-center ">
 
                     <div className="p-10">

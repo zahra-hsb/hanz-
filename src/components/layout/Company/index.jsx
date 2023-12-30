@@ -9,9 +9,9 @@ const Company = () => {
     return (
         <>
             <section className="flex flex-col w-full">
-                <div className="flex items-center justify-between px-20 py-14">
+                <div className="flex items-center justify-between p-3 mb-4 sm:p-8">
                     <div>
-                        <h3 className="text-2xl opacity-[76%]">
+                        <h3 className="text-xl opacity-[76%]">
                             گروه صنعتی هانز
                         </h3>
                     </div>
