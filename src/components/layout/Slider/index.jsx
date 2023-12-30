@@ -8,7 +8,7 @@ const Slider = () => {
     return (
         <>
 
-            <section className="flex flex-col w-full p-5 mb-36 mt-16">
+            <section className="flex flex-col w-full p-5 sm:mb-36 mb-24 mt-16">
                 <div className="lg:w-[80%] lg:m-auto">
                     <div className="flex items-center justify-between p-3 my-4">
                         <div>

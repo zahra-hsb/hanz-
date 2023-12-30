@@ -10,7 +10,7 @@ const FaQ = () => {
                         <h3 className="text-3xl font-bold">چرا آلومینیوم؟</h3>
                     </div>
                     <div>
-                        <h4 className="text-sm lg:text-md text-center">مهمترین دلایل برای در نظر گرفتن آلومینیوم برای پروژه بعدی</h4>
+                        <h4 className="text-sm lg:text-md text-center p-3">مهمترین دلایل برای در نظر گرفتن آلومینیوم برای پروژه بعدی</h4>
                     </div>
                     <div className="flex flex-wrap items-center justify-center w-full p-4">
                         <div className="w-full flex items-center justify-center my-5">
