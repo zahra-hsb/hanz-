@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import Link from 'next/link';
 
 function createElem(image, textSlider) {
     return (
@@ -68,7 +69,9 @@ const BigSlider = ({ slidesPerView, image1, image2, image3, textSlider, textSlid
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         {textShow ? (
-                            createElem(slide.image, slide.text)
+                            <Link href='/galleryImage'>
+                                {createElem(slide.image, slide.text)}
+                            </Link>
                         ) : (
                             createElem(banner)
                         )}
