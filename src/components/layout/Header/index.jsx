@@ -8,9 +8,9 @@ const Header = ({ setSidebarShow, router }) => {
         if (router.pathname === '/') {
             setPageName('خانه');
         } else if (router.pathname === '/products') {
-            setPageName('محصولات');
+            setPageName('معرفی محصول');
         } else if (router.pathname === '/galleryImage') {
-            setPageName('گالری محصولات');
+            setPageName('گالری تصاویر');
         } else if (router.pathname === '/about') {
             setPageName('درباره ما');
         } else if (router.pathname === '/callUs') {
