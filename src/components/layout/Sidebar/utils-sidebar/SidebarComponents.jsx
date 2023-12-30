@@ -43,7 +43,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
                 </div>
 
                 <div class="px-3 pb-4 mt-4 overflow-y-auto">
-                    <Menu selectedTab={selectedTab} setSelectedTab={setSelectedTab} handleTabClick={handleTabClick} />
+                    <Menu selectedTab={selectedTab} handleTabClick={handleTabClick} setSidebarShow={setSidebarShow} />
                 </div>
             </div>
 
