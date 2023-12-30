@@ -7,7 +7,7 @@ import Button from '../Main/button'
 const AboutSection = () => {
     return (
         <>
-            <section className="flex flex-col pt-5 w-full lg:m-auto">
+            <section className="flex flex-col pt-5 w-full my-20">
                 <div className="flex w-full xl:w-[95%] xl:m-auto flex-col lg:flex-row items-center justify-between gap-5">
                     <div className="lg:mr-10">
                         <Image src={picture} alt="hanz" />
@@ -33,7 +33,7 @@ const AboutSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2 p-5 m-5 lg:m-16">
+                <div className="lg:w-1/2 p-8 lg:m-16 my-12">
                     <div>
                         <h4 className="text-lg opacity-83">
                             واحد طراحی سیستم <span className="opacity-50">(SYSTEM DESIGN LINE):</span>
@@ -48,8 +48,8 @@ const AboutSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full items-center justify-center gap-5">
-                    <div className="flex flex-col lg:flex-row  items-center justify-between xl:w-[95%]">
+                <div className="flex w-full items-center justify-center">
+                    <div className="flex flex-col lg:flex-row gap-5 items-center justify-between xl:w-[95%]">
                         <div className="lg:mr-10">
                             <Image src={Picture2} alt="hanz" />
                         </div>

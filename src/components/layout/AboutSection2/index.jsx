@@ -5,7 +5,7 @@ import Button from "../Main/button"
 const AboutSection2 = () => {
     return (
         <>
-            <section className="flex w-full items-center justify-center gap-5 pt-20">
+            <section className="flex w-full items-center justify-center gap-5 py-16">
                 <div className="flex flex-col lg:flex-row justify-between items-center xl:w-[95%]">
 
                     <div className="h-full lg:m-10">
