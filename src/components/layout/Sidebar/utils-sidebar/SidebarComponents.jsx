@@ -7,10 +7,7 @@ import Login from './Login';
 import { toggleOverflow } from '@/components/utils';
 
 const SidebarComponents = ({ setSidebarShow, router }) => {
-
     const [selectedTab, setSelectedTab] = useState(null);
-
-    
 
     const handleTabClick = (tabName) => {
         setSelectedTab(tabName);
