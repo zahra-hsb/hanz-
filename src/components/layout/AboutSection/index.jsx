@@ -8,8 +8,8 @@ const AboutSection = () => {
     return (
         <>
             <section className="flex flex-col pt-5 w-full my-20">
-                <div className="flex w-full xl:w-[95%] xl:m-auto flex-col lg:flex-row items-center justify-between gap-5">
-                    <div className="lg:mr-10">
+                <div className="flex w-full lg:w-[90%] lg:m-auto flex-col lg:flex-row items-center justify-between">
+                    <div>
                         <Image src={picture} alt="hanz" />
                     </div>
                     <div className="p-8 lg:p-auto lg:w-[50%]">
@@ -49,8 +49,8 @@ const AboutSection = () => {
                     </div>
                 </div>
                 <div className="flex w-full items-center justify-center">
-                    <div className="flex flex-col lg:flex-row gap-5 items-center justify-between xl:w-[95%]">
-                        <div className="lg:mr-10">
+                    <div className="flex flex-col lg:flex-row gap-5 items-center justify-between lg:w-[90%] lg:m-auto">
+                        <div>
                             <Image src={Picture2} alt="hanz" />
                         </div>
                         <div className="p-8 lg:p-auto lg:w-[50%]">

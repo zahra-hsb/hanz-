@@ -4,7 +4,7 @@ const FaQ = () => {
     return (
         <>
             <section className="flex items-center justify-center py-20 bg-green text-white">
-                <div className="flex flex-col lg:w-[80%] lg:m-auto items-center justify-around gap-3">
+                <div className="flex flex-col lg:w-[90%] lg:m-auto items-center justify-around gap-3">
 
                     <div>
                         <h3 className="text-3xl font-bold">چرا آلومینیوم؟</h3>
