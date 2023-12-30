@@ -9,7 +9,7 @@ const Main = () => {
                             <h3 className="lg:text-4xl sm:text-2xl text-xl">
                                 سیستم های نوین درب و پنجره
                             </h3>
-                            <p className='mt-4 text-justify lg:text-lg sm:text-sm text-xs'>ما با هم ساختمان های پایدار با راه حل های آلومینیومی با کیفیت بالا ایجاد می کنیم.</p>
+                            <p className='mt-4 text-justify lg:text-lg sm:text-sm text-xs hidden sm:block'>ما با هم ساختمان های پایدار با راه حل های آلومینیومی با کیفیت بالا ایجاد می کنیم.</p>
                         </div>
                     </div>
                     <div className="p-1 absolute z-10 mt-[220px] mr-3 px-2 w-[200px]">
