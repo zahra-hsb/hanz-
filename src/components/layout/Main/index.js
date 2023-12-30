@@ -2,7 +2,7 @@ import Button from './button'
 const Main = () => {
     return (
         <>
-            <main className="w-full lg:h-[650px] h-[500px] relative sm:p-20 px-[5%] pt-[50px] mt-[45px] lg:pr-20 bg-mainSection bg-center bg-cover text-white">
+            <main className="w-full lg:h-[650px] h-[500px] relative sm:p-20 px-[5%] mt-[50px] lg:pr-20 bg-mainSection bg-center bg-cover text-white">
                 <div className="flex flex-col">
                     <div className="lg:p-4 p-2 mt-5">
                         <div className="absolute z-10 py-4 px-2 ml-4 mt-5 border-y-4 border-r-4 border-green">
