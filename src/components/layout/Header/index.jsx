@@ -9,11 +9,11 @@ const Header = ({ setSidebarShow, router }) => {
             setPageName('خانه');
         } else if (router.pathname === '/products') {
             setPageName('معرفی محصول');
-        } else if (router.pathname === '/galleryImage') {
+        } else if (router.pathname === '/imageGallery') {
             setPageName('گالری تصاویر');
         } else if (router.pathname === '/about') {
             setPageName('درباره ما');
-        } else if (router.pathname === '/callUs') {
+        } else if (router.pathname === '/contactUs') {
             setPageName('تماس با ما');
         }
     }, [router.pathname]);
