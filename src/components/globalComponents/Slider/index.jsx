@@ -17,7 +17,7 @@ function createElem(image, textSlider) {
     )
 }
 
-const BigSlider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
+const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
     const [textShow, setTextShow] = useState(textSlider)
 
     const slides = [
@@ -82,4 +82,4 @@ const BigSlider = ({ slidesPerView, image1, image2, image3, textSlider, textSlid
     )
 }
 
-export default BigSlider
+export default Slider

@@ -1,6 +1,6 @@
 import Pic from '../../../../public/image/image5.png'
 import Image from 'next/image'
-import Button from "../Main/button"
+import Button from "../../globalComponents/Main/button"
 
 const AboutSection2 = () => {
     return (

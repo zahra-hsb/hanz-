@@ -18,12 +18,12 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
             setSelectedTab('home');
         } else if (router.pathname === '/products') {
             setSelectedTab('products');
-        } else if (router.pathname === '/galleryImage') {
-            setSelectedTab('galleryImage');
+        } else if (router.pathname === '/imageGallery') {
+            setSelectedTab('imageGallery');
         } else if (router.pathname === '/about') {
             setSelectedTab('about');
-        } else if (router.pathname === '/callUs') {
-            setSelectedTab('callUs');
+        } else if (router.pathname === '/contactUs') {
+            setSelectedTab('contactUs');
         }
     }, [router.pathname]);
 
