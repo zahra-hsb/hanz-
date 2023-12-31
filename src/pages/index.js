@@ -1,9 +1,9 @@
-import AboutSection from "@/components/layout/AboutSection";
-import CategorySection from "@/components/layout/CategorySection";
-import Company from "@/components/layout/Company";
-import FaQ from "@/components/layout/FaQ";
-import Main from "@/components/layout/Main";
-import Slider from "@/components/layout/Slider";
+import AboutSection from "@/components/homeComponents/AboutSection";
+import CategorySection from "@/components/homeComponents/CategorySection";
+import Company from "@/components/homeComponents/Company";
+import FaQ from "@/components/homeComponents/FaQ";
+import Main from "@/components/globalComponents/Main";
+import Slider from "@/components/homeComponents/Carousel";
 
 export default function Home() {
   return (

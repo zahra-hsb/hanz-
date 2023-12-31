@@ -11,13 +11,13 @@ import Link from 'next/link';
 function createElem(image, textSlider) {
     return (
         <>
-            <Image src={image} className='w-full pb-4' />
+            <Image src={image} className='w-full pb-4' alt='hanz'/>
             <p className='text-xs sm:text-sm text-gray-600'>{textSlider}</p>
         </>
     )
 }
 
-const BigSlider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
+const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
     const [textShow, setTextShow] = useState(textSlider)
 
     const slides = [
@@ -82,4 +82,4 @@ const BigSlider = ({ slidesPerView, image1, image2, image3, textSlider, textSlid
     )
 }
 
-export default BigSlider
+export default Slider

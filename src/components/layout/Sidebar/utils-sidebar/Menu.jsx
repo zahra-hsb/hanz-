@@ -4,9 +4,9 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
     const menuItem = [
         { tab: 'home', label: 'خانه' },
         { tab: 'products', label: 'معرفی محصول' },
-        { tab: 'galleryImage', label: 'گالری تصاویر' },
+        { tab: 'imageGallery', label: 'گالری تصاویر' },
         { tab: 'about', label: 'درباره ما' },
-        { tab: 'callUs', label: 'تماس با ما' }
+        { tab: 'contactUs', label: 'تماس با ما' }
     ]
 
     return (

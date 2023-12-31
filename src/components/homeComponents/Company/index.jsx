@@ -1,5 +1,5 @@
-import Button from "../Main/button"
-import BigSlider from "../Slider/BigSlider"
+import Button from "../../globalComponents/Main/button"
+import Slider from "../../globalComponents/Slider"
 
 import banner from '../../../../public/image/cuh_banner.png'
 import AboutSection2 from "../AboutSection2"
@@ -16,11 +16,11 @@ const Company = () => {
                         </h3>
                     </div>
                     <div>
-                        <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'}/>
+                        <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
                     </div>
                 </div>
                 <div>
-                    <BigSlider slidesPerView={1} textSlider={false} banner={banner} />
+                    <Slider slidesPerView={1} textSlider={false} banner={banner} />
                 </div>
             </section>
             <AboutSection2 />

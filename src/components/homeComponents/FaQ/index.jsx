@@ -1,4 +1,4 @@
-import Button from "../Main/button"
+import Button from "../../globalComponents/Main/button"
 
 const FaQ = () => {
     return (
