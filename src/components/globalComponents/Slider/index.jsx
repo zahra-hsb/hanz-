@@ -11,7 +11,7 @@ import Link from 'next/link';
 function createElem(image, textSlider) {
     return (
         <>
-            <Image src={image} className='w-full pb-4' />
+            <Image src={image} className='w-full pb-4' alt='hanz'/>
             <p className='text-xs sm:text-sm text-gray-600'>{textSlider}</p>
         </>
     )
