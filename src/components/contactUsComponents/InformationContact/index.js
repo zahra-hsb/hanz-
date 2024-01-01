@@ -10,23 +10,23 @@ const InformationContact = () => {
                     از طریق تلفن، ایمیل یا فرم زیر با ما در ارتباط باشید. شما همچنین می توانید به ما مراجعه کنید
                 </p>
             </div>
-            <div className="my-10">
-                <div className="flex justify-start">
+            <div className="my-10 sm:leading-10">
+                <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0 sm:block">
                     <strong className="text-green">آدرس:</strong>
                     &nbsp;<p className="text-gray-600">تهران، بزرگراه شهید همت، خیابان توانیر شمالی، پلاک 27، واحد، 2​</p>
                 </div>
                 <div>
-                    <div className="flex justify-start">
+                    <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0">
                         <strong className="text-green">شماره تماس :</strong>
-                        &nbsp;<p className="text-gray-600">88871502-021</p>
+                        &nbsp;<p className="text-gray-600">021-88871502</p>
                     </div>
-                    <div className="flex justify-start">
+                    <div className="flex justify-start flex-col items-center sm:flex-row">
                         <strong className="text-green">شماره تماس :</strong>
-                        &nbsp;<p className="text-gray-600">88871502-021</p>
+                        &nbsp;<p className="text-gray-600">021-88871502</p>
                     </div>
                 </div>
             </div>
-            <div className='text-green'>
+            <div className='text-green flex flex-col items-center sm:flex-row sm:block'>
                 <div>
                     <h2 className="font-extrabold">ما را دنبال کنید:</h2>
                 </div>
