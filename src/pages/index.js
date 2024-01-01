@@ -8,7 +8,7 @@ import Slider from "@/components/homeComponents/Carousel";
 export default function Home() {
   return (
     <main>
-      <Main />
+      <Main title={'سیستم های نوین درب و پنجره'} bg={'bg-mainSection'} text={'ما با هم ساختمان های پایدار با راه حل های آلومینیومی با کیفیت بالا ایجاد می کنیم.'} height={'lg:h-[650px] h-[500px] '}/>
       <CategorySection />
       <AboutSection />
       <Company />
