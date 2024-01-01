@@ -9,11 +9,11 @@ export default function ContactUs() {
       </div>
       <div className="sm:flex justify-between items-center flex-wrap">
 
-        <div className="sm:basis-[50%] pl-4 flex flex-col justify-between h-[440px] mb-20 text-center sm:text-start mb-56 sm:mb-0">
+        <div className="sm:basis-[50%] pl-4 flex flex-col justify-between h-[440px] text-center sm:text-start mb-40 sm:mb-0">
           <InformationContact />
         </div>
 
-        <div className="sm:basis-[50%] mb-20">
+        <div className="sm:basis-[50%] mb-20 sm:mb-0">
           <Form />
         </div>
 
