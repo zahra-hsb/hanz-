@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import Logo from '../../../../public/icons/logo2.svg'
+import Logo from '@/components/layout/Sidebar/utils-sidebar/Logo'
 
 const AboutUs = () => {
     return (
         <>
-            <div className="flex flex-col justify-center items-center gap-10 p-6">
+            <div className="flex flex-col justify-center items-center sm:items-start gap-10 p-6">
                 <div>
-                    <Image src={Logo} alt='hanz' />
+                    <Logo />
                 </div>
                 <div>
                     <p className='sm:text-lg text-justify opacity-70 leading-9 sm:leading-10'>
