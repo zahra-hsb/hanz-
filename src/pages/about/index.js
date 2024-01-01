@@ -1,10 +1,13 @@
-import styles from "./about.module.css";
+import AboutUs from "@/components/aboutComponent/AboutUs";
+import Main from "@/components/globalComponents/Main";
+
 export default function ABOUT() {
   return (
-    <main className="flex justify-center items-center border-2 mt-[50px] pb-[50px] h-[100vh]">
-      <h2>ABOUT</h2>
-      {/* <div className={styles.a}></div>
-      <div className={styles.b}></div> */}
-    </main>
+    <>
+      <Main title={'درباره ما'} bg={'bg-aboutSection'} display={'hidden'} height={'h-[360px]'}/>
+      <main className="flex justify-center items-center sm:p-12 py-10">
+        <AboutUs />
+      </main>
+    </>
   );
 }
