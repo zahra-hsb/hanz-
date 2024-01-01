@@ -5,13 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node _document.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.484.0",
+    "@aws-sdk/s3-request-presigner": "^3.484.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "sharp": "^0.33.1",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
