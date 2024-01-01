@@ -9,7 +9,7 @@ export default function ABOUT() {
             <Image src={Logo} alt='hanz' />
           </div>
           <div>
-            <p className='sm:text-xl text-justify opacity-70 leading-9'>
+            <p className='sm:text-lg text-justify opacity-70 leading-9 sm:leading-10'>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
               گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
               سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
