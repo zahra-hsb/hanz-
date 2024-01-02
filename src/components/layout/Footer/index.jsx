@@ -18,10 +18,10 @@ const Footer = () => {
                             </div>
                             <div className='pt-4 text-sm sm:text-lg'>
                                 <ul>
-                                    <li className='py-2'><Link href='/'>پنجره</Link></li>
-                                    <li className='py-2'><Link href='/'>درب</Link></li>
-                                    <li className='py-2'><Link href='/'>اسلاید و کشویی</Link></li>
-                                    <li className='py-2'><Link href='/'>نما</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>پنجره</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>درب</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>اسلاید و کشویی</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>نما</Link></li>
                                 </ul>
                             </div>
                         </div>
