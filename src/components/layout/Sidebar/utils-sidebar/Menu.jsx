@@ -24,6 +24,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
                         className={`${selectedTab === item.tab ? 'text-green' : 'text-gray-500'} flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green`}
                         onClick={() => {
                             handleTabClick(item.tab)
+                            toggleOverflow()
                             item.tab === 'products' ? setHiddenChildMenu(s => !s) : ''
                         }}
                     >
