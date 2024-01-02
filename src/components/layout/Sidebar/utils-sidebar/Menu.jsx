@@ -25,8 +25,9 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
                         onClick={() => {
                             handleTabClick(item.tab)
                             toggleOverflow()
-                            item.tab === 'products' ? setHiddenChildMenu(s => !s) : ''
                         }}
+                        onMouseOver={() => item.tab === 'products' ? setHiddenChildMenu(false) : ''}
+                        onMouseLeave={() => item.tab === 'products' ? setHiddenChildMenu(true) : ''}
                     >
                         <span className="nav-link ms-3 pl-2">{item.label}</span>
                         {item.tab === 'products' && (
@@ -39,6 +40,8 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
                         <ul
                             id="dropdown-example"
                             className={`${hiddenChildMenu ? 'hidden' : ''} py-2 space-y-2`}
+                            onMouseOver={() => setHiddenChildMenu(false)}
+                            onMouseLeave={() => setHiddenChildMenu(true)}
                         >
                             <li>
                                 <Link
