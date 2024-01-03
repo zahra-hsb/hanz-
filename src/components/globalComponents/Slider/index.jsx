@@ -11,8 +11,10 @@ import Link from 'next/link';
 function createElem(image, textSlider) {
     return (
         <>
-            <Image src={image} className='w-full pb-4' alt='hanz' />
-            <p className='text-xs sm:text-sm text-gray-600'>{textSlider}</p>
+            <div className='overflow-hidden'>
+                <Image src={image} className='w-full transition duration-300 ease-in-out hover:scale-105' alt='hanz' />
+            </div>
+            <p className='text-xs sm:text-sm text-gray-600 pt-4'>{textSlider}</p>
         </>
     )
 }
@@ -74,11 +76,13 @@ const Slider = ({ slidesPerView, image1, image2, image3, image4, textSlider, tex
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         {textShow ? (
-                            <Link href='/galleryImage'>
+                            <Link href='/imageGallery'>
                                 {createElem(slide.image, slide.text)}
                             </Link>
                         ) : (
-                            createElem(banner)
+                            <Link href='/imageGallery'>
+                                {createElem(banner)}
+                            </Link>
                         )}
                     </SwiperSlide>
                 ))}
