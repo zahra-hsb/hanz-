@@ -11,7 +11,7 @@ import Link from 'next/link';
 function createElem(image, textSlider) {
     return (
         <>
-            <Image src={image} className='w-full pb-4' alt='hanz'/>
+            <Image src={image} className='w-full pb-4' alt='hanz' />
             <p className='text-xs sm:text-sm text-gray-600'>{textSlider}</p>
         </>
     )
@@ -47,6 +47,11 @@ const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1
         };
     }
 
+    let scrollbar = {}
+
+    textShow ? scrollbar = { draggable: false } : scrollbar = { draggable: true }
+
+
     return (
         <section classNameName='w-full relative'>
 
@@ -57,7 +62,7 @@ const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1
                 slidesPerView={slidesPerView}
                 navigation
                 // pagination={{ clickable: true }}
-                // scrollbar={{ draggable: true }}
+                scrollbar={scrollbar}
                 // onSwiper={(swiper) => console.log(swiper)}
                 // onSlideChange={() => console.log('slide change')}
                 autoplay={{

@@ -25,7 +25,7 @@ const AboutSection2 = () => {
                                 قابلیت سختکاری پروفیل باآلیاژ 6063 تا 14 وبستر سختی را داراست.
                             </p>
                         </div>
-                        <div>
+                        <div id='home-slider'>
                             <Button url={'/about'} title={'درباره ما'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
                         </div>
                     </div>

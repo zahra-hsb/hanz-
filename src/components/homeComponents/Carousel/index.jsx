@@ -20,7 +20,9 @@ const Carousel = () => {
 
                         </div>
                     </div>
-                    <Slider slidesPerView={3} image1={image1} image2={image2} image3={image3} textSlider={true} textSlider1={'چرخه زندگی آلومینیوم'} textSlider2={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider3={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider4={'چرخه زندگی آلومینیوم'} sliderCount={''} />
+                    <div id="home-carousel">
+                        <Slider slidesPerView={3} image1={image1} image2={image2} image3={image3} textSlider={true} textSlider1={'چرخه زندگی آلومینیوم'} textSlider2={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider3={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider4={'چرخه زندگی آلومینیوم'} sliderCount={''} />
+                    </div>
                 </div>
             </section>
         </>
