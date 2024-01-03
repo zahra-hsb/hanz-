@@ -7,16 +7,20 @@ export default function ImageGallery() {
     <main className="flex flex-col">
       <Main title={'گالری تصاویر'} bg={'bg-gallerySection'} height={'h-[390px]'} display={'hidden'} />
       <section className="p-10">
-        <div className="flex flex-wrap gap-16 p-5">
-          <div className="flex flex-col items-center justify-between gap-5">
+        <div className="flex items-center justify-center flex-wrap gap-16 p-5">
+          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
             <Image src={image1} alt={'hanz'} />
             <h3>تصاویر نمایشگاه</h3>
           </div>
-          <div className="flex flex-col items-center justify-between gap-5">
+          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
             <Image src={image1} alt={'hanz'} />
             <h3>تصاویر نمایشگاه</h3>
           </div>
-          <div className="flex flex-col items-center justify-between gap-5">
+          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
+            <Image src={image1} alt={'hanz'} />
+            <h3>تصاویر نمایشگاه</h3>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
             <Image src={image1} alt={'hanz'} />
             <h3>تصاویر نمایشگاه</h3>
           </div>
