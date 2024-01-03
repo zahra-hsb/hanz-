@@ -13,7 +13,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
     ]
 
     return (
-        <ul class="space-y-2 font-medium">
+        <ul className="space-y-2 font-medium">
             {menuItem.map(item => (
                 <li
                     key={item.tab}
@@ -32,7 +32,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
                         <span className="nav-link ms-3 pl-2">{item.label}</span>
                         {item.tab === 'products' && (
                             <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                             </svg>
                         )}
                     </Link>
