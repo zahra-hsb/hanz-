@@ -42,7 +42,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
                     <Search />
                 </div>
 
-                <div class="px-3 pb-4 mt-4 overflow-y-auto">
+                <div className="px-3 pb-4 mt-4 overflow-y-auto">
                     <Menu selectedTab={selectedTab} handleTabClick={handleTabClick} setSidebarShow={setSidebarShow} />
                 </div>
             </div>

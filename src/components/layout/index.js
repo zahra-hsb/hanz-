@@ -2,9 +2,10 @@ import Sidebar from "./Sidebar";
 import Header from "./Header";
 import Footer from "./Footer";
 import './layout.module.css';
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import MenuHamber from "./Sidebar/menuHamber";
 import { useRouter } from "next/router";
+import Loading from "../loading";
 
 const Layout = ({ children }) => {
   const [sidebarShow, setSidebarShow] = useState(false);
@@ -13,24 +14,24 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Suspense fallback={<Loading />}>
+        {sidebarShow ? (
+          <MenuHamber setSidebarShow={setSidebarShow} router={router} />
+        ) : (<Sidebar setSidebarShow={setSidebarShow} router={router} />)}
 
-      {sidebarShow ? (
-        <MenuHamber setSidebarShow={setSidebarShow} router={router} />
-      ) : (<Sidebar setSidebarShow={setSidebarShow} router={router} />)}
+        {/* <Sidebar /> */}
 
-      {/* <Sidebar /> */}
+        <div className="flex relative lg:w-[calc(100%-256px)] lg:mr-64">
 
-      <div className="flex relative lg:w-[calc(100%-256px)] lg:mr-64">
+          <div className="w-full flex flex-col">
+            <Header setSidebarShow={setSidebarShow} router={router} />
 
-        <div className="w-full flex flex-col">
-          <Header setSidebarShow={setSidebarShow} router={router} />
+            <div className="flex-1 h-[500px]">{children}</div>
 
-          <div className="flex-1 h-[500px]">{children}</div>
-
-          <Footer />
+            <Footer />
+          </div>
         </div>
-      </div>
-
+      </Suspense>
     </>
   );
 };

@@ -58,8 +58,8 @@ const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1
                 navigation
                 // pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
                 autoplay={{
                     delay: 6000,
                     disableOnInteraction: false
