@@ -17,14 +17,14 @@ function createElem(image, textSlider) {
     )
 }
 
-const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
+const Slider = ({ slidesPerView, image1, image2, image3, image4, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
     const [textShow, setTextShow] = useState(textSlider)
 
     const slides = [
         { image: image1, text: textSlider1 },
         { image: image2, text: textSlider2 },
         { image: image3, text: textSlider3 },
-        { image: image2, text: textSlider4 }
+        { image: image4, text: textSlider4 }
     ]
 
     let breakpoints = {}
