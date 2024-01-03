@@ -58,6 +58,17 @@ div.swiper-button-next::after {
 
   div.swiper-button-prev,
   div.swiper-button-next {
-    display: none;
+    display: none!important;
   }
+}
+
+@media (min-width: 768px) {
+
+  div.swiper-scrollbar-horizontal {
+    display: none!important;
+  }
+}
+
+#home-carousel div.swiper-scrollbar-horizontal {
+  display: none!important;
 }

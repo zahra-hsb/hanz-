@@ -11,20 +11,22 @@ import Link from 'next/link';
 function createElem(image, textSlider) {
     return (
         <>
-            <Image src={image} className='w-full pb-4' alt='hanz'/>
-            <p className='text-xs sm:text-sm text-gray-600'>{textSlider}</p>
+            <div className='overflow-hidden'>
+                <Image src={image} className='w-full transition duration-300 ease-in-out hover:scale-105' alt='hanz' />
+            </div>
+            <p className='text-xs sm:text-sm text-gray-600 pt-4'>{textSlider}</p>
         </>
     )
 }
 
-const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
+const Slider = ({ slidesPerView, image1, image2, image3, image4, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
     const [textShow, setTextShow] = useState(textSlider)
 
     const slides = [
         { image: image1, text: textSlider1 },
         { image: image2, text: textSlider2 },
         { image: image3, text: textSlider3 },
-        { image: image2, text: textSlider4 }
+        { image: image4, text: textSlider4 }
     ]
 
     let breakpoints = {}
@@ -47,6 +49,11 @@ const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1
         };
     }
 
+    let scrollbar = {}
+
+    textShow ? scrollbar = { draggable: false } : scrollbar = { draggable: true }
+
+
     return (
         <section classNameName='w-full relative'>
 
@@ -57,7 +64,7 @@ const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1
                 slidesPerView={slidesPerView}
                 navigation
                 // pagination={{ clickable: true }}
-                // scrollbar={{ draggable: true }}
+                scrollbar={scrollbar}
                 // onSwiper={(swiper) => console.log(swiper)}
                 // onSlideChange={() => console.log('slide change')}
                 autoplay={{
@@ -69,11 +76,13 @@ const Slider = ({ slidesPerView, image1, image2, image3, textSlider, textSlider1
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         {textShow ? (
-                            <Link href='/galleryImage'>
+                            <Link href='/imageGallery'>
                                 {createElem(slide.image, slide.text)}
                             </Link>
                         ) : (
-                            createElem(banner)
+                            <Link href='/imageGallery'>
+                                {createElem(banner)}
+                            </Link>
                         )}
                     </SwiperSlide>
                 ))}
