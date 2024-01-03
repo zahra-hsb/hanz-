@@ -10,7 +10,7 @@ module.exports = {
 
       },
       colors: {
-        green: 'var(--primary-green)'
+        green: 'var(--primary-green)',
       },
       backgroundImage: {
         mainSection: 'url(../../public/image/cuh_banner.png)',

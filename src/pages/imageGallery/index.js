@@ -8,20 +8,21 @@ export default function ImageGallery() {
       <Main title={'گالری تصاویر'} bg={'bg-gallerySection'} height={'h-[390px]'} display={'hidden'} />
       <section className="p-10">
         <div className="flex items-center justify-center flex-wrap gap-16 p-5">
-          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
-            <Image src={image1} alt={'hanz'} />
+          <div className="flex flex-col items-center justify-between gap-5 cursor-pointer overflow-hidden lg:w-[28%]">
+            <Image src={image1} alt={'hanz'} className="transition duration-300 ease-in-out overflow-hidden hover:scale-105"/>
+            {/* <div className="absolute top-0 left-0 w-full h-[180px] bg-black opacity-0 hover:opacity-60"></div> */}
             <h3>تصاویر نمایشگاه</h3>
           </div>
-          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
-            <Image src={image1} alt={'hanz'} />
+          <div className="flex flex-col items-center justify-between gap-5 cursor-pointer overflow-hidden lg:w-[28%]">
+            <Image src={image1} alt={'hanz'} className="transition duration-300 ease-in-out overflow-hidden hover:scale-105" />
             <h3>تصاویر نمایشگاه</h3>
           </div>
-          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
-            <Image src={image1} alt={'hanz'} />
+          <div className="flex flex-col items-center justify-between gap-5 cursor-pointer overflow-hidden lg:w-[28%]">
+            <Image src={image1} alt={'hanz'} className="transition duration-300 ease-in-out overflow-hidden hover:scale-105" />
             <h3>تصاویر نمایشگاه</h3>
           </div>
-          <div className="flex flex-col items-center justify-between gap-5 lg:w-[28%]">
-            <Image src={image1} alt={'hanz'} />
+          <div className="flex flex-col items-center justify-between gap-5 cursor-pointer overflow-hidden lg:w-[28%]">
+            <Image src={image1} alt={'hanz'} className="transition duration-300 ease-in-out overflow-hidden hover:scale-105"/>
             <h3>تصاویر نمایشگاه</h3>
           </div>
         </div>
