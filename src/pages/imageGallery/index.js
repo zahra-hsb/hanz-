@@ -1,9 +1,19 @@
+import Main from "@/components/globalComponents/Main";
+
 export default function ImageGallery() {
   return (
-    <main className="flex justify-center items-center border-2 mt-[50px] pb-[50px] h-[100vh]">
-      <h2>Image gallery</h2>
-      {/* <div className={styles.a}></div>
-      <div className={styles.b}></div> */}
+    <main className="flex flex-col">
+      <Main title={'گالری تصاویر'} bg={'bg-gallerySection'} height={'h-[390px]'} display={'hidden'}/>
+      <section>
+        <div>
+          <div>
+            {/* <Image src={} alt={'hanz'} /> */}
+          </div>
+        </div>
+      </section>
+      <section>
+
+      </section>
     </main>
   );
 }
