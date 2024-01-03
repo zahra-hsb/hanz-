@@ -34,7 +34,7 @@ const Form = () => {
                         <label htmlFor="floating_company" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start items-center"><p>اسم شرکت</p><p className="text-gray-400 text-xs">(اختیاری)</p></label>
                     </div>
                 </div>
-                <button type="submit" className="text-green text-sm lg:text-md px-4 py-1 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ثبت نظر</button>
+                <button type="submit" className="text-green text-sm lg:text-md px-4 py-1 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ارسال درخواست</button>
             </form>
         </>
     );
