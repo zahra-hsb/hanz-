@@ -1,9 +1,9 @@
 import Image from "next/image"
-import mainPic from "../../../public/image/Modiriyat-WEBSITE.jpg"
-import primePic1 from "../../../public/image/Sales-Manager-WEBSITE.jpg"
-import primePic2 from "../../../public/image/sales-manager-WEBSITE-1.jpg"
-import arrowRight from "../../../public/icons/arrow-1.svg"
-import arrowLeft from "../../../public/icons/arrow.svg"
+import mainPic from "../../../../public/image/Modiriyat-WEBSITE.jpg"
+import primePic1 from "../../../../public/image/Sales-Manager-WEBSITE.jpg"
+import primePic2 from "../../../../public/image/sales-manager-WEBSITE-1.jpg"
+import arrowRight from "../../../../public/icons/arrow-1.svg"
+import arrowLeft from "../../../../public/icons/arrow.svg"
 
 
 const GalleryModal = () => {

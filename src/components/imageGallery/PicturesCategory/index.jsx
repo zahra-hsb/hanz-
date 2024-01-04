@@ -1,6 +1,6 @@
 import Image from "next/image"
-import image1 from "../../../public/image/Shayco-Ghorfe-WEBSITE.jpg"
-import image2 from "../../../public/image/Dominion-Tower-14.jpg"
+import image1 from "../../../../public/image/Shayco-Ghorfe-WEBSITE.jpg"
+import image2 from "../../../../public/image/Dominion-Tower-14.jpg"
 
 const PicturesGallery = () => {
     return (
