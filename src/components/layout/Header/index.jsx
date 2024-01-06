@@ -1,8 +1,16 @@
 import { useEffect, useState } from "react";
 import { toggleOverflow } from "@/components/utils";
+import Link from "next/link";
 
 const Header = ({ setSidebarShow, router }) => {
-    const [pageName, setPageName] = useState('ohki');
+    const [pageName, setPageName] = useState('');
+
+    const menuItem = [
+        { tab: 'window', label: 'پنجره' },
+        { tab: 'door', label: 'درب' },
+        { tab: 'creatineWall', label: 'کراتین وال' },
+    ]
+
 
     useEffect(() => {
         if (router.pathname === '/') {
@@ -38,12 +46,29 @@ const Header = ({ setSidebarShow, router }) => {
                             </svg>
                         </button>
                     </div>
-                    <div className="mr-4">
+                    <div className="mr-4 flex items-center justify-center">
                         <p>{pageName}</p>
+                        {router.pathname === '/products' && (
+                            <ul className="mr-2 space-x-2 font-medium flex items-center">
+                                {menuItem.map(item => (
+                                    <li
+                                        key={item.tab}
+                                    >
+                                        <Link
+                                            href={"#"}
+                                            className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
+                                            onClick={() => {
+                                                handleTabClick(item.tab)
+                                                toggleOverflow()
+                                            }}
+                                        >
+                                            <span className="nav-link ms-3 pl-2">{item.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
-                </div>
-                <div>
-                    {/* <Image src={Logo} alt="logo"/> */}
                 </div>
             </header>
         </>
