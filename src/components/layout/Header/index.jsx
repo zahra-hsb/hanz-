@@ -57,10 +57,6 @@ const Header = ({ setSidebarShow, router }) => {
                                         <Link
                                             href={"#"}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
-                                            onClick={() => {
-                                                handleTabClick(item.tab)
-                                                toggleOverflow()
-                                            }}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
                                         </Link>
