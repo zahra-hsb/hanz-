@@ -1,6 +1,6 @@
 import React from 'react';
 
-const windows = () => {
+const Windows = () => {
     return (
         <div className='flex justify-center items-center border-2 mt-[50px] pb-[50px] h-[100vh]'>
             windows
@@ -8,4 +8,4 @@ const windows = () => {
     );
 }
 
-export default windows;
+export default Windows;
