@@ -28,7 +28,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
     }, [router.pathname]);
 
     return (
-        <div className='flex flex-col justify-between fixed top-0 right-0 z-50 w-full lg:w-64 h-screen bg-white border-l'>
+        <div className='flex flex-col justify-between fixed top-0 right-0 z-50 w-full lg:w-64 h-[100%] bg-white border-l'>
             <div>
                 <div className='flex justify-between items-end'>
                     <Logo />
