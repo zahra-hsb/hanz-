@@ -29,7 +29,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
 
     return (
         <div className='flex flex-col justify-between fixed top-0 right-0 z-50 w-full lg:w-64 h-[100%] bg-white border-l'>
-            <div>
+            <div className='flex flex-col justify-start'>
                 <div className='flex justify-between items-end'>
                     <Logo />
 
@@ -38,11 +38,11 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
                         toggleOverflow()
                     }}>+</div>
                 </div>
-                <div className="flex px-5 mt-6 w-full">
+                <div className="flex px-5 pt-6 w-full">
                     <Search />
                 </div>
 
-                <div className="px-3 pb-4 mt-4 overflow-y-auto">
+                <div className="px-3 py-4 overflow-y-auto">
                     <Menu selectedTab={selectedTab} handleTabClick={handleTabClick} setSidebarShow={setSidebarShow} />
                 </div>
             </div>
