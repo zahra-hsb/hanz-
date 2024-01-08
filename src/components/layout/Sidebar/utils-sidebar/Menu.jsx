@@ -2,7 +2,7 @@ import Link from "next/link"
 import { useState } from "react";
 
 const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
-    const [hiddenChildMenu, setHiddenChildMenu] = useState(true);
+    // const [hiddenChildMenu, setHiddenChildMenu] = useState(true);
 
     const menuItem = [
         { tab: 'home', label: 'خانه' },
@@ -26,17 +26,17 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
                             handleTabClick(item.tab)
                             toggleOverflow()
                         }}
-                        onMouseOver={() => item.tab === 'products' ? setHiddenChildMenu(false) : ''}
-                        onMouseLeave={() => item.tab === 'products' ? setHiddenChildMenu(true) : ''}
+                        // onMouseOver={() => item.tab === 'products' ? setHiddenChildMenu(false) : ''}
+                        // onMouseLeave={() => item.tab === 'products' ? setHiddenChildMenu(true) : ''}
                     >
                         <span className="nav-link ms-3 pl-2">{item.label}</span>
-                        {item.tab === 'products' && (
-                            <svg className="w-3 h-3 hidden lg:flex" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        {/* {item.tab === 'products' && (
+                            <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                             </svg>
-                        )}
+                        )} */}
                     </Link>
-                    {item.tab === 'products' && (
+                    {/* {item.tab === 'products' && (
                         <ul
                             id="dropdown-example"
                             className={`${hiddenChildMenu ? 'hidden' : ''} py-2 space-y-2`}
@@ -58,7 +58,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow }) => {
                                 <Link href="#" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>کرتین وال</Link>
                             </li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
             ))}
         </ul>
