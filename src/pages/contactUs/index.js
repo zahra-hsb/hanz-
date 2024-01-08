@@ -3,7 +3,7 @@ import InformationContact from "@/components/contactUsComponents/InformationCont
 
 export default function ContactUs() {
   return (
-    <main className="flex flex-col justify-start mt-[100px] w-[90%] sm:h-[100%] m-auto sm:w-[80%] lg:w-[70%]">
+    <main className="flex flex-col justify-start mt-[100px] w-[90%] sm:h-[100vh] m-auto sm:w-[80%] lg:w-[70%]">
       <div className="text-center my-[40px] lg:my-[70px] text-4xl">
         <h2 className="text-gray-600">با ما در تماس باشید</h2>
       </div>
