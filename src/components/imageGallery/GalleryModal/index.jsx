@@ -9,8 +9,8 @@ import arrowLeft from "../../../../public/icons/arrow.svg"
 const GalleryModal = ({ closeModal }) => {
     return (
         <>
-            <div className="transition duration-100 fixed top-0 left-0 z-40 w-full h-full bg-black cursor-pointer" onClick={closeModal}></div>
-            <section className="transition duration-100 fixed top-[50%] left-[50%] p-16 ml-[-500px] mt-[-300px] z-50 w-[1000px] h-[600px] bg-gradient-to-r from-[#010101] to-[#252525]">
+            <div className="transition duration-100 fixed top-0 left-0 z-40 w-full h-full bg-black cursor-pointer opacity-90" onClick={closeModal}></div>
+            <section className="transition duration-100 fixed top-[50%] left-[50%] p-16 ml-[-500px] mt-[-300px] z-50 w-[1000px] h-[600px] bg-gradient-to-tr from-[#010101] to-[#252525]">
                 <div className="flex items-center justify-center">
                     <div>
                         <Image src={mainPic} alt="" width={400} className="inner drop-shadow-sm" />
