@@ -59,13 +59,19 @@ const Header = ({ setSidebarShow, router }) => {
                                 {menuItem.map(item => (
                                     <li
                                         key={item.tab}
+                                        onClick={() => {
+                                            window.scrollTo({
+                                                top: window.pageYOffset + 180,
+                                                behavior: 'smooth'
+                                            });
+                                        }}
                                     >
-                                        <Link
+                                        <div
                                             href={"#"}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
-                                        </Link>
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
