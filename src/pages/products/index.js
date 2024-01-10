@@ -14,8 +14,11 @@ export default function Products() {
           <h2>محصولات</h2>
         </div>
 
-        <div className="w-full">
-          <div className="mt-20 mb-10 flex justify-between items-center text-xl text-gray-600">
+        <p>bbbbbbb</p>
+
+        <div id="profile"></div>
+          <div className="w-full">
+            <div className="mt-[90px] mb-10 flex justify-between items-center text-xl text-gray-600">
             <div>
               <h2>پروفیل</h2>
             </div>
@@ -29,8 +32,9 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="w-full">
-          <div className="mt-20 mb-10 flex justify-between items-center text-xl text-gray-600">
+        <div id="profile-properties"></div>
+          <div className="w-full">
+            <div className="mt-[90px] mb-10 flex justify-between items-center text-xl text-gray-600">
             <div>
               <h2>متعلقات</h2>
             </div>
@@ -44,20 +48,22 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="w-full">
-          <div className="mt-20 mb-10 flex justify-between items-center text-xl text-gray-600">
-            <div>
-              <h2>کراتین وال</h2>
-            </div>
+        <div id="cratinwall"></div>
+          <div className="w-full">
+            <div className="mt-[90px] mb-10 flex justify-between items-center text-xl text-gray-600">
+              <div>
+                <h2>کراتین وال</h2>
+              </div>
 
-            <div>
-              <Button title={'بیشتر'} url={'/about'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
+              <div>
+                <Button title={'بیشتر'} url={'/about'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
+              </div>
+            </div>
+            <div id="home-carousel" className="w-full">
+              <Slider slidesPerView={3} image1={image1} image2={image2} image3={image3} image4={image4} textSlider={true} textSlider1={'چرخه زندگی آلومینیوم'} textSlider2={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider3={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider4={'نحوه بستن حلقه بازیافت آلومینیوم'} sliderCount={''} />
             </div>
           </div>
-          <div id="home-carousel" className="w-full">
-            <Slider slidesPerView={3} image1={image1} image2={image2} image3={image3} image4={image4} textSlider={true} textSlider1={'چرخه زندگی آلومینیوم'} textSlider2={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider3={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider4={'نحوه بستن حلقه بازیافت آلومینیوم'} sliderCount={''} />
-          </div>
-        </div>
+        
 
 
       </div>
