@@ -17,7 +17,7 @@ export default function Products() {
         <div className="w-full">
           <div className="mt-20 mb-10 flex justify-between items-center text-xl text-gray-600">
             <div>
-              <h2>پنجره</h2>
+              <h2>پروفیل</h2>
             </div>
 
             <div>
@@ -32,7 +32,7 @@ export default function Products() {
         <div className="w-full">
           <div className="mt-20 mb-10 flex justify-between items-center text-xl text-gray-600">
             <div>
-              <h2>درب</h2>
+              <h2>متعلقات</h2>
             </div>
 
             <div>

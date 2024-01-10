@@ -6,10 +6,17 @@ const Header = ({ setSidebarShow, router }) => {
     const [pageName, setPageName] = useState('');
 
     const menuItem = [
-        { tab: 'window', label: 'پنجره' },
-        { tab: 'door', label: 'درب' },
+        { tab: 'window', label: 'پروفیل' },
+        { tab: 'door', label: 'متعلقات' },
         { tab: 'creatineWall', label: 'کراتین وال' },
     ]
+
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 160,
+            behavior: 'smooth'
+        });
+    }
 
 
     useEffect(() => {
@@ -59,15 +66,9 @@ const Header = ({ setSidebarShow, router }) => {
                                 {menuItem.map(item => (
                                     <li
                                         key={item.tab}
-                                        onClick={() => {
-                                            window.scrollTo({
-                                                top: window.pageYOffset + 180,
-                                                behavior: 'smooth'
-                                            });
-                                        }}
+                                        onClick={() => handleScroll()}
                                     >
                                         <div
-                                            href={"#"}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
