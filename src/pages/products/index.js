@@ -56,19 +56,15 @@ export default function Products() {
           </div>
         </div>
 
-        {/* <div id="profile"></div> */}
         <div className="w-full">
           <div className="mt-[90px] mb-10 flex justify-between items-center text-xl text-gray-600 w-[90%] sm:w-[100%] m-auto">
             <div>
               <h2>چرا هانز</h2>
             </div>
 
-            {/* <div>
-              <Button title={'بیشتر'} url={'/products'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
-            </div> */}
           </div>
           <div id="home-carousel" className="w-full">
-            <Slider slidesPerView={3} image1={hanzProfile1} image2={hanzProfile3} image3={hanzProfile2} image4={hanzProfile3} textSlider={true} textSlider1={'کنترل دقیق فرآیند'} textSlider2={'ظرفیت تولید'} textSlider3={'تجهیزات پیشرفته'} textSlider4={'قاب منظره آلومینیومی'} sliderCount={''} />
+            <Slider url={'/products'} slidesPerView={3} image1={hanzProfile1} image2={hanzProfile3} image3={hanzProfile2} image4={hanzProfile3} textSlider={true} textSlider1={'کنترل دقیق فرآیند'} textSlider2={'ظرفیت تولید'} textSlider3={'تجهیزات پیشرفته'} textSlider4={'قاب منظره آلومینیومی'} sliderCount={''} />
           </div>
         </div>
 
@@ -84,7 +80,7 @@ export default function Products() {
             </div>
           </div>
           <div id="home-carousel" className="w-full">
-            <Slider slidesPerView={3} image1={profile1} image2={profile3} image3={profile2} image4={profile3} textSlider={true} textSlider1={'کنترل دقیق فرآیند'} textSlider2={'SL-95T'} textSlider3={'تجهیزات پیشرفته'} textSlider4={'قاب منظره آلومینیومی'} sliderCount={''} />
+            <Slider url={'/products'} slidesPerView={3} image1={profile1} image2={profile3} image3={profile2} image4={profile3} textSlider={true} textSlider1={'کنترل دقیق فرآیند'} textSlider2={'SL-95T'} textSlider3={'تجهیزات پیشرفته'} textSlider4={'قاب منظره آلومینیومی'} sliderCount={''} />
           </div>
         </div>
 
@@ -100,7 +96,7 @@ export default function Products() {
             </div>
           </div>
           <div id="home-carousel" className="w-full">
-            <Slider slidesPerView={3} image1={profileGh1} image2={profileGh2} image3={profileGh3} image4={profileGh4} textSlider={true} textSlider1={'پیچ به جای جوش'} textSlider2={'اتصال آسان پروفیل های آلومینیومی'} textSlider3={'نوآوری از آیتم ایده های نوآورانه'} textSlider4={'پروفیل های ویژه آیتم مواد ویژه'} sliderCount={''} />
+            <Slider url={'/products'} slidesPerView={3} image1={profileGh1} image2={profileGh2} image3={profileGh3} image4={profileGh4} textSlider={true} textSlider1={'پیچ به جای جوش'} textSlider2={'اتصال آسان پروفیل های آلومینیومی'} textSlider3={'نوآوری از آیتم ایده های نوآورانه'} textSlider4={'پروفیل های ویژه آیتم مواد ویژه'} sliderCount={''} />
           </div>
         </div>
 
@@ -116,7 +112,7 @@ export default function Products() {
             </div>
           </div>
           <div id="home-carousel" className="w-full">
-            <Slider slidesPerView={3} image1={curtainWall1} image2={curtainWall2} image3={curtainWall3} image4={curtainWall2} textSlider={true} textSlider1={'طراحی محتاطانه و مینیمالیستی'} textSlider2={'قابلیت تحمل باد تا سرعت 20 متر بر ثانیه'} textSlider3={'پارچه شفاف در رنگ های مختلف'} textSlider4={'در کانال های هدایت جانبی به بالا و پایین می لغزد'} sliderCount={''} />
+            <Slider url={'/products'} slidesPerView={3} image1={curtainWall1} image2={curtainWall2} image3={curtainWall3} image4={curtainWall2} textSlider={true} textSlider1={'طراحی محتاطانه و مینیمالیستی'} textSlider2={'قابلیت تحمل باد تا سرعت 20 متر بر ثانیه'} textSlider3={'پارچه شفاف در رنگ های مختلف'} textSlider4={'در کانال های هدایت جانبی به بالا و پایین می لغزد'} sliderCount={''} />
           </div>
         </div>
 

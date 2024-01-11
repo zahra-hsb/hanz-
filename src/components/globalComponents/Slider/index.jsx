@@ -19,7 +19,7 @@ function createElem(image, textSlider) {
     )
 }
 
-const Slider = ({ slidesPerView, image1, image2, image3, image4, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
+const Slider = ({ url, slidesPerView, image1, image2, image3, image4, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
     const [textShow, setTextShow] = useState(textSlider)
 
     const slides = [
@@ -76,11 +76,11 @@ const Slider = ({ slidesPerView, image1, image2, image3, image4, textSlider, tex
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         {textShow ? (
-                            <Link href='/imageGallery'>
+                            <Link href={`${url}`}>
                                 {createElem(slide.image, slide.text)}
                             </Link>
                         ) : (
-                            <Link href='/imageGallery'>
+                            <Link href={`${url}`}>
                                 {createElem(banner)}
                             </Link>
                         )}
