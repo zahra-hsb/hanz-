@@ -19,18 +19,18 @@ const PicturesGallery = () => {
 
             <section className="p-10">
                 <div className="flex items-center justify-center flex-wrap sm:flex-nowrap gap-16 p-5">
-                    <div className="group flex flex-col items-center justify-between gap-5 relative cursor-pointer overflow-hidden lg:w-[28%]">
+                    <div className="group flex flex-col items-center justify-between gap-5 relative cursor-pointer overflow-hidden lg:w-[28%]" onClick={() => showModal()}>
                         <Image src={image1} alt={'hanz'} className="transition duration-300 ease-in-out overflow-hidden hover:scale-105 hover:brightness-50" />
                         <button className='z-50 text-green text-sm lg:text-md px-4 py-1 mt-[100px] rounded-3xl transition-colors opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 border-2 border-white absolute sm:mt-[30%] mt-[28%] text-white hover:text-black hover:bg-white' onClick={() => showModal()} >نمایش بیشتر  ←</button>
                         <h3 className="hover:text-green">تصاویر نمایشگاه</h3>
                     </div>
-                    <div className="group flex flex-col items-center justify-between gap-5 relative cursor-pointer overflow-hidden lg:w-[28%]">
+                    <div className="group flex flex-col items-center justify-between gap-5 relative cursor-pointer overflow-hidden lg:w-[28%]" onClick={() => showModal()}>
                         <Image src={image1} alt={'hanz'} className="transition duration-300 ease-in-out overflow-hidden hover:scale-105 hover:brightness-50" />
                         <button className='z-50 text-green text-sm lg:text-md px-4 py-1 mt-[100px] rounded-3xl transition-colors opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 border-2 border-white absolute sm:mt-[30%] mt-[28%] text-white hover:text-black hover:bg-white' onClick={() => showModal()} >نمایش بیشتر  ←</button>
 
                         <h3 className="hover:text-green">تصاویر پروژه ها</h3>
                     </div>
-                    <div className="group flex flex-col items-center justify-between gap-5 relative cursor-pointer overflow-hidden lg:w-[28%]">
+                    <div className="group flex flex-col items-center justify-between gap-5 relative cursor-pointer overflow-hidden lg:w-[28%]" onClick={() => showModal()}>
                         <Image src={image1} alt={'hanz'} className="transition duration-300 ease-in-out overflow-hidden hover:scale-105 hover:brightness-50" />
                         <button className='z-50 text-green text-sm lg:text-md px-4 py-1 mt-[100px] rounded-3xl transition-colors opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 border-2 border-white absolute sm:mt-[30%] mt-[28%] text-white hover:text-black hover:bg-white' onClick={() => showModal()} >نمایش بیشتر  ←</button>
 
