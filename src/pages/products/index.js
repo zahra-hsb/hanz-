@@ -80,7 +80,7 @@ export default function Products() {
             </div>
           </div>
           <div id="home-carousel" className="w-full">
-            <Slider url={'/products'} slidesPerView={3} image1={profile1} image2={profile3} image3={profile2} image4={profile3} textSlider={true} textSlider1={'کنترل دقیق فرآیند'} textSlider2={'SL-95T'} textSlider3={'تجهیزات پیشرفته'} textSlider4={'قاب منظره آلومینیومی'} sliderCount={''} />
+            <Slider url={'/products'} slidesPerView={3} image1={profile1} image2={profile3} image3={profile2} image4={profile3} textSlider={true} textSlider1={'System 140-SLIM'} textSlider2={'System SL-95T'} textSlider3={'System 95T-MONO'} textSlider4={'System SL-95T'} sliderCount={''} />
           </div>
         </div>
 
