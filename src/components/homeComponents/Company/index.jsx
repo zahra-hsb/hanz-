@@ -20,7 +20,7 @@ const Company = () => {
                     </div>
                 </div>
                 <div>
-                    <Slider slidesPerView={1} textSlider={false} banner={banner} />
+                    <Slider url={'/imageGallery'} slidesPerView={1} textSlider={false} banner={banner} />
                 </div>
             </section>
             <AboutSection2 />
