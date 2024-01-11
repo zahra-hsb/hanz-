@@ -6,10 +6,17 @@ const Header = ({ setSidebarShow, router }) => {
     const [pageName, setPageName] = useState('');
 
     const menuItem = [
-        { tab: 'window', label: 'پنجره' },
-        { tab: 'door', label: 'درب' },
+        { tab: 'profile', label: 'پروفیل' },
+        { tab: 'profile-properties', label: 'متعلقات' },
         { tab: 'creatineWall', label: 'کراتین وال' },
     ]
+
+    // const handleScroll = () => {
+    //     window.scrollTo({
+    //         top: 480,
+    //         behavior: 'smooth'
+    //     });
+    // }
 
 
     useEffect(() => {
@@ -59,19 +66,14 @@ const Header = ({ setSidebarShow, router }) => {
                                 {menuItem.map(item => (
                                     <li
                                         key={item.tab}
-                                        onClick={() => {
-                                            window.scrollTo({
-                                                top: window.pageYOffset + 180,
-                                                behavior: 'smooth'
-                                            });
-                                        }}
+                                        // onClick={() => handleScroll()}
                                     >
-                                        <div
-                                            href={"#"}
+                                        <Link
+                                            href={ item.tab === 'profile' ? '#profile' : (item.tab === 'profile-properties' ? '#profile-properties' : '#cratinwall') }
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
-                                        </div>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
