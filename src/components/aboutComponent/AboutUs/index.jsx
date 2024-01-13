@@ -30,7 +30,7 @@ const AboutUs = () => {
                 </div>
                 <div className='w-full flex items-center justify-center relative bottom-20 lg:bottom-20 mt-60 lg:mt-20 px-30'>
                     <Image src={pic} alt='about hanz' className='h-[300px] sm:h-[400px] lg:h-[450px]' />
-                    <Image src={pic2} alt='about pic' className='lg:w-2/4 sm:w-2/4 w-2/3 absolute top-56 lg:top-64 sm:top-72 left-[-15px] sm:left-[-50px] lg:left-[-100px] shadow-2xl' />
+                    <Image src={pic2} alt='about pic' className='lg:w-1/3 sm:w-2/4 w-2/3 absolute top-56 lg:top-64 sm:top-72 left-[-15px] sm:left-[-50px] lg:left-[-10px] shadow-2xl' />
                 </div>
                 <div>
                     <p className='lg:w-1/2 w-full sm:text-lg mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
