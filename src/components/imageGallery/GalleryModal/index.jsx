@@ -1,10 +1,17 @@
+"use client";
 import Image from "next/image"
 import mainPic from "../../../../public/image/Modiriyat-WEBSITE.jpg"
 import primePic1 from "../../../../public/image/Sales-Manager-WEBSITE.jpg"
 import primePic2 from "../../../../public/image/sales-manager-WEBSITE-1.jpg"
 import arrowRight from "../../../../public/icons/arrow-1.svg"
 import arrowLeft from "../../../../public/icons/arrow.svg"
+import Slider from "@/components/globalComponents/Slider"
 
+import {Pagination, Navigation} from 'swiper/modules'
+import {Swiper, SwiperSlide} from 'swiper/react'
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const GalleryModal = ({ closeModal }) => {
     return (
@@ -16,19 +23,24 @@ const GalleryModal = ({ closeModal }) => {
                         <Image src={mainPic} alt="" width={400} className="inner drop-shadow-sm" />
                     </div>
                 </div>
-                <div className="flex items-center justify-between py-16">
+                {/* <div className="flex items-center justify-between py-16">
                     <Image src={arrowRight} alt="arrow-right" className="cursor-pointer hover:invert" />
-                    <div>
-                        <Image src={primePic1} alt="" width={160} className="transition duration-300 ease-in-out hover:scale-105 hover:brightness-50 cursor-pointer" />
+                    <div className="lg:w-full flex items-center justify-between px-16">
+                        <div className="">
+                            <Image src={primePic1} alt="" width={160} className="transition duration-300 ease-in-out hover:scale-105 hover:brightness-50 cursor-pointer" />
+                        </div>
+                        <div className="w-full">
+                            <Image src={mainPic} alt="" width={200} className="transition duration-300 ease-in-out hover:scale-105 hover:brightness-50 cursor-pointer" />
+                        </div>
+                        <div>
+                            <Image src={primePic2} alt="" width={160} className="transition duration-300 ease-in-out hover:scale-105 hover:brightness-50 cursor-pointer" />
+                        </div>
+                        <Image src={arrowLeft} alt="arrow-right" className="cursor-pointer hover:invert" />
                     </div>
-                    <div>
-                        <Image src={mainPic} alt="" width={200} className="transition duration-300 ease-in-out hover:scale-105 hover:brightness-50 cursor-pointer" />
-                    </div>
-                    <div>
-                        <Image src={primePic2} alt="" width={160} className="transition duration-300 ease-in-out hover:scale-105 hover:brightness-50 cursor-pointer" />
-                    </div>
-                    <Image src={arrowLeft} alt="arrow-right" className="cursor-pointer hover:invert" />
-                </div>
+                </div> */}
+
+                {/* <Slider url={'#'} slidesPerView={3} image1={`${primePic1}`} image2={`${primePic2}`} image3={`${primePic1}`} image4={`${primePic2}`} /> */}
+
             </section>
         </>
     )
