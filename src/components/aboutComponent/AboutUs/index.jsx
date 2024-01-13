@@ -28,9 +28,9 @@ const AboutUs = () => {
 
                     </div>
                 </div>
-                <div className='relative bottom-20 lg:bottom-20 mt-60 lg:mt-20 px-30'>
-                    <Image src={pic} alt='about hanz' className='h-[300px] sm:h-[400px] lg:h-[450px]' />
-                    <Image src={pic2} alt='about pic' className='lg:w-2/4 sm:w-2/4 w-2/3 absolute top-56 lg:top-64 sm:top-72 left-[-15px] sm:left-[-50px] lg:left-[-100px] shadow-2xl' />
+                <div className='w-full flex items-center justify-center relative bottom-20 lg:bottom-20 lg:mt-48 mt-28 lg:mt-20 px-30'>
+                    <Image src={pic} alt='about hanz' />
+                    <Image src={pic2} alt='about pic' className='lg:w-[350px] sm:w-2/4 w-2/3 absolute bottom-[-100px] lg:bottom-[-100px] sm:bottom-[-17px] left-[-15px] sm:left-[-50px] lg:left-[-40px] shadow-2xl' />
                 </div>
                 <div>
                     <p className='lg:w-1/2 w-full sm:text-lg mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
