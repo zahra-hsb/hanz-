@@ -33,7 +33,7 @@ const AboutUs = () => {
                     <Image src={pic2} alt='about pic' className='lg:w-[350px] sm:w-2/4 w-2/3 absolute bottom-[-100px] lg:bottom-[-100px] sm:bottom-[-17px] left-[-15px] sm:left-[-50px] lg:left-[-40px] shadow-2xl' />
                 </div>
                 <div>
-                    <p className='lg:w-1/2 w-full sm:text-lg mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
+                    <p className='xl:w-1/2 lg:w-1/3 w-full sm:text-lg lg:mt-[-50px] lg:mr-16 mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
                         ما طراحی، فناوری و دیجیتالی‌سازی را در راه‌حل‌های نوآورانه ترکیب
                         می‌کنیم که ارزش افزوده و شرکایمان را برای ایجاد ساختمان‌های پایدار الهام می‌بخشد.
                     </p>
