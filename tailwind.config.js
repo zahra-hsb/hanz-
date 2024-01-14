@@ -14,7 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         mainSection: 'url(../../public/image/cuh_banner.png)',
-        aboutSection: 'url(../../public/image/6285071a478738158c37a31d_Window frames cover 1.png)',
+        aboutSection: 'url(../../public/image/bg-side-12.jpg)',
         gallerySection: 'url(../../public/image/cover.jpg)',
         productSection: 'url(../../public/image/wood-windows.jpg)'
       },
