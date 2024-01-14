@@ -14,8 +14,8 @@ module.exports = {
       },
       backgroundImage: {
         mainSection: 'url(../../public/image/cuh_banner.png)',
-        aboutSection: 'url(../../public/image/6285071a478738158c37a31d_Window frames cover 1.png)',
-        gallerySection: 'url(../../public/image/cover.jpg)',
+        aboutSection: 'url(../../public/image/whtb-banner-01-background.jpg)',
+        gallerySection: 'url(../../public/image/maxresdefault.jpg)',
         productSection: 'url(../../public/image/wood-windows.jpg)'
       },
       boxShadow: {
