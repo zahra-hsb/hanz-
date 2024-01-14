@@ -42,11 +42,11 @@ const AboutUs = () => {
                     </p>
                 </div>
                 {/* <Slider url={'/imageGallery'} slidesPerView={1} image1={banner} textSlider={false} /> */}
-                {/* <div>
-                    <p className='lg:w-1/2 w-full sm:text-lg mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
+                <div className='w-full flex justify-end'>
+                    <p className='lg:w-1/2 w-full sm:text-lg text-end mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
                         ما با هم محیط زندگی و کار مردم را در حال حاضر و برای نسل های آینده بهبود می بخشیم.
                     </p>
-                </div> */}
+                </div>
             </div>
         </>
     )
