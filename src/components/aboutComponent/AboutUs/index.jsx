@@ -4,6 +4,7 @@ import pic2 from '../../../../public/image/about.jpg'
 import Logo from '@/components/layout/Sidebar/utils-sidebar/Logo'
 import Slider from '@/components/globalComponents/Slider'
 import banner from '../../../../public/image/cuh_banner.png'
+import AboutSection2 from '@/components/homeComponents/AboutSection2'
 
 
 const AboutUs = () => {
@@ -42,7 +43,8 @@ const AboutUs = () => {
                     </p>
                 </div>
                 {/* <Slider url={'/imageGallery'} slidesPerView={1} image1={banner} textSlider={false} /> */}
-                <div className='w-full flex justify-end'>
+                <AboutSection2 />
+                <div className='w-full flex justify-end mt-[-50px]'>
                     <p className='lg:w-1/2 w-full sm:text-lg text-end mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
                         ما با هم محیط زندگی و کار مردم را در حال حاضر و برای نسل های آینده بهبود می بخشیم.
                     </p>
