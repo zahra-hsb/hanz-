@@ -7,6 +7,7 @@ import arrowRight from "../../../../public/icons/arrow-1.svg"
 import arrowLeft from "../../../../public/icons/arrow.svg"
 import Slider from "@/components/globalComponents/Slider"
 
+
 import { Pagination, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -14,7 +15,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+
+
 const GalleryModal = ({ closeModal }) => {
+    const images = [mainPic, primePic1, primePic2, primePic1, primePic2, primePic1, mainPic]
     return (
         <>
             <div className="transition duration-100 fixed top-0 left-0 z-40 w-full h-full bg-black cursor-pointer opacity-90" onClick={closeModal}></div>
@@ -44,24 +48,19 @@ const GalleryModal = ({ closeModal }) => {
                 <div className="p-20">
                     <Swiper
                         modules={[Navigation, Pagination]}
-                        spaceBetween={10}
+                        spaceBetween={70}
                         slidesPerView={3}
                         navigation
                         pagination
                         className="mySwiper text-white"
                     >
-                        <SwiperSlide>
-                            <Image src={primePic1} alt="" width={400} className="inner drop-shadow-sm" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={mainPic} alt="" width={400} className="inner drop-shadow-sm" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={primePic2} alt="" width={400} className="inner drop-shadow-sm" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={primePic1} alt="" width={400} className="inner drop-shadow-sm" />
-                        </SwiperSlide>
+                        {images.map((img, index) => (
+                            <>
+                                <SwiperSlide>
+                                    <Image src={img} key={index} alt="" width={400} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" />
+                                </SwiperSlide>
+                            </>
+                        ))}
                     </Swiper>
                 </div>
 
