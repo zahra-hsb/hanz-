@@ -27,7 +27,7 @@ const GalleryModal = ({ closeModal, opacity, wraperOpacity, galleryProp }) => {
     return (
         <>
             <div className={`${wraperOpacity} transition duration-500 ease-in-out fixed top-0 left-0 z-40 w-full h-full bg-black cursor-pointer`} onClick={closeModal}></div>
-            <section className={`${opacity} transition duration-500 ease-in-out fixed top-[50%] left-[50%] p-16 ml-[-40vw] mt-[-45vh] w-[80vw] h-[90vh] bg-gradient-to-tr from-[#010101] to-[#252525]`}>
+            <section className={`${opacity} transition duration-500 ease-in-out fixed top-[50%] left-[50%] p-16 ml-[-40vw] mt-[-45vh] w-[80vw] h-[90vh] bg-white`}>
                 <div className="flex items-center justify-center">
                     <div>
                         {isOpen && <Image src={mainPic} alt="" width={400} className="inner drop-shadow-sm" /> }

@@ -13,7 +13,7 @@ import { useState } from "react"
 const PicturesGallery = () => {
     const galleryArray = [
         {src: image1, category: 'تصاویر نمایشگاه', gallery: [mainPic, primePic1, primePic2, mainPic, primePic2]},
-        {src: image2, category: 'تصاویر پروژه ها', gallery: [image1, primePic1, primePic2]},
+        {src: image2, category: 'تصاویر پروژه ها', gallery: [image1, primePic1, primePic2, image2]},
     ]
     console.log('galleryArray: ' + galleryArray.gallery)
     const [isShow, setShow] = useState(false)
