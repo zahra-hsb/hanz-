@@ -18,11 +18,11 @@ import { useState } from "react";
 
 const GalleryModal = ({ closeModal, opacity, wraperOpacity, galleryProp }) => {
     const images = [mainPic, primePic1, primePic2, primePic1, primePic2, primePic1, mainPic]
-    const [isOpen, setOpen] = useState(false)
+    const [picture, setChange] = useState(mainPic)
     galleryProp.map(g => console.log('gallery prop : ', g))
     
-    function openPic() {
-        setOpen(true)
+    function changePic(img) {
+        setChange(img)
     }
     return (
         <>
@@ -30,7 +30,7 @@ const GalleryModal = ({ closeModal, opacity, wraperOpacity, galleryProp }) => {
             <section className={`${opacity} transition duration-500 ease-in-out fixed top-[50%] left-[50%] p-16 ml-[-40vw] mt-[-45vh] w-[80vw] h-[90vh] bg-white`}>
                 <div className="flex items-center justify-center">
                     <div>
-                        {isOpen && <Image src={mainPic} alt="" width={400} className="inner drop-shadow-sm" /> }
+                        {picture && <Image src={picture} alt="" width={400} className="inner drop-shadow-sm" />  }
                         
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const GalleryModal = ({ closeModal, opacity, wraperOpacity, galleryProp }) => {
                         {galleryProp.map((img, index) => (
                             <>
                                 <SwiperSlide>
-                                    <Image src={img} key={index} alt="" width={400} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => openPic()} />
+                                    <Image src={img} key={index} alt="" width={400} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
                                 </SwiperSlide>
                             </>
                         ))}
