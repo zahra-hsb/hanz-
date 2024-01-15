@@ -12,8 +12,8 @@ import { useState } from "react"
 
 const PicturesGallery = () => {
     const galleryArray = [
-        {src: image1, category: 'تصاویر نمایشگاه', gallery: [mainPic, primePic1, primePic2, mainPic, primePic2]},
-        {src: image2, category: 'تصاویر پروژه ها', gallery: [image1, primePic1, primePic2, image2]},
+        { id: 1, src: image1, category: 'تصاویر نمایشگاه', gallery: [mainPic, primePic1, primePic2, mainPic, primePic2] },
+        { id: 2, src: image2, category: 'تصاویر پروژه ها', gallery: [image1, primePic1, primePic2, image2] },
     ]
     console.log('galleryArray: ' + galleryArray.gallery)
     const [isShow, setShow] = useState(false)
@@ -39,7 +39,10 @@ const PicturesGallery = () => {
                                 <button className='z-50 text-green text-sm lg:text-md px-4 py-1 rounded-3xl transition-colors opacity-0 duration-300 ease-in-out group-hover:opacity-100 border-2 border-white absolute sm:my-[30%] my-auto mx-auto text-white hover:text-black hover:bg-white' onClick={() => showModal()} >نمایش بیشتر  ←</button>
                                 <h3 className="hover:text-green" key={index} >{img.category}</h3>
                             </div>
-                            {isShow ? <GalleryModal closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-80 z-40'} galleryProp={img.gallery} /> : <GalleryModal closeModal={closeModal} opacity={'opacity-0 z-[-10]'} wraperOpacity={'opacity-0 z-[-10]'} galleryProp={img.gallery} />}
+                            {/* {isShow ? <GalleryModal closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-80 z-40'} galleryProp={img.gallery} /> : <GalleryModal closeModal={closeModal} opacity={'opacity-0 z-[-10]'} wraperOpacity={'opacity-0 z-[-10]'} galleryProp={img.gallery} />} */}
+                            {isShow && (
+                                <GalleryModal closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-80 z-40'} galleryProp={img.gallery} key={index}/>
+                            )}
                         </>
                     ))}
                 </div>
