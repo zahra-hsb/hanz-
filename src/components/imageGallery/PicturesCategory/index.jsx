@@ -46,7 +46,7 @@ const PicturesGallery = () => {
                     </div>
                 </div>
             </section>
-            {isShow && <GalleryModal closeModal={closeModal} />}
+            {isShow ? <GalleryModal closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-90 z-40'} /> :  <GalleryModal closeModal={closeModal} opacity={'opacity-0 z-[-10]'} wraperOpacity={'opacity-0 z-[-10]'} />}
         </>
     )
 }

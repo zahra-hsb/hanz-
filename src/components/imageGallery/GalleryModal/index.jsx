@@ -18,7 +18,7 @@ import { useState } from "react";
 
 
 
-const GalleryModal = ({ closeModal }) => {
+const GalleryModal = ({ closeModal, opacity, wraperOpacity }) => {
     const images = [mainPic, primePic1, primePic2, primePic1, primePic2, primePic1, mainPic]
     const [isOpen, setOpen] = useState(false)
 
@@ -27,8 +27,8 @@ const GalleryModal = ({ closeModal }) => {
     }
     return (
         <>
-            <div className="transition duration-100 fixed top-0 left-0 z-40 w-full h-full bg-black cursor-pointer opacity-90" onClick={closeModal}></div>
-            <section className="transition duration-100 fixed top-[50%] left-[50%] p-16 ml-[-40vw] mt-[-45vh] z-50 w-[80vw] h-[90vh] bg-gradient-to-tr from-[#010101] to-[#252525]">
+            <div className={`${wraperOpacity} transition duration-100 fixed top-0 left-0 z-40 w-full h-full bg-black cursor-pointer`} onClick={closeModal}></div>
+            <section className={`${opacity} transition duration-300 fixed top-[50%] left-[50%] p-16 ml-[-40vw] mt-[-45vh] w-[80vw] h-[90vh] bg-gradient-to-tr from-[#010101] to-[#252525]`}>
                 <div className="flex items-center justify-center">
                     <div>
                         {isOpen && <Image src={mainPic} alt="" width={400} className="inner drop-shadow-sm" /> }
