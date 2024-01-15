@@ -9,7 +9,7 @@ import { useState } from "react"
 const PicturesGallery = () => {
     const galleryArray = [
         {src: image1, category: 'تصاویر نمایشگاه'},
-        {src: image2, category: 'تصاویر نمایشگاه'},
+        {src: image2, category: 'تصاویر پروژه ها'},
     ]
     console.log(galleryArray[1].src)
     const [isShow, setShow] = useState(false)
@@ -33,7 +33,7 @@ const PicturesGallery = () => {
                                     <Image src={img.src} key={index} alt={'hanz'} className="transition w-full duration-300 ease-in-out overflow-hidden hover:scale-105 hover:brightness-50" />
                                 </div>
                                 <button className='z-50 text-green text-sm lg:text-md px-4 py-1 rounded-3xl transition-colors opacity-0 duration-300 ease-in-out group-hover:opacity-100 border-2 border-white absolute sm:my-[30%] my-auto mx-auto text-white hover:text-black hover:bg-white' onClick={() => showModal()} >نمایش بیشتر  ←</button>
-                                <h3 className="hover:text-green">تصاویر نمایشگاه</h3>
+                                <h3 className="hover:text-green">{img.category}</h3>
                             </div>
                         </>
                     ))}
