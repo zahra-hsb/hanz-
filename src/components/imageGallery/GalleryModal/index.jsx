@@ -16,10 +16,11 @@ import { useState } from "react";
 
 
 
-const GalleryModal = ({ closeModal, opacity, wraperOpacity }) => {
+const GalleryModal = ({ closeModal, opacity, wraperOpacity, galleryProp }) => {
     const images = [mainPic, primePic1, primePic2, primePic1, primePic2, primePic1, mainPic]
     const [isOpen, setOpen] = useState(false)
-
+    galleryProp.map(g => console.log('gallery prop : ', g))
+    
     function openPic() {
         setOpen(true)
     }
@@ -44,7 +45,7 @@ const GalleryModal = ({ closeModal, opacity, wraperOpacity }) => {
                         pagination
                         className="mySwiper text-white"
                     >
-                        {images.map((img, index) => (
+                        {galleryProp.map((img, index) => (
                             <>
                                 <SwiperSlide>
                                     <Image src={img} key={index} alt="" width={400} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => openPic()} />
