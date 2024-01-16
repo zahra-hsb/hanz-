@@ -1,19 +1,25 @@
 import Image from "next/image"
 import GalleryModal from "@/components/imageGallery/GalleryModal";
-import image1 from "../../../../public/image/Shayco-Ghorfe-WEBSITE.jpg"
-import image2 from "../../../../public/image/Dominion-Tower-14.jpg"
-import mainPic from "../../../../public/image/Modiriyat-WEBSITE.jpg"
+import image1 from "../../../../public/image/projects/1-Edited-768x511.jpg"
+import image2 from "../../../../public/image/projects/2-edited-768x511.jpg"
+import image3 from "../../../../public/image/projects/3-edited-768x512.jpg"
+import image4 from "../../../../public/image/projects/4-edited2-768x511.jpg"
+import image5 from "../../../../public/image/projects/5-edited2-768x511.jpg"
+import image6 from "../../../../public/image/projects/7-edited-768x511.jpg"
+import image7 from "../../../../public/image/projects/8-edited-768x511.jpg"
+import image8 from "../../../../public/image/projects/9-edited-768x511.jpg"
+
+import mainPic from "../../../../public/image/projects/9-edited-768x511.jpg"
 import primePic1 from "../../../../public/image/Sales-Manager-WEBSITE.jpg"
 import primePic2 from "../../../../public/image/sales-manager-WEBSITE-1.jpg"
 
-import Button from "@/components/globalComponents/Main/button"
 import { useState } from "react"
 
 
 const PicturesGallery = () => {
     const galleryArray = [
         { id: 1, src: image1, category: 'تصاویر نمایشگاه', gallery: [mainPic, primePic1, primePic2, mainPic, primePic2] },
-        { id: 2, src: image2, category: 'تصاویر پروژه ها', gallery: [image1, primePic1, primePic2, image2] },
+        { id: 2, src: image2, category: 'تصاویر پروژه ها', gallery: [image1, image2, image3, image4, image5, image6, image7, image8] },
     ]
     console.log('galleryArray: ' + galleryArray.gallery)
     const [isShow, setShow] = useState(false)
