@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image"
-import mainPic from "../../../../public/image/Modiriyat-WEBSITE.jpg"
-import primePic1 from "../../../../public/image/Sales-Manager-WEBSITE.jpg"
-import primePic2 from "../../../../public/image/sales-manager-WEBSITE-1.jpg"
+import mainPic from "../../../../public/image/projects/9-edited-768x511.jpg"
 
 
 
