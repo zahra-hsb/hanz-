@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image"
-import mainPic from "../../../../public/image/projects/9-edited-768x511.jpg"
 
 
 
@@ -15,7 +14,7 @@ import { useState } from "react";
 
 
 
-const GalleryModal = ({ closeModal, opacity, wraperOpacity, galleryProp }) => {
+const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp }) => {
 
     const [picture, setChange] = useState(mainPic)
     
