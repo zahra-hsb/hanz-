@@ -33,6 +33,10 @@ const Header = ({ setSidebarShow, router }) => {
             setPageName('معرفی محصول');
         } else if (router.pathname === '/products/building') {
             setPageName('ساختمانی');
+        } else if (router.pathname === '/products/industrial') {
+            setPageName('صنعتی');
+        } else if (router.pathname === '/products/accessory') {
+            setPageName('اکسسوری');
         } else if (router.pathname === '/imageGallery') {
             setPageName('گالری تصاویر');
         } else if (router.pathname === '/about') {
@@ -109,7 +113,7 @@ const Header = ({ setSidebarShow, router }) => {
                         )}
                     </div>
 
-                    <div className={`${router.pathname === '/products' && 'border-t sm:border-none'}`}>
+                    <div className={`${router.pathname === '/products/accessory' && 'border-t sm:border-none'}`}>
                         {router.pathname === '/products/accessory' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
                                 {menuItemForaccessory.map(item => (
@@ -119,6 +123,26 @@ const Header = ({ setSidebarShow, router }) => {
                                     >
                                         <Link
                                             href={item.tab === 'profile' ? '#profile' : (item.tab === 'profile-properties' ? '#profile-properties' : '#cratinwall')}
+                                            className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
+                                        >
+                                            <span className="nav-link ms-3 pl-2">{item.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+
+                    <div className={`${router.pathname === '/products/industrial' && 'border-t sm:border-none'}`}>
+                        {router.pathname === '/products/industrial' && (
+                            <ul className="mr-2 space-x-2 font-medium flex items-center">
+                                {menuItemForBuilding.map(item => (
+                                    <li
+                                        key={item.tab}
+                                    // onClick={() => handleScroll()}
+                                    >
+                                        <Link
+                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
