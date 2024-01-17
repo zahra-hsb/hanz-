@@ -31,13 +31,13 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
                             <span className="nav-link ms-3">{item.label}</span>
                         </Link>
                         {item.tab === 'products' && (
-                            <ArowDown setShowChildMenu={setShowChildMenu} />
+                            <ArowDown showChildMenu={showChildMenu} setShowChildMenu={setShowChildMenu} />
                         )}
                     </div>
                     {item.tab === 'products' && (
                         <ul
                             id="dropdown-example"
-                            className={`${!showChildMenu ? 'hidden' : ''} py-2 space-y-2`}
+                            className={`${showChildMenu ? 'transition ease-in-out duration-300 transform translate-y-0' : 'hidden transition duration-300 transform translate-y-[-100%]' } py-2 space-y-2`}
                         >
                             <li>
                                 <Link href="/products/building" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}
@@ -64,14 +64,20 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
 
 export default Menu;
 
-export const ArowDown = ({ setShowChildMenu }) => {
+export const ArowDown = ({ showChildMenu, setShowChildMenu }) => {
+    const handleClick = () => {
+        setTimeout(() => {
+            setShowChildMenu(s => !s);
+        }, 500)
+    }
+
     return (
         <div
             className="px-2 py-3 rounded-lg hover:bg-gray-100 group hover:text-green cursor-pointer"
             onClick={() => setShowChildMenu(s => !s)}
         >
             <svg
-                className="w-3 h-3 text-gray-500"
+                className={`w-3 h-3 text-gray-500 transition ease-in-out duration-300 transform ${showChildMenu ? 'rotate-180' : ''}`}
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
