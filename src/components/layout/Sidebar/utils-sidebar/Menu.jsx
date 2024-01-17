@@ -45,13 +45,13 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
                                 >ساختمانی</Link>
                             </li>
                             <li>
-                                <Link href="#" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>صنعتی</Link>
+                                <Link href="/products/industrial" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>صنعتی</Link>
                             </li>
                             <li>
-                                <Link href="#" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>خدمات</Link>
+                                <Link href="/products/services" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>خدمات</Link>
                             </li>
                             <li>
-                                <Link href="#" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>اکسسوری</Link>
+                                <Link href="/products/accessory" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>اکسسوری</Link>
                             </li>
                         </ul>
                     )}
