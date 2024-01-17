@@ -19,6 +19,7 @@ module.exports = {
         productSection: 'url(../../public/image/wood-windows.jpg)',
         buildingSection: 'url(../../public/image/building-banner.png)',
         industrialSection: 'url(../../public/image/industrial-banner.jpg)',
+        servicesSection: 'url(../../public/image/services-banner.webp)',
         profileSection: 'url(../../public/image/profile_aluminium.jpg)'
       },
       boxShadow: {
