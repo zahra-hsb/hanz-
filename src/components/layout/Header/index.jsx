@@ -7,7 +7,7 @@ const Header = ({ setSidebarShow, router }) => {
 
     const menuItemForProduct = [
         { tab: 'building', label: 'ساختمانی' },
-        { tab: 'technical', label: 'فنی' },
+        { tab: 'industrial', label: 'صنعتی' },
         { tab: 'services', label: 'خدمات' },
         { tab: 'accessory', label: 'اکسسوری' },
     ]
