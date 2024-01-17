@@ -17,7 +17,8 @@ module.exports = {
         aboutSection: 'url(../../public/image/whtb-banner-01-background.jpg)',
         gallerySection: 'url(../../public/image/maxresdefault.jpg)',
         productSection: 'url(../../public/image/wood-windows.jpg)',
-        buildingSection: 'url(../../public/image/building-banner.png)'
+        buildingSection: 'url(../../public/image/building-banner.png)',
+        profileSection: 'url(../../public/image/profile_aluminium.jpg)'
       },
       boxShadow: {
         'shadow0' : '0 30px 0 0 #00AE8E'
