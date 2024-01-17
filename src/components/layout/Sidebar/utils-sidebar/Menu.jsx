@@ -21,7 +21,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
                 >
                     <div className="flex items-center justify-between">
                         <Link
-                            href={item.tab === 'home' ? '/' : item.tab}
+                            href={item.tab === 'home' ? '/' : `/${item.tab}`}
                             className={`${selectedTab === item.tab ? 'text-green' : 'text-gray-500'} flex items-center w-full p-2 rounded-lg hover:bg-gray-100 group hover:text-green`}
                             onClick={() => {
                                 handleTabClick(item.tab)
@@ -40,7 +40,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
                             className={`${!showChildMenu ? 'hidden' : ''} py-2 space-y-2`}
                         >
                             <li>
-                                <Link href="#" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}
+                                <Link href="/products/building" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}
                                 // onClick={() => handleTabClick(item.tab)}
                                 >ساختمانی</Link>
                             </li>
