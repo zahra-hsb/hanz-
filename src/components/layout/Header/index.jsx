@@ -12,11 +12,11 @@ const Header = ({ setSidebarShow, router }) => {
         { tab: 'accessory', label: 'اکسسوری' },
     ]
 
-    // const menuItemForProduct = [
-    //     { tab: 'profile', label: 'پروفیل' },
-    //     { tab: 'profile-properties', label: 'متعلقات' },
-    //     { tab: 'creatineWall', label: 'کراتین وال' },
-    // ]
+    const menuItemForaccessory = [
+        { tab: 'profile', label: 'پروفیل' },
+        { tab: 'profile-properties', label: 'متعلقات' },
+        { tab: 'creatineWall', label: 'کراتین وال' },
+    ]
 
     const menuItemForBuilding = [
         { tab: 'view', label: 'نما' },
@@ -70,7 +70,7 @@ const Header = ({ setSidebarShow, router }) => {
                         </div>
                     </div>
                     <div className={`${router.pathname === '/products' && 'border-t sm:border-none'}`}>
-                    {router.pathname === '/products' && (
+                        {router.pathname === '/products' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
                                 {menuItemForProduct.map(item => (
                                     <li
@@ -87,10 +87,32 @@ const Header = ({ setSidebarShow, router }) => {
                                 ))}
                             </ul>
                         )}
+                    </div>
 
-                        {/* {router.pathname === '/products' && (
+                    <div className={`${router.pathname === '/products/building' && 'border-t sm:border-none'}`}>
+                        {router.pathname === '/products/building' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
-                                {menuItemForProduct.map(item => (
+                                {menuItemForBuilding.map(item => (
+                                    <li
+                                        key={item.tab}
+                                    // onClick={() => handleScroll()}
+                                    >
+                                        <Link
+                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
+                                            className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
+                                        >
+                                            <span className="nav-link ms-3 pl-2">{item.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+
+                    <div className={`${router.pathname === '/products' && 'border-t sm:border-none'}`}>
+                        {router.pathname === '/products/accessory' && (
+                            <ul className="mr-2 space-x-2 font-medium flex items-center">
+                                {menuItemForaccessory.map(item => (
                                     <li
                                         key={item.tab}
                                     // onClick={() => handleScroll()}
@@ -104,27 +126,7 @@ const Header = ({ setSidebarShow, router }) => {
                                     </li>
                                 ))}
                             </ul>
-                        )} */}
-
-                        <div className={`${router.pathname === '/products/building' && 'border-t sm:border-none'}`}>
-                            {router.pathname === '/products/building' && (
-                                <ul className="mr-2 space-x-2 font-medium flex items-center">
-                                    {menuItemForBuilding.map(item => (
-                                        <li
-                                            key={item.tab}
-                                        // onClick={() => handleScroll()}
-                                        >
-                                            <Link
-                                                href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
-                                                className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
-                                            >
-                                                <span className="nav-link ms-3 pl-2">{item.label}</span>
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
+                        )}
                     </div>
                 </div>
             </header >
