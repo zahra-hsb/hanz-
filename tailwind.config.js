@@ -18,6 +18,7 @@ module.exports = {
         gallerySection: 'url(../../public/image/maxresdefault.jpg)',
         productSection: 'url(../../public/image/wood-windows.jpg)',
         buildingSection: 'url(../../public/image/building-banner.png)',
+        industrialSection: 'url(../../public/image/industrial-banner.jpg)',
         profileSection: 'url(../../public/image/profile_aluminium.jpg)'
       },
       boxShadow: {
