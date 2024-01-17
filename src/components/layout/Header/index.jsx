@@ -78,7 +78,7 @@ const Header = ({ setSidebarShow, router }) => {
                                     // onClick={() => handleScroll()}
                                     >
                                         <Link
-                                            href='/products/building'
+                                            href={item.tab === 'building' ? '/products/building' : (item.tab === 'industrial' ? '/products/industrial' : (item.tab === 'services' ? '/products/services' : '/products/accessory'))}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
