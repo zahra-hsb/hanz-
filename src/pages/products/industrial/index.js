@@ -6,18 +6,18 @@ import Profile from "@/components/prductsComponents/Profile";
 import ProfileProperties from "@/components/prductsComponents/ProfileProperties";
 import WhyHanz from "@/components/prductsComponents/WhyHanz";
 
-export default function accessory() {
+export default function industrial() {
   return (
     <main className="flex flex-col justify-center items-center pb-[50px]">
-      <Main title={'اکسسوری'} bg={'bg-profileSection'} height={'h-[390px]'} display={'hidden'} />
+      <Main title={'صنعتی'} bg={'bg-industrialSection'} height={'h-[390px]'} display={'hidden'} />
       <div className="w-[100%] sm:w-[90%] m-auto">
 
         {/* <MainSection />
 
-        <WhyHanz /> */}
+        <WhyHanz />
         <Profile />
         <ProfileProperties />
-        <Cratinwall />
+        <Cratinwall /> */}
 
       </div>
 
