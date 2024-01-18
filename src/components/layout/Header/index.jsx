@@ -12,16 +12,23 @@ const Header = ({ setSidebarShow, router }) => {
         { tab: 'accessory', label: 'اکسسوری' },
     ]
 
-    const menuItemForaccessory = [
-        { tab: 'profile', label: 'پروفیل' },
-        { tab: 'profile-properties', label: 'متعلقات' },
-        { tab: 'creatineWall', label: 'کراتین وال' },
-    ]
-
     const menuItemForBuilding = [
         { tab: 'view', label: 'نما' },
         { tab: 'window', label: 'پنجره' },
         { tab: 'shelter', label: 'جان پناه' },
+    ]
+
+    const menuItemForServices = [
+        { tab: 'color', label: 'رنگ' },
+        { tab: 'ThermalBreak', label: 'ترمال بریک' },
+        { tab: 'Pressure', label: 'پرس' },
+        { tab: 'accessory', label: 'اکسسوری' },
+    ]
+
+    const menuItemForaccessory = [
+        { tab: 'profile', label: 'پروفیل' },
+        { tab: 'profile-properties', label: 'متعلقات' },
+        { tab: 'creatineWall', label: 'کراتین وال' },
     ]
 
 
@@ -51,7 +58,7 @@ const Header = ({ setSidebarShow, router }) => {
     return (
         <>
             <header className={`
-            ${router.pathname === '/products' && 'h-[80px] sm:h-[50px]'} 
+            ${router.pathname === '/products' || router.pathname === '/products/building' || router.pathname === '/products/industrial' || '/products/services' || '/products/accessory' ? 'h-[80px] sm:h-[50px]' : ''}
             h-[50px] fixed bg-white z-30 flex justify-start items-center w-full border-b`}>
                 <div className="flex flex-col sm:flex-row">
                     <div className="flex justify-start items-center">
@@ -138,13 +145,13 @@ const Header = ({ setSidebarShow, router }) => {
                     <div className={`${router.pathname === '/products/services' && 'border-t sm:border-none'}`}>
                         {router.pathname === '/products/services' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
-                                {menuItemForBuilding.map(item => (
+                                {menuItemForServices.map(item => (
                                     <li
                                         key={item.tab}
                                     // onClick={() => handleScroll()}
                                     >
                                         <Link
-                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
+                                            href={item.tab === 'color' ? '#color' : (item.tab === 'ThermalBreak' ? '#ThermalBreak' : (item.tab === 'Pressure' ? '#Pressure' : 'accessory' ) )}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
