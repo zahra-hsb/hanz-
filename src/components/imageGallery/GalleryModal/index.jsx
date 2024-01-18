@@ -28,10 +28,10 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
                 <span className="w-[15px] fixed top-0 right-0 z-50 p-10 text-4xl text-white cursor-pointer hover:text-red" onClick={closeModal}>
                     <span className="rotate-45 flex hover:text-red">+</span>
                 </span>
-            <section className={`${opacity} rounded-md transition duration-500 ease-in-out fixed sm:top-[50%] top-20 sm:left-[50%] p-16 sm:ml-[-40vw] sm:mt-[-45vh] w-[90%] sm:w-[80vw] sm:h-[90vh] bg-white`}>
-                <div className="flex items-center justify-center">
-                    <div>
-                        {picture && <Image src={picture} alt="" width={400} className="inner drop-shadow-lg cursor-zoom-in rounded" />  }
+            <section className={`${opacity} rounded-md transition duration-500 ease-in-out fixed sm:top-[50%] top-[15vh] sm:left-[50%] sm:p-16 lg:p-16 sm:ml-[-40vw] sm:mt-[-45vh] w-[90%] sm:w-[80vw] sm:h-[90vh] bg-white`}>
+                <div>
+                    <div className="flex items-center justify-center">
+                        {picture && <Image src={picture} alt="" width={400} className="w-full sm:w-[75%] lg:w-[35%] left-0 inner drop-shadow-lg cursor-zoom-in rounded" />  }
                         
                     </div>
                 </div>
@@ -49,7 +49,7 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
                         {galleryProp.map((img, index) => (
                             <>
                                 <SwiperSlide>
-                                    <Image src={img} key={index} alt="" width={400} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
+                                    <Image src={img} key={index} alt="" width={300} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
                                 </SwiperSlide>
                             </>
                         ))}
