@@ -49,7 +49,7 @@ const PicturesGallery = () => {
                                 <div className="w-full lg:h-[160px] 2xl:h-[250px] overflow-hidden">
                                     <Image src={img.src} key={index} alt={'hanz'} className="transition w-full duration-300 ease-in-out overflow-hidden hover:scale-105 hover:brightness-50" />
                                 </div>
-                                <button className='z-50 text-green text-sm lg:text-md px-4 py-1 rounded-3xl transition-colors opacity-0 duration-300 ease-in-out group-hover:opacity-100 border-2 border-white absolute sm:my-[30%] my-auto mx-auto text-white hover:text-black hover:bg-white' onClick={() => showModal()} >نمایش بیشتر  ←</button>
+                                <button className='z-40 text-green text-sm lg:text-md px-4 py-1 rounded-3xl transition-colors opacity-0 duration-300 ease-in-out group-hover:opacity-100 border-2 border-white absolute sm:my-[30%] my-auto mx-auto text-white hover:text-black hover:bg-white' onClick={() => showModal()} >نمایش بیشتر  ←</button>
                                 <h3 className="hover:text-green" >{img.category}</h3>
                             </div>
                             {/* {isShow ? <GalleryModal closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-80 z-40'} galleryProp={img.gallery} /> : <GalleryModal closeModal={closeModal} opacity={'opacity-0 z-[-10]'} wraperOpacity={'opacity-0 z-[-10]'} galleryProp={img.gallery} />} */}
