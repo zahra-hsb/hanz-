@@ -23,6 +23,8 @@ const PicturesGallery = () => {
     ]
     console.log('galleryArray: ' + galleryArray.gallery)
     const [isShow, setShow] = useState(false)
+    const [currentCategory, setCurrentCategory] = useState(null);
+    
     console.log('show: ', isShow)
     function showModal() {
         setShow(true)
