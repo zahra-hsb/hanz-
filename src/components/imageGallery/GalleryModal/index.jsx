@@ -31,16 +31,16 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
             <section className={`${opacity} rounded-md overflow-hidden transition duration-500 ease-in-out fixed sm:top-[50%] top-[10vh] sm:left-[50%] lg:p-16 sm:ml-[-40vw] sm:mt-[-45vh] w-[90%] sm:w-[80vw] sm:h-[90vh] bg-white`}>
                 <div>
                     <div className="flex items-center justify-center">
-                        {picture && <Image src={picture} alt="" width={400} className="w-full lg:w-[45%] left-0 inner drop-shadow-lg cursor-zoom-in sm:rounded" />}
+                        {picture && <Image src={picture} alt="" width={400} className="w-full lg:w-[45%] left-0 inner drop-shadow-lg cursor-zoom-in sm:h-[60vh] lg:h-full lg:rounded" />}
 
                     </div>
                 </div>
 
 
-                <div className="py-10 sm:py-15 lg:p-20">
+                <div className="py-8 sm:py-5 lg:p-20">
                     <Swiper
                         modules={[Navigation, Pagination]}
-                        spaceBetween={30}
+                        spaceBetween={20}
                         slidesPerView={3}
                         navigation
                         // pagination
@@ -60,7 +60,7 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
                         {galleryProp.map((img, index) => (
                             <>
                                 <SwiperSlide>
-                                    <Image src={img} key={index} alt="" width={300} className="sm:w-[180px] inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
+                                    <Image src={img} key={index} alt="" width={300} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
                                 </SwiperSlide>
                             </>
                         ))}
