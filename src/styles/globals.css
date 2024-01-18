@@ -49,7 +49,11 @@ body {
   background-color: #00ae8e !important;
   color: #ffffff !important;
 }
-
+/* .swiper-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 div.swiper-button-prev::after,
 div.swiper-button-next::after {
   font-size: 15px !important;
