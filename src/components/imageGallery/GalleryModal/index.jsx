@@ -43,6 +43,17 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
                         slidesPerView={3}
                         navigation
                         // pagination
+                        breakpoints = {{
+                            0: {
+                                slidesPerView: 1.7,
+                            },
+                            576: {
+                                slidesPerView: 2.3,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            }
+                        }}
                         className="mySwiper text-white"
                     >
                         {galleryProp.map((img, index) => (
