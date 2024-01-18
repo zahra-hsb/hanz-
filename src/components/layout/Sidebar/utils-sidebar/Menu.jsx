@@ -69,7 +69,10 @@ export const ArowDown = ({ showChildMenu, setShowChildMenu }) => {
     return (
         <div
             className="px-2 py-3 rounded-lg hover:bg-gray-100 group hover:text-green cursor-pointer"
-            onClick={() => setShowChildMenu(s => !s)}
+            onClick={(event) => {
+                event.stopPropagation()
+                setShowChildMenu(s => !s)
+                }}
         >
             <svg
                 className={`w-3 h-3 text-gray-500 transition ease-in-out duration-300 transform ${showChildMenu ? 'rotate-180' : ''}`}
