@@ -5,18 +5,25 @@ import Link from "next/link";
 const Header = ({ setSidebarShow, router }) => {
     const [pageName, setPageName] = useState('');
 
-    const menuItem = [
+    const menuItemForProduct = [
+        { tab: 'building', label: 'ساختمانی' },
+        { tab: 'industrial', label: 'صنعتی' },
+        { tab: 'services', label: 'خدمات' },
+        { tab: 'accessory', label: 'اکسسوری' },
+    ]
+
+    const menuItemForaccessory = [
         { tab: 'profile', label: 'پروفیل' },
         { tab: 'profile-properties', label: 'متعلقات' },
         { tab: 'creatineWall', label: 'کراتین وال' },
     ]
 
-    // const handleScroll = () => {
-    //     window.scrollTo({
-    //         top: 480,
-    //         behavior: 'smooth'
-    //     });
-    // }
+    const menuItemForBuilding = [
+        { tab: 'view', label: 'نما' },
+        { tab: 'window', label: 'پنجره' },
+        { tab: 'shelter', label: 'جان پناه' },
+    ]
+
 
 
     useEffect(() => {
@@ -24,6 +31,14 @@ const Header = ({ setSidebarShow, router }) => {
             setPageName('خانه');
         } else if (router.pathname === '/products') {
             setPageName('معرفی محصول');
+        } else if (router.pathname === '/products/building') {
+            setPageName('ساختمانی');
+        } else if (router.pathname === '/products/industrial') {
+            setPageName('صنعتی');
+        } else if (router.pathname === '/products/services') {
+            setPageName('خدمات');
+        } else if (router.pathname === '/products/accessory') {
+            setPageName('اکسسوری');
         } else if (router.pathname === '/imageGallery') {
             setPageName('گالری تصاویر');
         } else if (router.pathname === '/about') {
@@ -56,20 +71,100 @@ const Header = ({ setSidebarShow, router }) => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="mr-4">
+                        <div className="mr-4 text-gray-600">
                             <p>{pageName}</p>
                         </div>
                     </div>
-                    <div className={`${router.pathname === '/products' && 'border-t sm:border-none'}`}>
+                    <div className={`${router.pathname === '/products' && 'border-t sm:border-none'} overflow-auto`}>
                         {router.pathname === '/products' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
-                                {menuItem.map(item => (
+                                {menuItemForProduct.map(item => (
                                     <li
                                         key={item.tab}
-                                        // onClick={() => handleScroll()}
+                                    // onClick={() => handleScroll()}
                                     >
                                         <Link
-                                            href={ item.tab === 'profile' ? '#profile' : (item.tab === 'profile-properties' ? '#profile-properties' : '#cratinwall') }
+                                            href={item.tab === 'building' ? '/products/building' : (item.tab === 'industrial' ? '/products/industrial' : (item.tab === 'services' ? '/products/services' : '/products/accessory'))}
+                                            className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
+                                        >
+                                            <span className="nav-link ms-3 pl-2">{item.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+
+                    <div className={`${router.pathname === '/products/building' && 'border-t sm:border-none'}`}>
+                        {router.pathname === '/products/building' && (
+                            <ul className="mr-2 space-x-2 font-medium flex items-center">
+                                {menuItemForBuilding.map(item => (
+                                    <li
+                                        key={item.tab}
+                                    // onClick={() => handleScroll()}
+                                    >
+                                        <Link
+                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
+                                            className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
+                                        >
+                                            <span className="nav-link ms-3 pl-2">{item.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+
+                    <div className={`${router.pathname === '/products/industrial' && 'border-t sm:border-none'}`}>
+                        {router.pathname === '/products/industrial' && (
+                            <ul className="mr-2 space-x-2 font-medium flex items-center">
+                                {menuItemForBuilding.map(item => (
+                                    <li
+                                        key={item.tab}
+                                    // onClick={() => handleScroll()}
+                                    >
+                                        <Link
+                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
+                                            className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
+                                        >
+                                            <span className="nav-link ms-3 pl-2">{item.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+
+                    <div className={`${router.pathname === '/products/services' && 'border-t sm:border-none'}`}>
+                        {router.pathname === '/products/services' && (
+                            <ul className="mr-2 space-x-2 font-medium flex items-center">
+                                {menuItemForBuilding.map(item => (
+                                    <li
+                                        key={item.tab}
+                                    // onClick={() => handleScroll()}
+                                    >
+                                        <Link
+                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
+                                            className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
+                                        >
+                                            <span className="nav-link ms-3 pl-2">{item.label}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+
+                    <div className={`${router.pathname === '/products/accessory' && 'border-t sm:border-none'}`}>
+                        {router.pathname === '/products/accessory' && (
+                            <ul className="mr-2 space-x-2 font-medium flex items-center">
+                                {menuItemForaccessory.map(item => (
+                                    <li
+                                        key={item.tab}
+                                    // onClick={() => handleScroll()}
+                                    >
+                                        <Link
+                                            href={item.tab === 'profile' ? '#profile' : (item.tab === 'profile-properties' ? '#profile-properties' : '#cratinwall')}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
@@ -80,9 +175,13 @@ const Header = ({ setSidebarShow, router }) => {
                         )}
                     </div>
                 </div>
-            </header>
+            </header >
         </>
     )
 }
 
 export default Header;
+
+
+
+

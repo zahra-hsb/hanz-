@@ -15,10 +15,6 @@ export default function OurProducts() {
         <MainSection />
 
         <WhyHanz />
-        <Profile />
-        <ProfileProperties />
-        <Cratinwall />
-
       </div>
     </>
   );

@@ -55,7 +55,7 @@ const Slider = ({ url, slidesPerView, image1, image2, image3, image4, textSlider
 
 
     return (
-        <section classNameName='w-full relative'>
+        <section className='w-full relative'>
 
             <Swiper
                 modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
