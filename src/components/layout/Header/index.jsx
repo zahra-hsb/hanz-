@@ -67,7 +67,7 @@ const Header = ({ setSidebarShow, router }) => {
                             <button
                                 onClick={() => {
                                     setSidebarShow((s) => !s)
-                                    toggleOverflow()
+                                    // toggleOverflow()
 
                                 }}
 
