@@ -35,7 +35,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
 
                     <div className='text-4xl ml-6 pb-1 lg:hidden text-gray-400 rotate-45 cursor-pointer' onClick={() => {
                         setSidebarShow((s) => !s)
-                        toggleOverflow()
+                        // toggleOverflow()
                     }}>+</div>
                 </div>
                 <div className="flex px-5 pt-6 w-full">

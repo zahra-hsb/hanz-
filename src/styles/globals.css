@@ -26,6 +26,25 @@ body {
   font-family: 'IranSans';
 }
 
+body::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar{
+	width: 9px;
+	background-color: #F5F5F5;
+	background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #666666;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+	background-color: #888888;
+}
+
 @font-face {
   font-family: IranSans;
   src: url('/fonts/IRANSansX-Medium.woff');
