@@ -17,22 +17,21 @@ import { useState } from "react";
 const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp }) => {
 
     const [picture, setChange] = useState(mainPic)
-    
+
     function changePic(img) {
         setChange(img)
     }
     return (
         <>
-            <div className={`${wraperOpacity} transition duration-500 ease-in-out fixed top-0 left-0 z-40 w-full h-full bg-black`} onClick={closeModal}>
-            </div>
-                <span className="w-[15px] fixed top-0 right-0 z-50 p-10 text-4xl text-white cursor-pointer hover:text-red" onClick={closeModal}>
-                    <span className="rotate-45 flex hover:text-red">+</span>
-                </span>
-            <section className={`${opacity} rounded-md transition duration-500 ease-in-out fixed sm:top-[50%] top-[15vh] sm:left-[50%] sm:p-16 lg:p-16 sm:ml-[-40vw] sm:mt-[-45vh] w-[90%] sm:w-[80vw] sm:h-[90vh] bg-white`}>
+            <div className={`${wraperOpacity} transition duration-500 ease-in-out fixed top-0 left-0 z-40 w-full h-full bg-black`} onClick={closeModal}></div>
+            <span className="w-[15px] fixed top-0 right-0 z-50 p-5 sm:p-10 lg:p-10 text-4xl text-white cursor-pointer hover:text-red" onClick={closeModal}>
+                <span className="rotate-45 flex hover:text-red">+</span>
+            </span>
+            <section className={`${opacity} rounded-md transition duration-500 ease-in-out fixed sm:top-[50%] top-[10vh] sm:left-[50%] sm:p-16 lg:p-16 sm:ml-[-40vw] sm:mt-[-45vh] w-[90%] sm:w-[80vw] sm:h-[90vh] bg-white`}>
                 <div>
                     <div className="flex items-center justify-center">
-                        {picture && <Image src={picture} alt="" width={400} className="w-full sm:w-[75%] lg:w-[35%] left-0 inner drop-shadow-lg cursor-zoom-in rounded" />  }
-                        
+                        {picture && <Image src={picture} alt="" width={400} className="w-full sm:w-[75%] lg:w-[35%] left-0 inner drop-shadow-lg cursor-zoom-in rounded" />}
+
                     </div>
                 </div>
 
