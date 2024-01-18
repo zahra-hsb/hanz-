@@ -64,12 +64,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
 
 export default Menu;
 
-export const ArowDown = ({ showChildMenu, setShowChildMenu }) => {
-    const handleClick = () => {
-        setTimeout(() => {
-            setShowChildMenu(s => !s);
-        }, 500)
-    }
+export const ArowDown = ({ setShowChildMenu }) => {
 
     return (
         <div
