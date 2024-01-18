@@ -64,8 +64,8 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
 
 export default Menu;
 
-export const ArowDown = ({ setShowChildMenu }) => {
-
+export const ArowDown = ({ showChildMenu, setShowChildMenu }) => {
+    
     return (
         <div
             className="px-2 py-3 rounded-lg hover:bg-gray-100 group hover:text-green cursor-pointer"
