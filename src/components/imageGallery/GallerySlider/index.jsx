@@ -10,12 +10,12 @@ import 'swiper/css/effect-coverflow';
 import { useState } from "react";
 
 
-const GallerySlider = ({galleryProp, changePic}) => {
+const GallerySlider = ({ galleryProp, changePic }) => {
     return (
         <Swiper
             modules={[Navigation, Pagination]}
-            spaceBetween={30}
-            slidesPerView={3}
+            spaceBetween={20}
+            slidesPerView={4}
             navigation
             // pagination
             breakpoints={{
@@ -34,7 +34,7 @@ const GallerySlider = ({galleryProp, changePic}) => {
             {galleryProp.map((img, index) => (
                 <>
                     <SwiperSlide>
-                        <Image src={img} key={index} alt="" width={300} className="sm:w-[180px] inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
+                        <Image src={img} key={index} alt="" width={300} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
                     </SwiperSlide>
                 </>
             ))}

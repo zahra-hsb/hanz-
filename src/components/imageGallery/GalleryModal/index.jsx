@@ -38,34 +38,7 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
 
 
                 <div className="py-8 sm:py-5 lg:p-10">
-                    <Swiper
-                        modules={[Navigation, Pagination]}
-                        spaceBetween={20}
-                        slidesPerView={3}
-                        navigation
-                        // pagination
-                        breakpoints = {{
-                            0: {
-                                slidesPerView: 1.7,
-                            },
-                            576: {
-                                slidesPerView: 2.3,
-                            },
-                            768: {
-                                slidesPerView: 3,
-                            }
-                        }}
-                        className="mySwiper text-white"
-                    >
-                        {galleryProp.map((img, index) => (
-                            <>
-                                <SwiperSlide>
-                                    <Image src={img} key={index} alt="" width={300} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
-                                </SwiperSlide>
-                            </>
-                        ))}
-                    </Swiper>
-                    {/* <GallerySlider galleryProp= */}
+                    <GallerySlider galleryProp={galleryProp} changePic={changePic} />
                 </div>
 
             </section>
