@@ -14,20 +14,28 @@ const Footer = () => {
                     <div className="flex justify-between flex-wrap basis-[100%]">
                         <div className='mb-8 ml-2 sm:ml-0'>
                             <div>
-                                <h2 className="font-extrabold sm:text-xl">محصولات</h2>
+                                <h2 className="font-extrabold sm:text-xl">
+                                    <Link className='hover:text-gray-100' href='/products'>
+                                        محصولات
+                                    </Link>
+                                </h2>
                             </div>
                             <div className='pt-4 text-sm sm:text-lg'>
                                 <ul>
-                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>پنجره</Link></li>
-                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>درب</Link></li>
-                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>اسلاید و کشویی</Link></li>
-                                    <li className='py-2'><Link className='hover:text-gray-300' href='/'>نما</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-200' href='/products/building'>ساختمانی</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-200' href='/products/industrial'>صنعتی</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-200' href='/products/services'>خدمات</Link></li>
+                                    <li className='py-2'><Link className='hover:text-gray-200' href='/products/accessory'>اکسسوری</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className='mb-8'>
                             <div>
-                                <h2 className="font-extrabold sm:text-xl">تماس با ما</h2>
+                                <h2 className="font-extrabold sm:text-xl">
+                                    <Link className='hover:text-gray-100' href='/contactUs'>
+                                        تماس با ما
+                                    </Link>
+                                </h2>
                             </div>
                             <div>
                                 <ul className='pt-4 text-sm sm:text-lg'>
