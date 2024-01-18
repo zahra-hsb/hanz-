@@ -13,12 +13,7 @@ const Carousel = () => {
                 <div className="lg:w-[90%] lg:m-auto">
                     <div className="flex items-center justify-between p-3 my-4">
                         <div>
-
-                            <h3>پروژه های انجام شده</h3>
-                        </div>
-                        <div>
-                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} color={'text-green text-sm'} hover={'hover:bg-green hover:text-white'} />
-
+                            <h3 className="text-lg opacity-[76%]">چرا باید از آلومینیوم استفاده کنیم:</h3>
                         </div>
                     </div>
                     <div id="home-carousel">
