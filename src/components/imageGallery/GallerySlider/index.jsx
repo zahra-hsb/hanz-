@@ -1,5 +1,5 @@
 
-import { Pagination, Navigation } from 'swiper/modules'
+import { Pagination, Navigation, A11y } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Image from 'next/image'
 
@@ -13,10 +13,11 @@ import { useState } from "react";
 const GallerySlider = ({ galleryProp, changePic }) => {
     return (
         <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, A11y]}
             spaceBetween={20}
             slidesPerView={4}
             navigation
+            loop={true}
             // pagination
             breakpoints={{
                 0: {
