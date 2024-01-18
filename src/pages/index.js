@@ -22,7 +22,7 @@ export default function Home() {
     <main>
       {/* {isLoading && <Loading />} */}
 
-      <Main title={'سیستم های نوین درب و پنجره'} bg={'bg-mainSection'} text={'ما با هم ساختمان های پایدار با راه حل های آلومینیومی با کیفیت بالا ایجاد می کنیم.'} height={'lg:h-[650px] h-[500px] '} />
+      <Main title={'تولید پروفیل آلومینیوم'} bg={'bg-mainSection'} text={'ما با هم ساختمان های پایدار با راه حل های آلومینیومی با کیفیت بالا ایجاد می کنیم.'} height={'lg:h-[650px] h-[500px] '} />
       <CategorySection />
       <AboutSection />
       <Company />
