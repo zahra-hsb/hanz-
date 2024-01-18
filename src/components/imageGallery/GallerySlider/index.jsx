@@ -10,7 +10,7 @@ import 'swiper/css/effect-coverflow';
 import { useState } from "react";
 
 
-const GallerySlider = () => {
+const GallerySlider = ({galleryProp, changePic}) => {
     return (
         <Swiper
             modules={[Navigation, Pagination]}

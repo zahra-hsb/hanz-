@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import { useState } from "react";
+import GallerySlider from "../GallerySlider";
 
 
 
@@ -27,16 +28,16 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
             <span className="w-[15px] fixed top-0 right-0 z-50 p-5 sm:p-10 lg:p-10 text-4xl text-white cursor-pointer hover:text-red" onClick={closeModal}>
                 <span className="rotate-45 flex hover:text-red">+</span>
             </span>
-            <section className={`${opacity} rounded-md transition duration-500 ease-in-out fixed sm:top-[50%] top-[10vh] sm:left-[50%] sm:p-[5%] lg:p-16 sm:ml-[-40vw] sm:mt-[-45vh] w-[90%] sm:w-[80vw] sm:h-[90vh] bg-white`}>
+            <section className={`${opacity} rounded-md overflow-hidden transition duration-500 ease-in-out fixed sm:top-[50%] top-[10vh] sm:left-[50%] lg:p-16 sm:ml-[-40vw] sm:mt-[-45vh] w-[90%] sm:w-[80vw] sm:h-[90vh] bg-white`}>
                 <div>
                     <div className="flex items-center justify-center">
-                        {picture && <Image src={picture} alt="" width={400} className="w-full sm:w-[80%] lg:w-[45%] left-0 inner drop-shadow-lg cursor-zoom-in rounded" />}
+                        {picture && <Image src={picture} alt="" width={400} className="w-full lg:w-[45%] left-0 inner drop-shadow-lg cursor-zoom-in sm:rounded" />}
 
                     </div>
                 </div>
 
 
-                <div className="p-10 sm:p-15 lg:p-20">
+                <div className="py-10 sm:py-15 lg:p-20">
                     <Swiper
                         modules={[Navigation, Pagination]}
                         spaceBetween={30}
@@ -64,6 +65,7 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wraperOpacity, galleryProp
                             </>
                         ))}
                     </Swiper>
+                    {/* <GallerySlider galleryProp= */}
                 </div>
 
             </section>
