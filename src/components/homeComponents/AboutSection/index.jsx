@@ -1,7 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
 import picture from '../../../../public/image/Shayco-Ghorfe.png'
-import Picture2 from '../../../../public/image/image4.png'
 import Button from '../../globalComponents/Main/button'
 
 const AboutSection = () => {
