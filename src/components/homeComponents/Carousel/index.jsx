@@ -6,6 +6,13 @@ import image3 from '../../../../public/image/Aluminium-life-cycle-3.jpg'
 import image4 from '../../../../public/image/Aluminium-recyclability-4.jpg'
 
 const Carousel = () => {
+    const slides = [
+        { image: image1, text: 'چرخه زندگی آلومینیوم' },
+        { image: image2, text: 'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید' },
+        { image: image3, text: 'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید' },
+        { image: image4, text: 'نحوه بستن حلقه بازیافت آلومینیوم' }
+    ]
+
     return (
         <>
 
@@ -17,7 +24,12 @@ const Carousel = () => {
                         </div>
                     </div>
                     <div id="home-carousel">
-                        <Slider url={'/imageGallery'} slidesPerView={3} image1={image1} image2={image2} image3={image3} image4={image4} textSlider={true} textSlider1={'چرخه زندگی آلومینیوم'} textSlider2={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider3={'عایق صوتی: صدای ناخواسته داخل خانه را کاهش دهید'} textSlider4={'نحوه بستن حلقه بازیافت آلومینیوم'} sliderCount={''} />
+                        <Slider
+                            url='/imageGallery'
+                            slidesPerView={3}
+                            slides={slides}
+                            textSlider={true}
+                        />
                     </div>
                 </div>
             </section>

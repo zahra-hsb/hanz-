@@ -6,6 +6,13 @@ import hanzProfile3 from '../../../../public/image/hanz-profile3.webp'
 
 
 const WhyHanzHome = () => {
+    const slides = [
+        { image: hanzProfile1, text: 'صرفه جویی در زمان' },
+        { image: hanzProfile3, text: 'زمان بندی مناسب' },
+        { image: hanzProfile2, text: 'صرفه جویی در هزینه حمل و نقل' },
+        { image: hanzProfile3, text: 'تعهد' }
+    ]
+
     return (
         <section className="flex flex-col pt-5 w-full my-20">
             <div className="flex w-full lg:w-[90%] lg:m-auto flex-col lg:flex-row items-center justify-between">
@@ -18,10 +25,13 @@ const WhyHanzHome = () => {
 
                     </div>
 
-
-
                     <div id="WhyHanzHome-carousel" className="w-full">
-                        <Slider url={'/about'} slidesPerView={3} image1={hanzProfile1} image2={hanzProfile3} image3={hanzProfile2} image4={hanzProfile3} textSlider={true} textSlider1={'صرفه جویی در زمان'} textSlider2={'زمان بندی مناسب'} textSlider3={'صرفه جویی در هزینه حمل و نقل'} textSlider4={'تعهد'} sliderCount={''} />
+                        <Slider
+                            url='/about'
+                            slidesPerView={3}
+                            slides={slides}
+                            textSlider={true}
+                        />
                     </div>
                 </div>
 
