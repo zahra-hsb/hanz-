@@ -19,7 +19,7 @@ function createElem(image, textSlider) {
     )
 }
 
-const Slider = ({ url, slidesPerView, image1, image2, image3, image4, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, banner }) => {
+const Slider = ({ url, slidesPerView, image1, image2, image3, image4, image5, textSlider, textSlider1, textSlider2, textSlider3, textSlider4, textSlider5, banner }) => {
     const [textShow, setTextShow] = useState(textSlider)
 
     const slides = [
