@@ -6,6 +6,8 @@ import Main from "@/components/globalComponents/Main";
 import Slider from "@/components/homeComponents/Carousel";
 import Loading from "@/components/loading";
 import { useEffect, useState } from "react";
+import Design from "@/components/homeComponents/Design";
+import DesignTitle from "@/components/homeComponents/DesignTitle";
 
 
 export default function Home() {
@@ -25,7 +27,9 @@ export default function Home() {
       <Main title={'تولید پروفیل آلومینیوم'} bg={'bg-mainSection'} text={'ما با هم ساختمان های پایدار با راه حل های آلومینیومی با کیفیت بالا ایجاد می کنیم.'} height={'lg:h-[650px] h-[500px] '} />
       <CategorySection />
       <AboutSection />
-      <Company />
+      {/* <DesignTitle />
+      <Design /> */}
+      {/* <Company /> */}
       <FaQ />
       <Slider />
 
