@@ -97,3 +97,19 @@ div.swiper-button-next::after {
 #home-carousel div.swiper-scrollbar-horizontal {
   display: none!important;
 }
+
+/* #WhyHanzHome-carousel .swiper-wrapper {
+  display: flex!important;
+  justify-content: space-between!important;
+}
+
+#WhyHanzHome-carousel div.swiper-scrollbar-horizontal {
+  display: none!important;
+}
+ */
+
+/* #WhyHanzHome-carousel .swiper-slide {
+  width: 100px!important;
+  margin-left: 0!important;
+  padding: 0 10px 0 10px;
+} */
