@@ -11,8 +11,19 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { useState } from "react";
 
 const HanzUnits = () => {
+    const [HoveredIndex, setHoveredIndex] = useState(null);
+
+    const handleMouseEnter = (index) => {
+        setHoveredIndex(index)
+    }
+
+    const handleMouseLeave = () => {
+        setHoveredIndex(null)
+    }
+
     const sliderItems = [
         { image: image1, text: 'واحد طراحی سیستم (SYSTEM DESIGN LINE)' },
         { image: image1, text: 'واحد اکستروژن (EXTRUSION LINE)' },
@@ -37,10 +48,12 @@ const HanzUnits = () => {
                     {sliderItems.map((item, index) => (
                         <>
                             <SwiperSlide>
-                                <div className="relative">
-                                    <Image src={item.image} alt="" key={index} className="hover:rotate-180 group" />
-                                    <div className="bg-green absolute top-0 hidden group-hover:block group-hover:z-10">
-                                        <p>
+                                <div className={`relative cursor-pointer ${HoveredIndex === index ? 'hover:rotate-180' : ''}`}
+                                    onMouseEnter={() => handleMouseEnter(index)}
+                                    onMouseLeave={handleMouseLeave}>
+                                    <Image src={item.image} alt="" key={index} />
+                                    <div className={`bg-green absolute top-0 bottom-0 group-hover: group-hover:z-10 ${HoveredIndex === index ? 'block z-10 rotate-180' : 'hidden'}`}>
+                                        <p className="text-white">
                                             شرکت هانز افتخار دارد در این واحد به کمک مهندسین مجرب
                                             و جوان کارآزموده با و با تکیه بر بررسی نیازهای بازار اقدام
                                             به طراحی و ساخت سیستم های مدرن و نوین در بخش صنعت
@@ -48,8 +61,8 @@ const HanzUnits = () => {
                                             پاسخگویی به انواع سلیقه های مشتریان و معماران عزیز می نماید.
                                         </p>
                                     </div>
-                                    <p>{item.text}</p>
                                 </div>
+                                <p>{item.text}</p>
                             </SwiperSlide>
                         </>
                     ))}
