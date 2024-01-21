@@ -7,6 +7,13 @@ import Button from "@/components/globalComponents/Main/button";
 
 
 export default function ProfileProperties() {
+    const slides = [
+        { image: profileGh1, text: 'پیچ به جای جوش' },
+        { image: profileGh2, text: 'اتصال آسان پروفیل های آلومینیومی' },
+        { image: profileGh3, text: 'نوآوری از آیتم ایده های نوآورانه' },
+        { image: profileGh4, text: 'پروفیل های ویژه آیتم مواد ویژه' }
+    ]
+
     return (
         <>
             <div id="profile-properties"></div>
@@ -21,7 +28,12 @@ export default function ProfileProperties() {
                     </div>
                 </div>
                 <div id="home-carousel" className="w-full">
-                    <Slider url={'/products'} slidesPerView={3} image1={profileGh1} image2={profileGh2} image3={profileGh3} image4={profileGh4} textSlider={true} textSlider1={'پیچ به جای جوش'} textSlider2={'اتصال آسان پروفیل های آلومینیومی'} textSlider3={'نوآوری از آیتم ایده های نوآورانه'} textSlider4={'پروفیل های ویژه آیتم مواد ویژه'} sliderCount={''} />
+                    <Slider
+                        url='/products'
+                        slidesPerView={3}
+                        slides={slides}
+                        textSlider={true}
+                    />
                 </div>
             </div>
         </>
