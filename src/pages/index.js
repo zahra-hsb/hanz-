@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Design from "@/components/homeComponents/Design";
 import DesignTitle from "@/components/homeComponents/DesignTitle";
 import WhyHanzHome from "@/components/homeComponents/WhyHanzHome";
+import HanzUnits from "@/components/homeComponents/HanzUnits";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <CategorySection />
       <AboutSection />
       <WhyHanzHome />
+      <HanzUnits />
       {/* <DesignTitle />
       <Design /> */}
       {/* <Company /> */}
