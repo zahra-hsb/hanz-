@@ -98,15 +98,14 @@ div.swiper-button-next::after {
   display: none!important;
 }
 
-/* #WhyHanzHome-carousel .swiper-wrapper {
-  display: flex!important;
-  justify-content: space-between!important;
-}
-
 #WhyHanzHome-carousel div.swiper-scrollbar-horizontal {
   display: none!important;
 }
- */
+
+/* #WhyHanzHome-carousel .swiper-wrapper {
+  display: flex!important;
+  justify-content: space-between!important;
+} */
 
 /* #WhyHanzHome-carousel .swiper-slide {
   width: 100px!important;
