@@ -5,7 +5,6 @@ import './layout.module.css';
 import { Suspense, useState } from "react";
 import MenuHamber from "./Sidebar/menuHamber";
 import { useRouter } from "next/router";
-import Loading from "../loading";
 
 const Layout = ({ children }) => {
   const [sidebarShow, setSidebarShow] = useState(false);
@@ -14,7 +13,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Suspense fallback={<Loading />}>
         {sidebarShow ? (
           <MenuHamber setSidebarShow={setSidebarShow} router={router} />
         ) : (<Sidebar setSidebarShow={setSidebarShow} router={router} />)}
@@ -31,7 +29,6 @@ const Layout = ({ children }) => {
             <Footer />
           </div>
         </div>
-      </Suspense>
     </>
   );
 };

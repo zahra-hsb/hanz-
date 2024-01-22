@@ -4,7 +4,6 @@ import Company from "@/components/homeComponents/Company";
 import FaQ from "@/components/homeComponents/FaQ";
 import Main from "@/components/globalComponents/Main";
 import Slider from "@/components/homeComponents/Carousel";
-import Loading from "@/components/loading";
 import { useEffect, useState } from "react";
 import Design from "@/components/homeComponents/Design";
 import DesignTitle from "@/components/homeComponents/DesignTitle";
