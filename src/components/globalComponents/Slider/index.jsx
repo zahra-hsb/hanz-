@@ -25,8 +25,8 @@ const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => 
     console.log(slides)
 
     const breakpoints = textShow ? {
-        0: { slidesPerView: 1.7 },
-        576: { slidesPerView: 2.3 },
+        0: { slidesPerView: 1.2 },
+        576: { slidesPerView: 2.2 },
         768: { slidesPerView: 3 }
     } : { slidesPerView: 1 };
 
