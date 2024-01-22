@@ -49,7 +49,7 @@ const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => 
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <Link href={url}>
+                        <div>
                             {/* {createElem(slide.image, slide.text || textSlider)} */}
                             {textShow ? (
                                 <Link href={`${url}`}>
@@ -60,7 +60,7 @@ const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => 
                                     {createElem(banner)}
                                 </Link>
                             )}
-                        </Link>
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

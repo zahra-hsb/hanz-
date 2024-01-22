@@ -21,7 +21,7 @@ const HanzUnits = () => {
     const [isMobile, setIsMobile] = useState(false)
     const [isShowModal, setShowModal] = useState(false)
     const [HoveredIndex, setHoveredIndex] = useState(null);
-
+    const [currentImage, setCurrentImage] = useState(null)
 
     // ? mobile view ?
     useEffect(() => {
@@ -36,8 +36,9 @@ const HanzUnits = () => {
     }, []);
 
 
-    const handleClick = () => {
+    const handleClick = (image) => {
         if (isMobile) {
+            setCurrentImage(image)
             setShowModal(true)
         } else {
             setShowModal(false)
@@ -80,8 +81,8 @@ const HanzUnits = () => {
                             slidesPerView={3}
                             spaceBetween={30}
                             breakpoints={{
-                                0: { slidesPerView: 1.7 },
-                                576: { slidesPerView: 2.3 },
+                                0: { slidesPerView: 1.2 },
+                                576: { slidesPerView: 2.2 },
                                 768: { slidesPerView: 3 }
                             }}
                             pagination={{
@@ -93,25 +94,27 @@ const HanzUnits = () => {
                             {sliderItems.map((item, index) => (
                                 <>
                                     <SwiperSlide>
-                                        <div onClick={() => handleClick()} className={`relative transform transition-all duration-500 ease-in-out cursor-pointer ${HoveredIndex === index ? 'transform' : ''}`}
+                                        <div onClick={() => handleClick(item.image)} className={`relative transform transition-all duration-500 ease-in-out cursor-pointer ${HoveredIndex === index ? 'transform' : ''}`}
                                             onMouseEnter={() => handleMouseEnter(index)}
                                             onMouseLeave={handleMouseLeave}>
                                             <Image src={item.image} alt="" key={index} className="w-full" />
                                             <div className={`bg-gray-600 absolute top-0 bottom-0 group-hover: group-hover:z-10 p-5 transition-all ease-in-out duration-500 ${HoveredIndex === index ? 'block opacity-8  0 z-10 transform' : 'opacity-0'}`}>
-                                                <p className="text-white text-justify text-sm sm:text-md font-normal">
+                                                <p className="text-white text-justify text-xs sm:text-md font-normal">
                                                     {item.detail}
                                                 </p>
                                             </div>
                                         </div>
                                         <p className="my-8 text-xs sm:text-sm text-gray-600">{item.text}</p>
                                     </SwiperSlide>
-                                    {isShowModal && <DetailModal closeModal={closeModal} image={item.image} text={item.detail} title={item.text} />}
+                                    {isShowModal ? <DetailModal closeModal={closeModal} image={sliderItems.find((item) => item.image === currentImage).image} text={item.detail} title={item.text} /> : console.log('ajhdjkahsdha')}
+
                                 </>
                             ))}
 
                         </Swiper>
                     </div>
                 </div>
+                {/* {isShowModal && <DetailModal closeModal={closeModal}/>} */}
             </section>
         </>
     )
