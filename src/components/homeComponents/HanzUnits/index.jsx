@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
 import { useEffect, useState } from "react";
+import DetailModal from "../DetailModal";
 
 const HanzUnits = () => {
     const [isMobile, setIsMobile] = useState(false)
@@ -42,7 +43,9 @@ const HanzUnits = () => {
             setShowModal(false)
         }
     }
-
+    const closeModal = () => {
+        setShowModal(false)
+    }
     // ? desktop view ?
     const handleMouseEnter = (index) => {
         setHoveredIndex(index)
@@ -108,7 +111,7 @@ const HanzUnits = () => {
                         </Swiper>
                     </div>
                 </div>
-                {/* {isShowModal && <Modal />} */}
+                {isShowModal && <DetailModal closeModal={closeModal}/>}
             </section>
         </>
     )
