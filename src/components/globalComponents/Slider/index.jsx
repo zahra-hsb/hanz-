@@ -25,8 +25,8 @@ const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => 
     console.log(slides)
 
     const breakpoints = textShow ? {
-        0: { slidesPerView: 1.7 },
-        576: { slidesPerView: 2.3 },
+        0: { slidesPerView: 1.2 },
+        576: { slidesPerView: 2.2 },
         768: { slidesPerView: 3 }
     } : { slidesPerView: 1 };
 
@@ -49,7 +49,7 @@ const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => 
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <Link href={url}>
+                        <div>
                             {/* {createElem(slide.image, slide.text || textSlider)} */}
                             {textShow ? (
                                 <Link href={`${url}`}>
@@ -60,7 +60,7 @@ const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => 
                                     {createElem(banner)}
                                 </Link>
                             )}
-                        </Link>
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
