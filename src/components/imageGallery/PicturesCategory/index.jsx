@@ -32,7 +32,6 @@ const PicturesGallery = () => {
         setShow(true);
       };
     
-    console.log('show: ', isShow)
     function showModal() {
         setShow(true)
     }
