@@ -37,7 +37,7 @@ const HanzUnits = () => {
 
 
     const handleClick = () => {
-        if(isMobile) {
+        if (isMobile) {
             setShowModal(true)
         } else {
             setShowModal(false)
@@ -66,7 +66,7 @@ const HanzUnits = () => {
     ]
     return (
         <>
-            <section className="flex flex-col pt-5 w-full my-20">
+            <section className="relative flex flex-col pt-5 w-full my-20">
                 <div className="flex w-full lg:w-[90%] lg:m-auto flex-col lg:flex-row items-center justify-between">
                     <div className="w-full">
 
@@ -105,13 +105,13 @@ const HanzUnits = () => {
                                         </div>
                                         <p className="my-8 text-xs sm:text-sm text-gray-600">{item.text}</p>
                                     </SwiperSlide>
+                                    {isShowModal && <DetailModal closeModal={closeModal} image={item.image} text={item.detail} title={item.text} />}
                                 </>
                             ))}
 
                         </Swiper>
                     </div>
                 </div>
-                {isShowModal && <DetailModal closeModal={closeModal}/>}
             </section>
         </>
     )
