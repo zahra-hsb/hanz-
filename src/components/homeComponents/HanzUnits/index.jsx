@@ -98,13 +98,13 @@ const HanzUnits = () => {
                                             onMouseEnter={() => handleMouseEnter(index)}
                                             onMouseLeave={handleMouseLeave}>
                                             <Image src={item.image} alt="" key={index} className="w-full" />
-                                            <div className={`bg-gray-600 absolute top-0 bottom-0 group-hover: group-hover:z-10 p-5 transition-all ease-in-out duration-500 ${HoveredIndex === index ? 'block opacity-8  0 z-10 transform' : 'opacity-0'}`}>
+                                            <div className={`backdrop-blur-lg flex items-center justify-start absolute top-0 bottom-0 group-hover: group-hover:z-10 p-5 transition-all ease-in-out duration-500 ${HoveredIndex === index ? 'block opacity-8  0 z-10 transform' : 'opacity-0'}`}>
                                                 <p className="text-white text-justify text-xs sm:text-md font-normal">
                                                     {item.detail}
                                                 </p>
                                             </div>
                                         </div>
-                                        <p className="my-8 text-xs sm:text-sm text-gray-600">{item.text}</p>
+                                        <p className="mt-4 mb-6 text-xs sm:text-sm text-gray-600">{item.text}</p>
                                     </SwiperSlide>
                                     {isShowModal ? <DetailModal closeModal={closeModal} image={sliderItems.find((item) => item.image === currentImage).image} text={item.detail} title={item.text} /> : console.log('ajhdjkahsdha')}
 
