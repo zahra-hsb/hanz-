@@ -14,11 +14,36 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const HanzUnits = () => {
+    const [isMobile, setIsMobile] = useState(false)
+    const [isShowModal, setShowModal] = useState(false)
     const [HoveredIndex, setHoveredIndex] = useState(null);
 
+
+    // ? mobile view ?
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.addEventListener('resize', handleResize)
+        };
+    }, []);
+
+
+    const handleClick = () => {
+        if(isMobile) {
+            setShowModal(true)
+        } else {
+            setShowModal(false)
+        }
+    }
+
+    // ? desktop view ?
     const handleMouseEnter = (index) => {
         setHoveredIndex(index)
     }
@@ -65,7 +90,7 @@ const HanzUnits = () => {
                             {sliderItems.map((item, index) => (
                                 <>
                                     <SwiperSlide>
-                                        <div className={`relative transform transition-all duration-500 ease-in-out cursor-pointer ${HoveredIndex === index ? 'transform' : ''}`}
+                                        <div onClick={() => handleClick()} className={`relative transform transition-all duration-500 ease-in-out cursor-pointer ${HoveredIndex === index ? 'transform' : ''}`}
                                             onMouseEnter={() => handleMouseEnter(index)}
                                             onMouseLeave={handleMouseLeave}>
                                             <Image src={item.image} alt="" key={index} className="w-full" />
@@ -83,6 +108,7 @@ const HanzUnits = () => {
                         </Swiper>
                     </div>
                 </div>
+                {/* {isShowModal && <Modal />} */}
             </section>
         </>
     )
