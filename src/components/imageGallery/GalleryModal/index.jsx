@@ -12,7 +12,7 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wrapperOpacity, galleryPro
   return (
     <>
       <div
-        className={`${wrapperOpacity} fixed top-0 left-0 z-40 w-full h-full backdrop-blur-md transition duration-500 ease-in-out`}
+        className={`${wrapperOpacity} fixed top-0 left-0 z-40 w-full h-full backdrop-blur-md lg:opacity-0 transition duration-500 ease-in-out`}
         onClick={closeModal}
       ></div>
       <span
