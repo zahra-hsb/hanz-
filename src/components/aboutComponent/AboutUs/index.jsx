@@ -45,13 +45,14 @@ const AboutUs = () => {
                             ما طراحی، فناوری و دیجیتال سازی را در راه‌حل‌های نوآورانه ترکیب
                             می‌کنیم که ارزش افزوده و شرکایمان را برای ایجاد ساختمان‌های پایدار الهام می‌بخشد.
                         </p>
+                        <p className='xl:w-1/2 lg:w-1/3 w-full sm:text-lg mt-5 lg:mr-16 text-justify opacity-70 leading-9 sm:leading-10'>
+                            ما با هم محیط زندگی و کار مردم را در حال حاضر و برای نسل های آینده بهبود می بخشیم.
+                        </p>
                     </div>
                     {/* <Slider url={'/imageGallery'} slidesPerView={1} image1={banner} textSlider={false} /> */}
                     {/* <AboutSection2 /> */}
-                    <div className='w-full flex justify-end mt-[-50px]'>
-                        <p className='lg:w-1/2 w-full sm:text-lg mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
-                            ما با هم محیط زندگی و کار مردم را در حال حاضر و برای نسل های آینده بهبود می بخشیم.
-                        </p>
+                    <div className='w-full flex justify-start mt-[-50px]'>
+                       
                     </div>
                 </div>
 
