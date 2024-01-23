@@ -79,7 +79,7 @@ const HanzUnits = () => {
                         </div>
                         <Swiper
                             slidesPerView={3}
-                            spaceBetween={30}
+                            spaceBetween={20}
                             breakpoints={{
                                 0: { slidesPerView: 1.2 },
                                 576: { slidesPerView: 2.2 },
