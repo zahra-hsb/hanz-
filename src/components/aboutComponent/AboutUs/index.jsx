@@ -12,7 +12,7 @@ import WhyHanzHome from '@/components/homeComponents/WhyHanzHome'
 const AboutUs = () => {
     return (
         <>
-            <div className='flex flex-col'>
+            <div className='w-full block'>
 
                 <div className="flex flex-col justify-center items-center sm:items-start gap-10 p-6">
                     <div>
@@ -54,10 +54,9 @@ const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className='block w-[80%]'>
+
                     <WhyHanzHome />
 
-                </div>
             </div>
         </>
     )
