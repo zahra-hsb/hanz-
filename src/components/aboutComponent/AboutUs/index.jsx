@@ -32,9 +32,9 @@ const AboutUs = () => {
 
                     </div>
                 </div>
-                <div className='w-full flex items-center justify-center relative bottom-20 lg:bottom-20 lg:mt-48 mt-28 px-30'>
+                <div className='w-full flex items-center justify-center relative bottom-20 lg:bottom-20 lg:mt-46 mt-28 px-30'>
                     <Image src={pic} alt='about hanz' />
-                    <Image src={pic2} alt='about pic' className='lg:w-[350px] sm:w-2/4 w-2/3 absolute bottom-[-100px] lg:bottom-[-100px] sm:bottom-[-17px] left-[-15px] sm:left-[-50px] lg:left-[-40px] 2xl:left-[19%] shadow-2xl' />
+                    <Image src={pic2} alt='about pic' className='lg:w-[350px] sm:w-2/4 w-2/3 absolute bottom-[-100px] lg:bottom-[-100px] sm:bottom-[-17px] left-[-15px] sm:left-[-50px] lg:left-[-40px] 2xl:left-[10%] shadow-2xl' />
                 </div>
                 <div>
                     <p className='xl:w-1/2 lg:w-1/3 w-full sm:text-lg lg:mt-[-50px] lg:mr-16 mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
@@ -43,7 +43,7 @@ const AboutUs = () => {
                     </p>
                 </div>
                 {/* <Slider url={'/imageGallery'} slidesPerView={1} image1={banner} textSlider={false} /> */}
-                <AboutSection2 />
+                {/* <AboutSection2 /> */}
                 <div className='w-full flex justify-end mt-[-50px]'>
                     <p className='lg:w-1/2 w-full sm:text-lg mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
                         ما با هم محیط زندگی و کار مردم را در حال حاضر و برای نسل های آینده بهبود می بخشیم.
