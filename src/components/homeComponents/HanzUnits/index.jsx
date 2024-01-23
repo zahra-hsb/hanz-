@@ -99,7 +99,7 @@ const HanzUnits = () => {
                                             onMouseLeave={handleMouseLeave}>
                                             <Image src={item.image} alt="" key={index} className="w-full" />
                                             <div className={`backdrop-blur-lg flex items-center justify-start absolute top-0 bottom-0 group-hover: group-hover:z-10 p-5 transition-all ease-in-out duration-500 ${HoveredIndex === index ? 'block opacity-8  0 z-10 transform' : 'opacity-0'}`}>
-                                                <p className="text-white text-justify text-xs sm:text-md font-normal">
+                                                <p className="text-white text-justify text-xs sm:text-md leading-5 font-normal">
                                                     {item.detail}
                                                 </p>
                                             </div>
