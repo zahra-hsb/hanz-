@@ -8,18 +8,18 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
 
-function createElem(image, textSlider) {
+function createElem(image, textSlider, textColor) {
     return (
         <>
             <div className='overflow-hidden'>
                 <Image src={image} className='w-full transition duration-300 ease-in-out hover:scale-105' alt='hanz' />
             </div>
-            <p className='text-xs sm:text-sm text-gray-600 pt-4'>{textSlider}</p>
+            <p className={`${textColor} text-xs sm:text-sm pt-4`}>{textSlider}</p>
         </>
     );
 }
 
-const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => {
+const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner, textColor }) => {
     const [textShow, setTextShow] = useState(textSlider);
 
     console.log(slides)
@@ -53,7 +53,7 @@ const Slider = ({ url, slidesPerView = 1, slides = [], textSlider, banner }) => 
                             {/* {createElem(slide.image, slide.text || textSlider)} */}
                             {textShow ? (
                                 <Link href={`${url}`}>
-                                    {createElem(slide.image, slide.text)}
+                                    {createElem(slide.image, slide.text, textColor)}
                                 </Link>
                             ) : (
                                 <Link href={`${url}`}>
