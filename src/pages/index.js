@@ -24,8 +24,8 @@ export default function Home() {
       {/* <DesignTitle />
       <Design /> */}
       {/* <Company /> */}
-      <FaQ />
-      <Slider />
+      {/* <FaQ /> */}
+      {/* <Slider /> */}
 
     </main>
   );
