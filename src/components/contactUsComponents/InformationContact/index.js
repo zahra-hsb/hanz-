@@ -13,7 +13,7 @@ const InformationContact = () => {
             <div className="my-10 sm:leading-10">
                 <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0 sm:block">
                     <strong className="text-green">آدرس:</strong>
-                    &nbsp;<p className="text-gray-600">تهران، بزرگراه شهید همت، خیابان توانیر شمالی، پلاک 27، واحد، 2​</p>
+                    &nbsp;<p className="text-gray-600">تهران، شهریار، صباشهر، بعد از شهرداری، لاین کندرو، کوچه شقایق، انتهای کوچه شرکت هانز​</p>
                 </div>
                 <div>
                     <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0">
