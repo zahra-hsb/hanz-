@@ -46,6 +46,9 @@ const Form = () => {
     }
     return (
         <>
+            <div className='flex items-center lg:justify-start justify-center pb-5'>
+                <h2 className='font-bold text-lg text-gray-600 '>فرم درخواست</h2>
+            </div>
             {status && renderAlert()}
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
                 <div className="relative z-0 w-full mb-8 group">
