@@ -18,11 +18,15 @@ const InformationContact = () => {
                 <div>
                     <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0">
                         <strong className="text-green">شماره تماس :</strong>
-                        &nbsp;<p className="text-gray-600">021-88871502</p>
+                        &nbsp;<p className="text-gray-600">021-65626443</p>
+                        <strong className="text-green">شماره تماس :</strong>
+                        &nbsp;<p className="text-gray-600">021-65626446</p>
                     </div>
                     <div className="flex justify-start flex-col items-center sm:flex-row">
                         <strong className="text-green">شماره تماس :</strong>
-                        &nbsp;<p className="text-gray-600">021-88871502</p>
+                        &nbsp;<p className="text-gray-600">021-65626448</p>
+                        <strong className="text-green">شماره تماس :</strong>
+                        &nbsp;<p className="text-gray-600">021-65626449</p>
                     </div>
                 </div>
             </div>
