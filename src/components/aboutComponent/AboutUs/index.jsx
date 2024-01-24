@@ -7,6 +7,7 @@ import banner from '../../../../public/image/cuh_banner.png'
 import AboutSection2 from '@/components/homeComponents/AboutSection2'
 import WhyHanz from '@/components/prductsComponents/WhyHanz'
 import WhyHanzHome from '@/components/homeComponents/WhyHanzHome'
+import WhyHanzCarousel from '@/components/WhyHanzCarousel'
 
 
 const AboutUs = () => {
@@ -59,7 +60,7 @@ const AboutUs = () => {
                 </div>
 
                 <WhyHanzHome />
-
+                <WhyHanzCarousel />
             </div>
         </>
     )
