@@ -33,6 +33,7 @@ export default function Cratinwall() {
             slidesPerView={3}
             slides={slides}
             textSlider={true}
+            textColor={'text-gray-600'}
           />
         </div>
       </div>
