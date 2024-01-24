@@ -7,6 +7,7 @@ import banner from '../../../../public/image/cuh_banner.png'
 import AboutSection2 from '@/components/homeComponents/AboutSection2'
 import WhyHanz from '@/components/prductsComponents/WhyHanz'
 import WhyHanzHome from '@/components/homeComponents/WhyHanzHome'
+import WhyHanzCarousel from '@/components/WhyHanzCarousel'
 
 
 const AboutUs = () => {
@@ -48,16 +49,18 @@ const AboutUs = () => {
                         <p className='xl:w-1/2 lg:w-1/3 w-full sm:text-lg mt-5 lg:mr-16 text-justify opacity-70 leading-9 sm:leading-10'>
                             ما با هم محیط زندگی و کار مردم را در حال حاضر و برای نسل های آینده بهبود می بخشیم.
                         </p>
+                        <p className="xl:w-1/2 lg:w-1/3 w-full sm:text-lg mt-5 lg:mr-16 text-justify opacity-70 leading-9 sm:leading-10">سیستم‌های باکیفیت ما سخت‌گیرانه‌ترین خواسته‌ها را از نظر راحتی، انرژی، امنیت، طراحی معماری و بهره‌وری انرژی برآورده می‌کنند.</p>
+
                     </div>
                     {/* <Slider url={'/imageGallery'} slidesPerView={1} image1={banner} textSlider={false} /> */}
                     {/* <AboutSection2 /> */}
                     <div className='w-full flex justify-start mt-[-50px]'>
-                       
+
                     </div>
                 </div>
 
-                    <WhyHanzHome />
-
+                <WhyHanzHome />
+                <WhyHanzCarousel />
             </div>
         </>
     )
