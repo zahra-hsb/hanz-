@@ -14,11 +14,11 @@ const WhyHanzHome = () => {
     ]
 
     return (
-        <section className="flex flex-col pt-5 w-full my-20">
+        <section className="flex flex-col pt-5 w-full my-20 py-20 bg-green">
             <div className="flex w-full lg:w-[90%] lg:m-auto flex-col lg:flex-row items-center justify-between">
 
-                <div className="w-full">
-                    <div className="mb-10 flex justify-between items-center text-xl text-gray-600 w-[90%] sm:w-[100%] m-auto">
+                <div className="w-full pt-10">
+                    <div className="mb-10 flex justify-between items-center text-3xl text-white w-[90%] sm:w-[100%] m-auto">
                         <div>
                             <h2>چرا هانز</h2>
                         </div>
@@ -31,6 +31,7 @@ const WhyHanzHome = () => {
                             slidesPerView={3}
                             slides={slides}
                             textSlider={true}
+                            textColor={'text-white'}
                         />
                     </div>
                 </div>
