@@ -79,7 +79,7 @@ const Form = () => {
                         <label htmlFor="floating_repeat_password" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>متن پیام</p><p className="text-red-500">*</p></label>
                     </div>
 
-                    <button type="submit" className="text-green text-sm lg:text-md px-4 py-1 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ارسال درخواست</button>
+                    <button type="submit" className="text-green text-sm lg:text-md px-4 py-2 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ارسال درخواست</button>
                 </form>
             </div>
         </>
@@ -87,8 +87,8 @@ const Form = () => {
 }
 
 const renderAlert = () => (
-    <div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100 rounded mb-5 text-center">
-        <p>your message submitted successfully</p>
+    <div className="px-4 py-3 leading-normal text-green bg-gray-200 rounded mb-5 text-center">
+        <p>پیام شما با موفقیت ارسال شد.</p>
     </div>
 )
 
