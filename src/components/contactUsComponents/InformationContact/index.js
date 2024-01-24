@@ -10,19 +10,21 @@ const InformationContact = () => {
                     از طریق تلفن، ایمیل یا فرم زیر با ما در ارتباط باشید. شما همچنین می توانید به ما مراجعه کنید
                 </p>
             </div>
-            <div className="my-10 sm:leading-10">
+            <div className="my-5 sm:leading-10">
                 <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0 sm:block">
                     <strong className="text-green">آدرس:</strong>
-                    &nbsp;<p className="text-gray-600">تهران، بزرگراه شهید همت، خیابان توانیر شمالی، پلاک 27، واحد، 2​</p>
+                   <p className="text-gray-600">تهران، شهریار، صباشهر، بعد از شهرداری، لاین کندرو، کوچه شقایق، انتهای کوچه شرکت هانز​</p>
                 </div>
                 <div>
-                    <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0">
-                        <strong className="text-green">شماره تماس :</strong>
-                        &nbsp;<p className="text-gray-600">021-88871502</p>
-                    </div>
-                    <div className="flex justify-start flex-col items-center sm:flex-row">
-                        <strong className="text-green">شماره تماس :</strong>
-                        &nbsp;<p className="text-gray-600">021-88871502</p>
+                    <div className="flex justify-start flex-col gap-3 mb-8 sm:mb-0">
+                        <div className="flex gap-2 justify-start items-center sm:items-start flex-col">
+                            <strong className="text-green">شماره تماس :</strong>
+                           <p className="text-gray-600 text-justify">021-65626443 - 021-65626448 <br /> 021-65626446 - 021-65626448</p>
+                        </div>
+                        <div className="flex gap-1 justify-start flex-col">
+                            <strong className="text-green"> کدپستی :</strong>
+                           <p className="text-gray-600">3357632121</p>
+                        </div>
                     </div>
                 </div>
             </div>
