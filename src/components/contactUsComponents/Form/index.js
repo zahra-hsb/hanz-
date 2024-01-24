@@ -50,7 +50,6 @@ const Form = () => {
                 <div className='flex items-center lg:justify-start justify-center pb-5'>
                     <h2 className='font-bold text-lg text-gray-600 '>فرم درخواست</h2>
                 </div>
-                {status && renderAlert()}
                 <form onSubmit={handleSubmit}>
                     <div className="relative z-0 w-full mb-8 group">
                         <input value={values.fullName} name='fullName' onChange={handleChange} type="text" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
@@ -78,6 +77,7 @@ const Form = () => {
                         <input value={values.message} name='message' onChange={handleChange} type="text" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
                         <label htmlFor="floating_repeat_password" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>متن پیام</p><p className="text-red-500">*</p></label>
                     </div>
+                    {status && renderAlert()}
 
                     <button type="submit" className="text-green text-sm lg:text-md px-4 py-2 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ارسال درخواست</button>
                 </form>
