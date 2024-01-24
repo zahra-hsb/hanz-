@@ -25,6 +25,7 @@ const Company = () => {
                         slidesPerView={1}
                         textSlider={false}
                         banner={banner}
+                        textColor={'text-gray-600'}
                     />
                 </div>
             </section>

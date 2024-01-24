@@ -29,6 +29,7 @@ const Carousel = () => {
                             slidesPerView={3}
                             slides={slides}
                             textSlider={true}
+                            textColor={'text-gray-600'}
                         />
                     </div>
                 </div>
