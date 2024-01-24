@@ -59,9 +59,11 @@ const AboutUs = () => {
                     </div>
                 </div>
 
+            </div>
+            {/* <div className='w-[110%]'>
                 <WhyHanzHome />
                 <WhyHanzCarousel />
-            </div>
+            </div> */}
         </>
     )
 }

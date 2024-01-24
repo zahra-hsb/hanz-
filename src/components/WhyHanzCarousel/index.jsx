@@ -13,10 +13,9 @@ const icons = [
 
 
 const WhyHanzCarousel = () => {
-    console.log(icons[0])
     return (
         <>
-            <div id="">
+            <div className="py-5 px-10" id="">
                 <Slider url={''} slidesPerView={4} slides={icons} textSlider={true} />
             </div>
         </>
