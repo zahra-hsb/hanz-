@@ -34,7 +34,7 @@ const Form = () => {
         if (status === 'SUCCESS') {
             setTimeout(() => {
                 setStatus('');
-            }, 3000);
+            }, 1000);
         }
     }, [status]);
 
