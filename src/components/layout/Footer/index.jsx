@@ -39,9 +39,14 @@ const Footer = () => {
                             </div>
                             <div>
                                 <ul className='pt-4 text-sm sm:text-lg'>
-                                    <li className='py-2'>شماره تماس: 02188871502</li>
-                                    <li className='py-2'>پست الکترونیکی : info@shayco.net</li>
-                                    <li className='py-2'>دفتر مرکزی: تهران، بزرگراه شهید همت، <br />خیابان توانیر شمالی، پلاک 27، واحد، 2​</li>
+                                    <li className='py-2'>
+                                        <div className="">
+                                            <p className="">شماره تماس :</p>
+                                            <p className="text-justify">021-65626443 - 021-65626449 <br /> 021-65626446 - 021-65626448</p>
+                                        </div>
+                                    </li>
+                                    {/* <li className='py-2'>پست الکترونیکی : info@shayco.net</li> */}
+                                    <li className='py-2'>آدرس: تهران، شهریار، صباشهر، بعد از شهرداری، لاین کندرو،<br /> کوچه شقایق، انتهای کوچه شرکت هانز​</li>
                                 </ul>
                             </div>
                         </div>
@@ -81,7 +86,7 @@ const Footer = () => {
                             <p>“ما همراه با شرکای خود، بر ایجاد محصولاتی با انرژی کارآمد و مسئولانه تولید می‌شویم که برای خانه‌ها، ساختمان‌ها و افرادی که به آنها خدمات می‌دهند تفاوت ایجاد می‌کند.”</p>
                         </div>
                         <div className='py-5'>
-                            <p>طراحی و پشتیبانی توسط تیم 
+                            <p>طراحی و پشتیبانی توسط تیم
                                 <Link href={''} className='hover:text-gray-200'> BidaTec</Link></p>
                         </div>
                     </div>
