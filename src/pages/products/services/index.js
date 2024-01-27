@@ -64,20 +64,20 @@ export default function services() {
         <div>
 
           <div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
-            <div className="hidden sm:flex border-b border-gray-200 w-1/3"></div>
+            <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
             <div className="mx-8">
               <h4 className="text-xl opacity-[76%]">
                 واحدهای تولید
-                <span className="text-3xl text-green opacity-1"> هانز</span>
+                <span className="text-3xl text-green opacity-1">هانز</span>
               </h4>
             </div>
-            <div className="hidden sm:flex border-b border-gray-200 w-1/3"></div>
+            <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
           </div>
 
           <div className="py-10 flex justify-around flex-wrap">
             {servicesData.map((service, index) => (
               <div key={index} className="mb-10">
-                <Link href={service.link} className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <Link href={service.link} className="flex flex-col items-center bg-white border border-gray-100 rounded-lg shadow-inner md:flex-row md:max-w-xl hover:bg-gray-100">
                   <Image className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={service.image} alt="" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-5 text-xl font-bold tracking-tight text-gray-700">{service.title}</h5>
