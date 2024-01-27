@@ -14,7 +14,6 @@ export default function OurProducts() {
 
         <MainSection />
 
-        <WhyHanz />
       </div>
     </>
   );
