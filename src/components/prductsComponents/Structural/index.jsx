@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { useEffect, useState } from "react";
 
-const Structural = ({ items = [], subCategory }) => {
+const Structural = ({ items = [], subCategory, text }) => {
     
     // const [HoveredIndex, setHoveredIndex] = useState(null);
 
@@ -30,7 +30,7 @@ const Structural = ({ items = [], subCategory }) => {
                 </div>
                 <div>
                     <p className="lg:w-5/6 text-justify text-gray-600 text-lg">
-                        در شرکت ما تجهیزات ساختمانی باکیفیت توسط نیروی های ما ساخته می شود.
+                        {text}
                     </p>
                 </div>
             </div>

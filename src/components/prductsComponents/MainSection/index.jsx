@@ -16,6 +16,15 @@ export default function MainSection() {
     { image: hanzProfile3, text: 'هیدسینگ' },
     { image: hanzProfile2, text: 'الکترونیک' },
   ]
+  const servicesArray = [
+    { image: hanzProfile1, text: 'واحد طراحی سیستم' },
+    { image: hanzProfile3, text: 'واحد اکستروژن' },
+    { image: hanzProfile2, text: 'واحد رنگ دکورال' },
+    { image: hanzProfile2, text: 'واحد رنگ پودری الکترواستاتیک' },
+    { image: hanzProfile2, text: 'واحد ترمال بریک' },
+    { image: hanzProfile2, text: 'واحد مونتاژ' },
+    { image: hanzProfile2, text: 'واحد رنگ آنادیز' },
+  ]
   return (
     <>
 
@@ -34,8 +43,14 @@ export default function MainSection() {
         </div>
       </div>
 
-      <Structural items={structuralArray} subCategory={'ساختمانی'} />
-      
+      <Structural items={structuralArray} subCategory={'ساختمانی'} 
+      text={'در شرکت ما تجهیزات ساختمانی باکیفیت توسط نیروی های ما ساخته می شود.'}/>
+      <Structural items={industrialArray} subCategory={'صنعتی'} 
+        text={''}
+      />
+      <Structural items={servicesArray}
+      subCategory={'خدمات'}
+      text={''} />
     </>
   );
 }
