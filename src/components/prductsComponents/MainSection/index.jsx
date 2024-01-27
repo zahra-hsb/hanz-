@@ -5,13 +5,17 @@ import hanzProfile2 from '../../../../public/image/hanz-profile2.webp'
 import hanzProfile3 from '../../../../public/image/hanz-profile3.webp'
 
 export default function MainSection() {
-  const slides = [
+  const structuralArray = [
     { image: hanzProfile1, text: 'نما' },
     { image: hanzProfile3, text: 'پنجره' },
     { image: hanzProfile2, text: 'جان پناه' },
     { image: hanzProfile3, text: 'شاتر' }
-]
-
+  ]
+  const industrialArray = [
+    { image: hanzProfile1, text: 'گلخانه' },
+    { image: hanzProfile3, text: 'هیدسینگ' },
+    { image: hanzProfile2, text: 'الکترونیک' },
+  ]
   return (
     <>
 
@@ -30,7 +34,8 @@ export default function MainSection() {
         </div>
       </div>
 
-      <Structural items={slides} subCategory={'ساختمانی'}/>
+      <Structural items={structuralArray} subCategory={'ساختمانی'} />
+      
     </>
   );
 }
