@@ -1,11 +1,10 @@
 import Main from "@/components/globalComponents/Main";
 import Image from "next/image";
-import Link from "next/link";
 import service1Image from "../../../../public/image/service-1.jpg"
 import { useState } from "react";
 
 export default function Builing() {
-  const [currentPage, setCurrentPage] = useState(3)
+  const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 2;
 
 
@@ -116,7 +115,7 @@ export default function Builing() {
               </li>
               {pages.map((page) => (
                 <li key={page}>
-                  <p onClick={() => handlePageChange(page)} className={`cursor-pointer flex items-center justify-center px-3 h-8 leading-tight ${currentPage === page ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700' : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'}`}>{page}</p>
+                  <p onClick={() => handlePageChange(page)} className={`${currentPage === 1 ? 'disabled' : ''} cursor-pointer flex items-center justify-center px-3 h-8 leading-tight ${currentPage === page ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700' : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'}`}>{page}</p>
                 </li>
               ))}
               <li>
