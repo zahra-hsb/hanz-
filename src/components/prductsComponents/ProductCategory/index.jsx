@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { useEffect, useState } from "react";
 
-const Structural = ({ items = [], subCategory, text }) => {
+const ProductCategory = ({ items = [], subCategory, text }) => {
     
     // const [HoveredIndex, setHoveredIndex] = useState(null);
 
@@ -70,4 +70,4 @@ const Structural = ({ items = [], subCategory, text }) => {
     )
 }
 
-export default Structural
+export default ProductCategory
