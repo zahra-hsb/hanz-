@@ -5,7 +5,7 @@ import service1Image from "../../../../public/image/service-1.jpg"
 import { useState } from "react";
 
 export default function Builing() {
-  const [currentPage, setCurrentPage] = useState(1)
+  const [currentPage, setCurrentPage] = useState(3)
   const itemsPerPage = 2;
 
 
@@ -55,43 +55,54 @@ export default function Builing() {
   const totalPages = Math.ceil(servicesData.length / itemsPerPage);
 
   const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
-  console.log(pages)
+
+  console.log('pages =>', pages)
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const visibleServices = servicesData.slice(startIndex, endIndex);
+  console.log('vvvv', visibleServices)
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   return (
     <main className="flex flex-col justify-center items-center pb-[50px]">
       <Main title={'ساختمانی'} bg={'bg-BuilingSection'} height={'h-[390px]'} display={'hidden'} />
       <div className="w-[100%] sm:w-[90%] m-auto">
 
-      <div>
+        <div>
 
-<div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
-  <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
-  <div className="mx-8">
-    <h4 className="text-xl opacity-[76%]">
-      واحدهای تولید
-      <span className="text-3xl text-green opacity-1">هانز</span>
-    </h4>
-  </div>
-  <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
-</div>
-
-<div className="py-10 flex justify-around flex-wrap">
-  {servicesData.map((service, index) => (
-    <div key={index} className="mb-10">
-      <div className="flex flex-col items-center bg-white border border-gray-100 rounded-lg shadow-inner md:flex-row md:max-w-xl hover:bg-gray-100">
-        <Image className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={service.image} alt="" />
-        <div className="flex flex-col justify-between p-4 leading-normal">
-          <h5 className="mb-5 text-xl font-bold tracking-tight text-gray-700 opacity-[80%]">{service.title}</h5>
-          <div>
-            <p className="mb-3 text-sm text-gray-600 opacity-[76%]">{service.description}</p>
+          <div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
+            <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
+            <div className="mx-8">
+              <h4 className="text-xl opacity-[76%]">
+                واحدهای تولید
+                <span className="text-3xl text-green opacity-1">هانز</span>
+              </h4>
+            </div>
+            <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
           </div>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
 
-</div>
+          <div className="py-10 flex justify-around flex-wrap">
+            {visibleServices.map((service, index) => (
+              <div key={index} className="mb-10">
+                <div className="flex flex-col items-center bg-white border border-gray-100 rounded-lg shadow-inner md:flex-row md:max-w-xl hover:bg-gray-100">
+                  <Image className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={service.image} alt="" />
+                  <div className="flex flex-col justify-between p-4 leading-normal">
+                    <h5 className="mb-5 text-xl font-bold tracking-tight text-gray-700 opacity-[80%]">{service.title}</h5>
+                    <div>
+                      <p className="mb-3 text-sm text-gray-600 opacity-[76%]">{service.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
 
 
         <div className="flex justify-center mt-10">
@@ -105,21 +116,11 @@ export default function Builing() {
                   </svg>
                 </Link>
               </li>
-              <li>
-                <Link href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">1</Link>
-              </li>
-              <li>
-                <Link href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</Link>
-              </li>
-              <li>
-                <Link href="#" aria-current="page" class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700">3</Link>
-              </li>
-              <li>
-                <Link href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">4</Link>
-              </li>
-              <li>
-                <Link href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">5</Link>
-              </li>
+              {pages.map((page) => (
+                <li key={page}>
+                  <p onClick={() => handlePageChange(page)} className={`flex items-center justify-center px-3 h-8 leading-tight ${currentPage === page ? 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700' : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700'}`}>{page}</p>
+                </li>
+              ))}
               <li>
                 <Link href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">
                   <span class="sr-only">Next</span>
@@ -133,6 +134,7 @@ export default function Builing() {
         </div>
 
       </div>
+      {/* <Link href="#" aria-current="page" class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700">3</Link> */}
 
     </main>
   );
