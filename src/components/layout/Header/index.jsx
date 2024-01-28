@@ -18,12 +18,12 @@ const Header = ({ setSidebarShow, router }) => {
         { tab: 'shelter', label: 'جان پناه' },
     ]
 
-    const menuItemForServices = [
-        { tab: 'color', label: 'رنگ' },
-        { tab: 'ThermalBreak', label: 'ترمال بریک' },
-        { tab: 'Pressure', label: 'پرس' },
-        { tab: 'accessory', label: 'اکسسوری' },
-    ]
+    // const menuItemForServices = [
+    //     { tab: 'color', label: 'رنگ' },
+    //     { tab: 'ThermalBreak', label: 'ترمال بریک' },
+    //     { tab: 'Pressure', label: 'پرس' },
+    //     { tab: 'accessory', label: 'اکسسوری' },
+    // ]
 
     const menuItemForaccessory = [
         { tab: 'profile', label: 'پروفیل' },
@@ -142,7 +142,7 @@ const Header = ({ setSidebarShow, router }) => {
                         )}
                     </div>
 
-                    <div className={`${router.pathname === '/products/services' && 'border-t sm:border-none'}`}>
+                    {/* <div className={`${router.pathname === '/products/services' && 'border-t sm:border-none'}`}>
                         {router.pathname === '/products/services' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
                                 {menuItemForServices.map(item => (
@@ -160,7 +160,7 @@ const Header = ({ setSidebarShow, router }) => {
                                 ))}
                             </ul>
                         )}
-                    </div>
+                    </div> */}
 
                     <div className={`${router.pathname === '/products/accessory' && 'border-t sm:border-none'}`}>
                         {router.pathname === '/products/accessory' && (

@@ -19,7 +19,7 @@ const InformationContact = () => {
                     <div className="flex justify-start flex-col gap-3 mb-8 sm:mb-0">
                         <div className="flex gap-2 justify-start items-center sm:items-start flex-col">
                             <strong className="text-green">شماره تماس :</strong>
-                           <p className="text-gray-600 text-justify">021-65626443 - 021-65626448 <br /> 021-65626446 - 021-65626448</p>
+                           <p className="text-gray-600 text-justify">021-65626443 - 021-65626449 <br /> 021-65626446 - 021-65626448</p>
                         </div>
                         <div className="flex gap-1 justify-start flex-col">
                             <strong className="text-green"> کدپستی :</strong>
