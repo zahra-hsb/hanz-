@@ -56,13 +56,11 @@ export default function Builing() {
 
   const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
 
-  console.log('pages =>', pages)
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
   const visibleServices = servicesData.slice(startIndex, endIndex);
-  console.log('vvvv', visibleServices)
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -109,7 +107,7 @@ export default function Builing() {
           <nav aria-label="Page navigation example">
             <ul class="flex items-center -space-x-px h-8 text-sm">
               <li>
-                <p class="cursor-pointer flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700">
+                <p onClick={() => currentPage > 1 && setCurrentPage(currentPage - 1)} class="cursor-pointer flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700">
                   <span class="sr-only">Previous</span>
                   <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
@@ -122,7 +120,7 @@ export default function Builing() {
                 </li>
               ))}
               <li>
-                <p class="cursor-pointer flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">
+                <p onClick={() => currentPage < totalPages && setCurrentPage(currentPage + 1)} class="cursor-pointer flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">
                   <span class="sr-only">Next</span>
                   <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
@@ -133,7 +131,7 @@ export default function Builing() {
           </nav>
         </div>
 
-      </div>
+      </div> 
 
     </main>
   );
