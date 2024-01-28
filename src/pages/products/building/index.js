@@ -74,11 +74,11 @@ export default function Builing() {
 
           <div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
             <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
-            <div className="mx-8">
+            <div className="mx-8 flex items-center">
               <h4 className="text-xl opacity-[76%]">
-                واحدهای تولید
-                <span className="text-3xl text-green opacity-1">هانز</span>
+                کاتالوگ های شکرت
               </h4>
+              <span className="text-3xl text-green opacity-1 mr-1">هانز</span>
             </div>
             <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
           </div>
