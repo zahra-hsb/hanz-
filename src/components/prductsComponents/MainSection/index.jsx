@@ -49,14 +49,17 @@ export default function MainSection() {
       </div>
 
       <ProductCategory items={structuralArray} subCategory={'ساختمانی'} 
-      text={'در شرکت ما تجهیزات ساختمانی باکیفیت توسط نیروی های ما ساخته می شود.'}/>
+      text={'در شرکت ما تجهیزات ساختمانی باکیفیت ساخته می شود.'}/>
       <ProductCategory items={industrialArray} subCategory={'صنعتی'} 
-        text={''}
+        text={'تجهیزات صنعتی هانز را در زیر می توانید ببینید'}
       />
       <ProductCategory items={servicesArray}
       subCategory={'خدمات'}
-      text={''} />
-      
+      text={'شرکت هانز به کمک 7 واحد افتخار خدمت رسانی به شما عزیزان را دارد'} />
+      <ProductCategory items={Accessories} 
+      subCategory={'اکسسوری'}
+      text={'اکسسوری های هانز به سه دسته زیر تقسیم بندی می شوند.'} 
+      />
     </>
   );
 }
