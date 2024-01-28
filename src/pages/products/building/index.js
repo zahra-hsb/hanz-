@@ -1,5 +1,5 @@
 import Main from "@/components/globalComponents/Main";
-
+import CatalogueComponent from "../../../components/catalogueComponent/index"
 
 export default function Builing() {
 
@@ -8,7 +8,7 @@ export default function Builing() {
       <Main title={'ساختمانی'} bg={'bg-BuilingSection'} height={'h-[390px]'} display={'hidden'} />
       <div className="w-[100%] sm:w-[90%] m-auto">
 
-        
+        <CatalogueComponent />
 
       </div> 
 
