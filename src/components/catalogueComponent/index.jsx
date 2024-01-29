@@ -85,7 +85,7 @@ const CatalogueComponent = () => {
                             <div className="flex flex-col items-center bg-white border border-gray-100 rounded-lg shadow-inner md:flex-row md:max-w-xl hover:bg-gray-100">
                                 <Image className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={service.image} alt="" />
                                 <div className="flex flex-col justify-between p-4 leading-normal">
-                                    <h5 className="mb-5 text-xl font-bold tracking-tight text-gray-700 opacity-[80%]">{service.title}</h5>
+                                    <h5 className="mb-5 text-lg font-bold tracking-tight text-gray-700 opacity-[80%] leading-[1.9rem]">{service.title}</h5>
                                     <div>
                                         <p className="mb-3 text-sm text-gray-600 opacity-[76%]">{service.description}</p>
                                     </div>
