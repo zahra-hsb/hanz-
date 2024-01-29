@@ -1,5 +1,5 @@
 import Image from "next/image";
-import service1Image from "../../../public/image/service-1.jpg"
+import service1Image from "../../../../../public/image/service-1.jpg"
 import { useState } from "react";
 
 const CatalogueComponent = () => {
