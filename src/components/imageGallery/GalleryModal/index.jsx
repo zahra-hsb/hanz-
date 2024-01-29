@@ -4,11 +4,12 @@ import GallerySlider from "../GallerySlider";
 
 const GalleryModal = ({ mainPic, closeModal, opacity, wrapperOpacity, galleryProp }) => {
   const [picture, setPicture] = useState(mainPic);
+  
 
   const changePic = (img) => {
     setPicture(img);
   };
-
+  
   return (
     <>
       <div
