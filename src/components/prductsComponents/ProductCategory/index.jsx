@@ -36,7 +36,7 @@ const ProductCategory = ({ items = [], subCategory, text }) => {
                     </div>
                 </div>
                 <div>
-                    <p className="lg:w-5/6 text-justify text-gray-600 text-lg">
+                    <p className="lg:w-5/6 text-justify text-gray-600 text-md">
                         {text}
                     </p>
                 </div>
