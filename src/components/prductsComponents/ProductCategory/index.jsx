@@ -6,9 +6,16 @@ import 'swiper/css/pagination';
 
 import { Pagination } from 'swiper/modules';
 import { useEffect, useState } from "react";
+import Slider from "@/components/globalComponents/Slider";
 
 const ProductCategory = ({ items = [], subCategory, text }) => {
-    
+    const slides = [
+        { image: items[0].image, text: items[0].text },
+        { image: items[1].image, text: items[1].text },
+        { image: items[2].image, text: items[2].text },
+        { image: items[1].image, text: items[1].text }
+    ]
+
     // const [HoveredIndex, setHoveredIndex] = useState(null);
 
     // const handleMouseEnter = (index) => {
@@ -34,7 +41,15 @@ const ProductCategory = ({ items = [], subCategory, text }) => {
                     </p>
                 </div>
             </div>
-            <Swiper
+
+            <Slider
+                url='#'
+                slidesPerView={3}
+                slides={slides}
+                textSlider={true}
+                textColor={'text-gray-600'}
+            />
+            {/* <Swiper
                 slidesPerView={3}
                 spaceBetween={20}
                 breakpoints={{
@@ -47,25 +62,25 @@ const ProductCategory = ({ items = [], subCategory, text }) => {
                 }}
                 modules={[Pagination]}
                 className="mySwiper"
-            >
-                {items.map((item, index) => (
+            > */}
+                {/* {items.map((item, index) => (
                     <>
                         <SwiperSlide>
                             <div className={`relative overflow-hidden transform transition-all duration-500 ease-in-out cursor-pointer`}>
-                                <Image src={item.image} alt="" key={index} className="w-full hover:scale-105 transition-all duration-300" />
+                                <Image src={item.image} alt="" key={index} className="w-full hover:scale-105 transition-all duration-300" /> */}
                                 {/* <div className={`backdrop-blur-lg flex items-center justify-start absolute top-0 bottom-0 group-hover: group-hover:z-10 p-5 transition-all ease-in-out duration-500 ${HoveredIndex === index ? 'block opacity-8  0 z-10 transform' : 'opacity-0'}`}> */}
                                 {/* <p className="text-white text-justify text-xs sm:text-md leading-5 font-normal">
                     {item.text}
                   </p> */}
                                 {/* </div> */}
-                            </div>
+                            {/* </div>
                             <p className="mt-4 mb-10 text-xs sm:text-lg text-center text-gray-600">{item.text}</p>
                         </SwiperSlide>
 
                     </>
-                ))}
+                ))} */}
 
-            </Swiper>
+            {/* </Swiper> */}
         </>
     )
 }
