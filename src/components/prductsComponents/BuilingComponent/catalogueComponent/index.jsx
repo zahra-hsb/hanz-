@@ -1,5 +1,7 @@
 import Image from "next/image";
 import profile1Image from "../../../../../public/image/profile-1.jpg"
+import ShaycoGhorfe from "../../../../../public/image/catalogue3d/Shayco-Ghorfe.png"
+import SL115TMono from "../../../../../public/image/catalogue3d/SL-115-T-Mono.png"
 import profile2Image from "../../../../../public/image/profile-2.jpg"
 import profile3Image from "../../../../../public/image/profile-3.jpg"
 import { useState } from "react";
@@ -17,7 +19,7 @@ const CatalogueComponent = () => {
         },
         {
             title: <div>سیستم <span>SL 140 2CM</span></div>,
-            image: profile2Image,
+            image: ShaycoGhorfe,
         },
         {
             title: <div>سیستم <span>SL 140 4CM</span></div>,
@@ -41,7 +43,7 @@ const CatalogueComponent = () => {
         },
         {
             title: <div>سیستم <span>SL 115 T Mono</span></div>,
-            image: profile2Image,
+            image: SL115TMono,
         },
         {
             title: <div>سیستم <span>SL 115 T Double Rial</span></div>,
