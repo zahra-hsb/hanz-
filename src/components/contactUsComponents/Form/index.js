@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 
 const Form = () => {
     const [email, setEmail] = useState('')
-    const [isValid, setIsValid] = useState(false)
-
+    const [tel, setTel] = useState('')
+    const [isEmailValid, setIsValid] = useState(false)
+    const [isMobileValid, setMobileValid] = useState(false)
 
     const [values, setValues] = useState({
         fullName: '',
@@ -41,6 +42,12 @@ const Form = () => {
         setIsValid(emailRegex.test(e.target.value))
     }
 
+    const handleMobileChange = (e) => {
+        setTel(e.target.value)
+        const mobileRegex = /^(\\+98|0)?9\\d{9}$/;
+        setMobileValid(mobileRegex.test(e.target.value))
+    }
+
     useEffect(() => {
         if (status === 'SUCCESS') {
             setTimeout(() => {
@@ -54,7 +61,6 @@ const Form = () => {
             ...values,
             [e.target.name]: e.target.value
         })
-        handleEmailChange(e)
     }
     return (
         <>
@@ -69,14 +75,14 @@ const Form = () => {
                     </div>
                     <div className="relative z-0 w-full mb-8 group">
 
-                        <input value={values.email} name='email' onChange={handleChange} type="email" id="floating_email" className={`${isValid ? `border-green` : `border-red-500`} block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 peer`} placeholder=" " required />
+                        <input value={values.email} name='email' onKeyUp={(e) => handleEmailChange(e)} onChange={handleChange} type="email" id="floating_email" className={`${isEmailValid ? `border-green` : `border-red-500`} block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 peer`} placeholder=" " required />
 
                         <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>آدرس ایمیل</p><p className="text-red-500">*</p></label>
                         {/* {isValid ? <p className='text-green'>email is valid</p> : <p className='text-red-800'>email is invalid</p>} */}
                     </div>
                     <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="relative z-0 w-full mb-8 group">
-                            <input value={values.tel} name='tel' onChange={handleChange} type="tel" id="floating_phone" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
+                            <input value={values.tel} name='tel' onKeyUp={(e) => handleMobileChange(e)} onChange={handleChange} type="tel" id="floating_phone" className={`${setMobileValid ? `border-green` : `border-red-500`} block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 peer`} placeholder=" " required />
                             <label htmlFor="floating_phone" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>شماره تماس</p><p className="text-red-500">*</p></label>
                         </div>
                         <div className="relative z-0 w-full mb-8 group">
