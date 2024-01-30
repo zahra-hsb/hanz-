@@ -113,7 +113,7 @@ const Header = ({ setSidebarShow, router }) => {
                                     // onClick={() => handleScroll()}
                                     >
                                         <Link
-                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
+                                            href={item.tab === 'view' ? '#view' : (item.tab === 'sliding' ? '#sliding' : (item.tab === 'Hinge' ? '#Hinge' : (item.tab === 'shelter' ? '#shelter' : '#shutter')))}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
