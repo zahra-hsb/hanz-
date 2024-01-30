@@ -2,6 +2,11 @@ import emailjs from 'emailjs-com';
 import { useEffect, useState } from 'react';
 
 const Form = () => {
+    const [email, setEmail] = useState('')
+    const [tel, setTel] = useState('')
+    const [isEmailValid, setIsValid] = useState(false)
+    const [isMobileValid, setMobileValid] = useState(false)
+    
     const [values, setValues] = useState({
         fullName: '',
         email: '',
@@ -13,21 +18,41 @@ const Form = () => {
     const [status, setStatus] = useState('');
     function handleSubmit(event) {
         event.preventDefault()
-        emailjs.send('service_u48ym1p', 'template_oq6pgux', values, 'Vtwq3EtwQskHbElPW')
-            .then(response => {
-                console.log('SUCCESS!')
-                setValues({
-                    fullName: '',
-                    email: '',
-                    tel: '',
-                    company: '',
-                    subject: '',
-                    message: ''
+        if (!isEmailValid || !isMobileValid) {
+            setStatus({message: 'لطفا ایمیل یا شماره تماس را به درستی وارد کنید.', messageColor: 'text-red-500'});
+            console.log('not valid')
+            
+        } else {
+            emailjs.send('service_u48ym1p', 'template_oq6pgux', values, 'Vtwq3EtwQskHbElPW')
+                .then(response => {
+                    console.log('SUCCESS!')
+                    setValues({
+                        fullName: '',
+                        email: '',
+                        tel: '',
+                        company: '',
+                        subject: '',
+                        message: ''
+                    });
+                    setStatus({message: 'پیام شما با موفقیت ارسال شد', messageColor: 'text-green'})
+                }, error => {
+                    setStatus({message: 'پیام ارسال نشد', messageColor: 'text-red-500'})
                 });
-                setStatus('SUCCESS')
-            }, error => {
-                console.log('FAILED...', error)
-            });
+
+        }
+    }
+
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value)
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        setIsValid(emailRegex.test(e.target.value))
+    }
+
+    const handleMobileChange = (e) => {
+        setTel(e.target.value)
+        const mobileRegex = /^(0|0098|\+98)9(0[1-5]|[1 3]\d|2[0-2]|98)\d{7}$/;
+        setMobileValid(mobileRegex.test(e.target.value))
     }
 
     useEffect(() => {
@@ -56,12 +81,15 @@ const Form = () => {
                         <label htmlFor="floating_first_name" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>نام و نام خانوادگی</p><p className="text-red-500">*</p></label>
                     </div>
                     <div className="relative z-0 w-full mb-8 group">
-                        <input value={values.email} name='email' onChange={handleChange} type="email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
+
+                        <input value={values.email} maxLength={40} name='email' onKeyUp={(e) => handleEmailChange(e)} onChange={handleChange} type="email" id="floating_email" className={`${isEmailValid ? `border-green` : `focus:border-red-500`} block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 peer`} placeholder=" " required />
+
                         <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>آدرس ایمیل</p><p className="text-red-500">*</p></label>
+                        {/* {isValid ? <p className='text-green'>email is valid</p> : <p className='text-red-800'>email is invalid</p>} */}
                     </div>
                     <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="relative z-0 w-full mb-8 group">
-                            <input value={values.tel} name='tel' onChange={handleChange} type="tel" id="floating_phone" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
+                            <input value={values.tel} maxLength={11} name='tel' onKeyUp={(e) => handleMobileChange(e)} onChange={handleChange} type="tel" id="floating_phone" className={`${isMobileValid ? `border-green` : `focus:border-red-500`} block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 peer`} placeholder=" " required />
                             <label htmlFor="floating_phone" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>شماره تماس</p><p className="text-red-500">*</p></label>
                         </div>
                         <div className="relative z-0 w-full mb-8 group">
@@ -77,7 +105,7 @@ const Form = () => {
                         <input value={values.message} name='message' onChange={handleChange} type="text" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
                         <label htmlFor="floating_repeat_password" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>متن پیام</p><p className="text-red-500">*</p></label>
                     </div>
-                    {status && renderAlert()}
+                    {status && renderAlert(status)}
 
                     <button type="submit" className="text-green text-sm lg:text-md px-4 py-2 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ارسال درخواست</button>
                 </form>
@@ -86,9 +114,9 @@ const Form = () => {
     );
 }
 
-const renderAlert = () => (
-    <div className="px-4 py-3 leading-normal text-green bg-gray-200 rounded mb-5 text-center">
-        <p>پیام شما با موفقیت ارسال شد.</p>
+const renderAlert = ({ message, messageColor }) => (
+    <div className={`px-4 py-3 leading-normal ${messageColor} bg-gray-200 rounded mb-5 text-center`}>
+        <p>{message}</p>
     </div>
 )
 

@@ -39,6 +39,11 @@ const PicturesGallery = () => {
         setShow(false)
     }
 
+    let pictureCount = []
+    pictureCount = galleryArray.map(g => (
+         g.count = g.gallery.length
+    ))
+
     return (
         <>
 
@@ -55,7 +60,7 @@ const PicturesGallery = () => {
                             </div>
                             {/* {isShow ? <GalleryModal closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-80 z-40'} galleryProp={img.gallery} /> : <GalleryModal closeModal={closeModal} opacity={'opacity-0 z-[-10]'} wraperOpacity={'opacity-0 z-[-10]'} galleryProp={img.gallery} />} */}
                             {isShow && (
-                                <GalleryModal mainPic={galleryArray.find(item => item.src === currentMainPic).src} closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-80 z-40'} galleryProp={galleryArray.find((item) => item.category === currentCategory).gallery}/>
+                                <GalleryModal pictureCount={galleryArray.find(item => item.src === currentMainPic).count} mainPic={galleryArray.find(item => item.src === currentMainPic).src} closeModal={closeModal} opacity={'opacity-100 z-50'} wraperOpacity={'opacity-80 z-40'} galleryProp={galleryArray.find((item) => item.category === currentCategory).gallery}/>
                             )}
                         </>
                     ))}
