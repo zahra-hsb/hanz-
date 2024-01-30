@@ -94,9 +94,9 @@ const CatalogueComponent = () => {
 
     return (
         <>
-            <div>
+            <div id="sliding">
                 <div>
-                    <div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
+                    <div className="pt-20 mb-10 text-gray-600 flex justify-center items-center">
                         <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
                         <div className="mx-8 flex items-center">
                             <h4 className="text-xl opacity-[76%]">
@@ -132,9 +132,9 @@ const CatalogueComponent = () => {
                 </div>
             </div>
 
-            <div>
+            <div id="Hinge">
                 <div>
-                    <div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
+                    <div className="pt-20 mb-10 text-gray-600 flex justify-center items-center">
                         <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
                         <div className="mx-8 flex items-center">
                             <h4 className="text-xl opacity-[76%]">
