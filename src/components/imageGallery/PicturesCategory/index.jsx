@@ -10,15 +10,14 @@ import image7 from "../../../../public/image/projects/8-edited-768x511.jpg"
 import image8 from "../../../../public/image/projects/9-edited-768x511.jpg"
 
 import mainPic from "../../../../public/image/projects/9-edited-768x511.jpg"
-import primePic1 from "../../../../public/image/Sales-Manager-WEBSITE.jpg"
-import primePic2 from "../../../../public/image/sales-manager-WEBSITE-1.jpg"
+
 
 import { useState } from "react"
 
 
 const PicturesGallery = () => {
     const galleryArray = [
-        { id: 1, src: image1, category: 'تصاویر نمایشگاه', gallery: [mainPic, primePic1, primePic2, mainPic, primePic2] },
+        { id: 1, src: image1, category: 'تصاویر نمایشگاه', gallery: [mainPic, image2, image3, image5, image2, image2 ] },
         { id: 2, src: image2, category: 'تصاویر پروژه ها', gallery: [image1, image2, image3, image4, image5, image6, image7, image8] },
     ]
 

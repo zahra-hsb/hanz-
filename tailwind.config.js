@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         green: 'var(--primary-green)',
+        hoverColor: 'var(--hover-color)',
       },
       backgroundImage: {
         mainSection: 'url(../../public/image/cuh_banner.png)',
@@ -20,7 +21,7 @@ module.exports = {
         BuilingSection: 'url(../../public/image/building-banner.png)',
         industrialSection: 'url(../../public/image/industrial-banner.jpg)',
         servicesSection: 'url(../../public/image/services-banner.webp)',
-        profileSection: 'url(../../public/image/profile_aluminium.jpg)'
+        profileSection: 'url(../../public/image/profile_aluminium.jpg)',
       },
       boxShadow: {
         'shadow0' : '0 30px 0 0 #00AE8E'
