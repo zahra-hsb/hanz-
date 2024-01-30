@@ -38,7 +38,7 @@ export default function Custom404() {
                 </div>
                 <div class="w-full lg:w-1/2">
                     <p class="text-sm font-medium text-green dark:text-blue-400">خطای 404</p>
-                    <h1 class="mt-3 text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">صفحه مورد نظر پیدا نشد. </h1>
+                    <h1 class="mt-3 text-2xl text-gray-500 dark:text-white md:text-3xl">صفحه مورد نظر پیدا نشد. </h1>
                     <p class="mt-4 text-gray-500 dark:text-gray-400">صفحه ای که شما دنبال آن هستید، پیدا نشد. لینک های زیر کمک کننده هستند:</p>
 
                     <div class="flex items-center mt-6 gap-x-3">
