@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --primary-green: #00AE8E;
+    --hover-color: #00d7b0;
     --gray: #eee;
   }
 }
