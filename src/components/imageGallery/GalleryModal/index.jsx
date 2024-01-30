@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 import GallerySlider from "../GallerySlider";
 
-const GalleryModal = ({ mainPic, closeModal, opacity, wrapperOpacity, galleryProp }) => {
+const GalleryModal = ({ mainPic, closeModal, opacity, wrapperOpacity, galleryProp, pictureCount = [] }) => {
   const [picture, setPicture] = useState(mainPic);
-  
+
 
   const changePic = (img) => {
     setPicture(img);
   };
-  
+
   return (
     <>
       <div
@@ -35,8 +35,16 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wrapperOpacity, galleryPro
             />
           )}
         </div>
-        <div className="py-8 sm:py-5 lg:p-10">
+        <div className="pb-8 sm:pb-2 lg:p-1">
+          <p className="text-start p-5 text-gray-900">
+            <span className="text-gray-50 text-shadow-lg">تعداد: </span>
+            {pictureCount}
+            مورد
+          </p>
           <GallerySlider galleryProp={galleryProp} changePic={changePic} />
+        </div>
+        <div>
+
         </div>
       </section>
     </>

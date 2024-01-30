@@ -14,8 +14,8 @@ const GallerySlider = ({ galleryProp, changePic }) => {
     return (
         <Swiper
             modules={[Navigation, Pagination, A11y]}
-            spaceBetween={20}
-            slidesPerView={4}
+            spaceBetween={10}
+            // slidesPerView={4}
             navigation
             loop={true}
             // pagination
@@ -27,7 +27,7 @@ const GallerySlider = ({ galleryProp, changePic }) => {
                     slidesPerView: 2.3,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                 }
             }}
             className="mySwiper text-white"
@@ -35,7 +35,7 @@ const GallerySlider = ({ galleryProp, changePic }) => {
             {galleryProp.map((img, index) => (
                 <>
                     <SwiperSlide>
-                        <Image src={img} key={index} alt="" width={300} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
+                        <Image src={img} key={index} alt="" width={250} className="inner drop-shadow-sm cursor-pointer hover:brightness-50 hover:scale-105 transition-all duration-300" onClick={() => changePic(img)} />
                     </SwiperSlide>
                 </>
             ))}

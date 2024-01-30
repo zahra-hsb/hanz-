@@ -25,6 +25,9 @@ module.exports = {
       boxShadow: {
         'shadow0' : '0 30px 0 0 #00AE8E'
       },
+      textShadow: {
+        'shadow-lg' : '1px 1px 2px #00000069'
+      }
     },
   },
 
