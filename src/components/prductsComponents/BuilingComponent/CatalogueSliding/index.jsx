@@ -15,38 +15,47 @@ const CatalogueSliding = () => {
         {
             title: <div>سیستم <span>SL 140 SLIM</span></div>,
             image: profile1Image,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 140 2CM</span></div>,
             image: ShaycoGhorfe,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 140 4CM</span></div>,
             image: profile3Image,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 95 T</span></div>,
             image: profile1Image,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 95 T Mono</span></div>,
             image: profile2Image,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 95 N Mono</span></div>,
             image: profile3Image,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 115 T Mono</span></div>,
             image: SL115TMono,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 115 T Double Rial</span></div>,
             image: profile3Image,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 60 N</span></div>,
             image: profile1Image,
+            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
     ];
 
@@ -69,16 +78,16 @@ const CatalogueSliding = () => {
                 </div>
 
                 <div className="py-10 flex justify-around flex-wrap w-[90%] sm:w-full m-auto">
-                    {receivedDataSliding && receivedDataSliding.map((service, index) => (
+                    {receivedDataSliding && receivedDataSliding.map((data, index) => (
                         <div key={index} className="max-w-sm bg-white border border-gray-100 rounded-lg shadow-inner mb-10">
-                            <a href="#">
-                                <Image className="rounded-t-lg" src={service.image} alt="" />
-                            </a>
+                            <div>
+                                <Image className="rounded-t-lg" src={data.image} alt="" />
+                            </div>
                             <div className="p-5 flex justify-between items-center">
-                                <h5 className="text-xl tracking-tight text-gray-800 opacity-[76%] basis-[58%]">{service.title}</h5>
-                                <Link href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green rounded-lg hover:opacity-[80%] outline-none">
-                                    دانلود کاتالوگ
-                                    <svg className="rotate-90 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <h5 className="text-xl tracking-tight text-gray-800 opacity-[76%] basis-[58%]">{data.title}</h5>
+                                <Link href={data.link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green rounded-lg hover:opacity-[80%] outline-none">
+                                    نمایش کاتالوگ
+                                    <svg className="rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                     </svg>
                                 </Link>
