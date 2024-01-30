@@ -1,4 +1,4 @@
-import AboutUs from "@/components/aboutComponent/AboutUs";
+import AboutUs from "@/components/aboutComponents/AboutUs";
 import Main from "@/components/globalComponents/Main";
 
 export default function ABOUT() {
