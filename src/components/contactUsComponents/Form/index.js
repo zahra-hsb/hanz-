@@ -6,7 +6,7 @@ const Form = () => {
     const [tel, setTel] = useState('')
     const [isEmailValid, setIsValid] = useState(false)
     const [isMobileValid, setMobileValid] = useState(false)
-
+    
     const [values, setValues] = useState({
         fullName: '',
         email: '',
@@ -19,9 +19,7 @@ const Form = () => {
     function handleSubmit(event) {
         event.preventDefault()
         if (!isEmailValid || !isMobileValid) {
-            // return(
-            //     renderAlert('لطفا ایمیل یا شماره تماس را به درستی وارد کنید.', 'text-red-500')
-            // )
+            setStatus({message: 'لطفا ایمیل یا شماره تماس را به درستی وارد کنید.', messageColor: 'text-red-500'});
             console.log('not valid')
             
         } else {
@@ -36,9 +34,9 @@ const Form = () => {
                         subject: '',
                         message: ''
                     });
-                    setStatus('SUCCESS')
+                    setStatus({message: 'پیام شما با موفقیت ارسال شد', messageColor: 'text-green'})
                 }, error => {
-                    console.log('FAILED...', error)
+                    setStatus({message: 'پیام ارسال نشد', messageColor: 'text-red-500'})
                 });
 
         }
@@ -107,7 +105,7 @@ const Form = () => {
                         <input value={values.message} name='message' onChange={handleChange} type="text" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
                         <label htmlFor="floating_repeat_password" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>متن پیام</p><p className="text-red-500">*</p></label>
                     </div>
-                    {status && renderAlert('پیام شما با موفقیت ارسال شد.', 'text-green')}
+                    {status && renderAlert(status)}
 
                     <button type="submit" className="text-green text-sm lg:text-md px-4 py-2 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ارسال درخواست</button>
                 </form>
