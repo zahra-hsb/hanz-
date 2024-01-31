@@ -8,8 +8,9 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
         { tab: 'home', label: 'خانه' },
         { tab: 'products', label: 'معرفی محصول' },
         { tab: 'imageGallery', label: 'گالری تصاویر' },
+        { tab: 'agency', label: 'نمایندگی' },
         { tab: 'about', label: 'درباره ما' },
-        { tab: 'contactUs', label: 'تماس با ما' }
+        { tab: 'contactUs', label: 'تماس با ما' },
     ]
 
     return (

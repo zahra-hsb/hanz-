@@ -7,8 +7,9 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { useEffect, useState } from "react";
 import Slider from "@/components/globalComponents/Slider";
+import Button from "@/components/globalComponents/Main/button";
 
-const ProductCategory = ({ items = [], subCategory, text }) => {
+const ProductCategory = ({ items = [], subCategory, text, url }) => {
     const slides = [
         { image: items[0].image, text: items[0].text },
         { image: items[1].image, text: items[1].text },
@@ -35,15 +36,16 @@ const ProductCategory = ({ items = [], subCategory, text }) => {
                         </h4>
                     </div>
                 </div>
-                <div>
+                <div className="w-full flex justify-between items-center">
                     <p className="lg:w-5/6 text-justify text-gray-600 text-md">
                         {text}
                     </p>
+                    <Button url={`/products/${url}`} title={'بیشتر'} hover={'hover:bg-green hover:text-white'} border={'border-2 border-green !mt-0'}/>
                 </div>
             </div>
 
             <Slider
-                url='#'
+                url={`/products/${url}`}
                 slidesPerView={3}
                 slides={slides}
                 textSlider={true}

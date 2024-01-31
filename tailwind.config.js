@@ -22,6 +22,7 @@ module.exports = {
         industrialSection: 'url(../../public/image/industrial-banner.jpg)',
         servicesSection: 'url(../../public/image/services-banner.webp)',
         profileSection: 'url(../../public/image/profile_aluminium.jpg)',
+        agencySection: 'url(../../public/image/About-Us-Banner.jpg)'
       },
       boxShadow: {
         'shadow0' : '0 30px 0 0 #00AE8E'
