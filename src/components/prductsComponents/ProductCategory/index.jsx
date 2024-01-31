@@ -8,7 +8,7 @@ import { Pagination } from 'swiper/modules';
 import { useEffect, useState } from "react";
 import Slider from "@/components/globalComponents/Slider";
 
-const ProductCategory = ({ items = [], subCategory, text }) => {
+const ProductCategory = ({ items = [], subCategory, text, url }) => {
     const slides = [
         { image: items[0].image, text: items[0].text },
         { image: items[1].image, text: items[1].text },
@@ -43,7 +43,7 @@ const ProductCategory = ({ items = [], subCategory, text }) => {
             </div>
 
             <Slider
-                url='#'
+                url={`/products/${url}`}
                 slidesPerView={3}
                 slides={slides}
                 textSlider={true}

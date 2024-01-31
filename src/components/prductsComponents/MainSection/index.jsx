@@ -49,16 +49,16 @@ export default function MainSection() {
       </div>
 
       <ProductCategory items={structuralArray} subCategory={'ساختمانی'} 
-      text={'در شرکت ما تجهیزات ساختمانی باکیفیت ساخته می شود.'}/>
+      text={'در شرکت ما تجهیزات ساختمانی باکیفیت ساخته می شود.'} url={'building'}/>
       <ProductCategory items={industrialArray} subCategory={'صنعتی'} 
-        text={'تجهیزات صنعتی هانز را در زیر می توانید ببینید'}
+        text={'تجهیزات صنعتی هانز را در زیر می توانید ببینید'} url={'industrial'}
       />
       <ProductCategory items={servicesArray}
       subCategory={'خدمات'}
-      text={'شرکت هانز به کمک 7 واحد افتخار خدمت رسانی به شما عزیزان را دارد'} />
+      text={'شرکت هانز به کمک 7 واحد افتخار خدمت رسانی به شما عزیزان را دارد'} url={'services'} />
       <ProductCategory items={Accessories} 
       subCategory={'اکسسوری'}
-      text={'اکسسوری های هانز به سه دسته زیر تقسیم بندی می شوند.'} 
+      text={'اکسسوری های هانز به سه دسته زیر تقسیم بندی می شوند.'} url={'accessory'}
       />
     </>
   );
