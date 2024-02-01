@@ -85,7 +85,7 @@ const CatalogueSliding = () => {
                             </div>
                             <div className="p-5 flex justify-between items-center">
                                 <h5 className="text-xl tracking-tight text-gray-800 opacity-[76%] basis-[58%]">{data.title}</h5>
-                                <Link href={data.link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green rounded-lg hover:opacity-[80%] outline-none">
+                                <Link href={data.link} target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green rounded-lg hover:opacity-[80%] outline-none">
                                     نمایش کاتالوگ
                                     <svg className="rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
