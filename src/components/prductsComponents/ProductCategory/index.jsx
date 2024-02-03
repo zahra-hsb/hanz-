@@ -47,7 +47,7 @@ const ProductCategory = ({ items = [], subCategory, text, url }) => {
             <Slider
                 url={`/products/${url}`}
                 slidesPerView={3}
-                slides={slides}
+                slides={items}
                 textSlider={true}
                 textColor={'text-gray-600'}
             />

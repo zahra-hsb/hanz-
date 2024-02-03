@@ -4,12 +4,17 @@ import hanzProfile1 from '../../../../public/image/hanz-profile1.webp'
 import hanzProfile2 from '../../../../public/image/hanz-profile2.webp'
 import hanzProfile3 from '../../../../public/image/hanz-profile3.webp'
 
+import slidingImg from "../../../../public/image/profile-1.jpg"
+import hingeImg from "../../../../public/image/profile-2.jpg"
+
 export default function MainSection() {
   const structuralArray = [
-    { image: hanzProfile1, text: 'نما' },
-    { image: hanzProfile3, text: 'پنجره' },
-    { image: hanzProfile2, text: 'جان پناه' },
-    { image: hanzProfile3, text: 'شاتر' }
+    { image: slidingImg, text: 'نما' },
+    { image: slidingImg, text: 'پنجره' },
+    { image: slidingImg, text: 'جان پناه' },
+    { image: slidingImg, text: 'شاتر' },
+    { image: slidingImg, text: 'کشویی' },
+    { image: hingeImg, text: 'لولایی' },
   ]
   const industrialArray = [
     { image: hanzProfile1, text: 'گلخانه' },
