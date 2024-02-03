@@ -4,12 +4,31 @@ import hanzProfile1 from '../../../../public/image/hanz-profile1.webp'
 import hanzProfile2 from '../../../../public/image/hanz-profile2.webp'
 import hanzProfile3 from '../../../../public/image/hanz-profile3.webp'
 
+// services
+import ExtrusionImage from "../../../../public/image/line/aluminum-extrusion.jpg"
+import WoodenImage from "../../../../public/image/presentationProducts/units/Untitled3.jpg"
+import PowdercoatingImage from "../../../../public/image/presentationProducts/units/Untitled2.jpg"
+import TERMALImage from "../../../../public/image/line/index.jpg"
+import ASSEMBLINGImage from "../../../../public/image/presentationProducts/units/Untitled2.jpg"
+
+// products
+import slidingImg from "../../../../public/image/profile-1.jpg"
+import hingeImg from "../../../../public/image/profile-2.jpg"
+
+// accessory
+import profile1 from '../../../../public/image/profile-1.jpg'
+import profileGh1 from '../../../../public/image/presentationProducts/profile-gh.jpg'
+import curtainWall1 from '../../../../public/image/presentationProducts/curtain.jpg'
+
+
 export default function MainSection() {
   const structuralArray = [
-    { image: hanzProfile1, text: 'نما' },
-    { image: hanzProfile3, text: 'پنجره' },
-    { image: hanzProfile2, text: 'جان پناه' },
-    { image: hanzProfile3, text: 'شاتر' }
+    { image: slidingImg, text: 'نما' },
+    { image: slidingImg, text: 'پنجره' },
+    { image: slidingImg, text: 'جان پناه' },
+    { image: slidingImg, text: 'شاتر' },
+    { image: slidingImg, text: 'کشویی' },
+    { image: hingeImg, text: 'لولایی' },
   ]
   const industrialArray = [
     { image: hanzProfile1, text: 'گلخانه' },
@@ -17,18 +36,18 @@ export default function MainSection() {
     { image: hanzProfile2, text: 'الکترونیک' },
   ]
   const servicesArray = [
-    { image: hanzProfile1, text: 'واحد طراحی سیستم' },
-    { image: hanzProfile3, text: 'واحد اکستروژن' },
-    { image: hanzProfile2, text: 'واحد رنگ دکورال' },
-    { image: hanzProfile2, text: 'واحد رنگ پودری الکترواستاتیک' },
-    { image: hanzProfile2, text: 'واحد ترمال بریک' },
-    { image: hanzProfile2, text: 'واحد مونتاژ' },
-    { image: hanzProfile2, text: 'واحد رنگ آنادیز' },
+    { image: TERMALImage, text: 'واحد طراحی سیستم' },
+    { image: ExtrusionImage, text: 'واحد اکستروژن' },
+    { image: WoodenImage, text: 'واحد رنگ دکورال' },
+    { image: PowdercoatingImage, text: 'واحد رنگ پودری الکترواستاتیک' },
+    { image: TERMALImage, text: 'واحد ترمال بریک' },
+    { image: ASSEMBLINGImage, text: 'واحد مونتاژ' },
+    { image: PowdercoatingImage, text: 'واحد رنگ آنادیز' },
   ]
   const Accessories = [
-    { image: hanzProfile1, text: 'پروفیل' },
-    { image: hanzProfile3, text: 'متعلقات' },
-    { image: hanzProfile2, text: 'کراتین وال' },
+    { image: profile1, text: 'پروفیل' },
+    { image: profileGh1, text: 'متعلقات' },
+    { image: curtainWall1, text: 'کرتین وال' },
   ]
   return (
     <>
