@@ -7,6 +7,7 @@ import profile3Image from "../../../../../public/image/profile-3.jpg"
 import Link from "next/link";
 import Pagination from "../../../pagination/index"
 import Image from "next/image";
+import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
 
 const CatalogueSliding = () => {
     const [receivedDataSliding, setReceivedDataSliding] = useState()
@@ -78,7 +79,7 @@ const CatalogueSliding = () => {
                 </div>
 
                 <div className="py-10 flex justify-around flex-wrap w-[90%] sm:w-full m-auto">
-                    {receivedDataSliding && receivedDataSliding.map((data, index) => (
+                    {/* {receivedDataSliding && receivedDataSliding.map((data, index) => (
                         <div key={index} className="max-w-sm bg-white border border-gray-100 rounded-lg shadow-inner mb-10">
                             <div>
                                 <Image className="rounded-t-lg" src={data.image} alt="" />
@@ -93,7 +94,8 @@ const CatalogueSliding = () => {
                                 </Link>
                             </div>
                         </div>
-                    ))}
+                    ))} */}
+                    <CatalogueCardComponent receivedData={receivedDataSliding} />
                 </div>
             </div>
 

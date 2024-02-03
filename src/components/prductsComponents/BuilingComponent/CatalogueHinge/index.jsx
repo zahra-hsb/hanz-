@@ -5,6 +5,7 @@ import profile3Image from "../../../../../public/image/profile-3.jpg"
 import Link from "next/link";
 import Pagination from "../../../pagination/index"
 import Image from "next/image";
+import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
 
 const CatalogueHinge = () => {
     const [receivedDataHinge, setReceivedDataHinge] = useState()
@@ -66,7 +67,7 @@ const CatalogueHinge = () => {
                 </div>
 
                 <div className="py-10 flex justify-around flex-wrap w-[90%] sm:w-full m-auto">
-                    {receivedDataHinge && receivedDataHinge.map((data, index) => (
+                    {/* {receivedDataHinge && receivedDataHinge.map((data, index) => (
                         <div key={index} className="max-w-sm bg-white border border-gray-100 rounded-lg shadow-inner mb-10">
                             <div>
                                 <Image className="rounded-t-lg" src={data.image} alt="" />
@@ -81,7 +82,8 @@ const CatalogueHinge = () => {
                                 </Link>
                             </div>
                         </div>
-                    ))}
+                    ))} */}
+                    <CatalogueCardComponent receivedData={receivedDataHinge}/>
                 </div>
             </div>
 
