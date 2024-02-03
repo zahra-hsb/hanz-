@@ -7,6 +7,7 @@ import WoodenImage from "../../../../public/image/line/Alluminium5.jpg"
 import PowdercoatingImage from "../../../../public/image/line/powdercoating.jpg"
 import TERMALImage from "../../../../public/image/line/index.jpg"
 import ASSEMBLINGImage from "../../../../public/image/line/2022115113115655.jpg"
+import ServicesCardComponent from "./ServicesCardComponent";
 
 export default function services() {
 
@@ -72,7 +73,7 @@ export default function services() {
           </div>
 
           <div className="py-10 flex justify-around flex-wrap">
-            {servicesData.map((service, index) => (
+            {/* {servicesData.map((service, index) => (
               <div key={index} className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 hover:bg-gray-100 mb-10">
                 <div
                   className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
@@ -87,7 +88,8 @@ export default function services() {
                   <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">{service.description}</p>
                 </div>
               </div>
-            ))}
+            ))} */}
+            <ServicesCardComponent servicesData={servicesData} />
           </div>
           {/* <div className="mb-10">
             <div className="flex flex-col items-center bg-white border border-gray-100 rounded-lg shadow-inner md:flex-row md:max-w-xl hover:bg-gray-100">
