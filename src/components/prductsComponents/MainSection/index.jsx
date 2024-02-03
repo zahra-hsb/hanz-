@@ -6,10 +6,10 @@ import hanzProfile3 from '../../../../public/image/hanz-profile3.webp'
 
 // services
 import ExtrusionImage from "../../../../public/image/line/aluminum-extrusion.jpg"
-import WoodenImage from "../../../../public/image/line/Alluminium5.jpg"
-import PowdercoatingImage from "../../../../public/image/line/powdercoating.jpg"
+import WoodenImage from "../../../../public/image/presentationProducts/units/Untitled3.jpg"
+import PowdercoatingImage from "../../../../public/image/presentationProducts/units/Untitled2.jpg"
 import TERMALImage from "../../../../public/image/line/index.jpg"
-import ASSEMBLINGImage from "../../../../public/image/line/2022115113115655.jpg"
+import ASSEMBLINGImage from "../../../../public/image/presentationProducts/units/Untitled2.jpg"
 
 // products
 import slidingImg from "../../../../public/image/profile-1.jpg"
@@ -17,8 +17,8 @@ import hingeImg from "../../../../public/image/profile-2.jpg"
 
 // accessory
 import profile1 from '../../../../public/image/profile-1.jpg'
-import profileGh1 from '../../../../public/image/profile-gh1.jpg'
-import curtainWall1 from '../../../../public/image/curtainWall1.jpg'
+import profileGh1 from '../../../../public/image/presentationProducts/profile-gh.jpg'
+import curtainWall1 from '../../../../public/image/presentationProducts/curtain.jpg'
 
 
 export default function MainSection() {
@@ -47,7 +47,7 @@ export default function MainSection() {
   const Accessories = [
     { image: profile1, text: 'پروفیل' },
     { image: profileGh1, text: 'متعلقات' },
-    { image: curtainWall1, text: 'کراتین وال' },
+    { image: curtainWall1, text: 'کرتین وال' },
   ]
   return (
     <>
