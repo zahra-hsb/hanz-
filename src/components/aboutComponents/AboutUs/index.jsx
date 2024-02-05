@@ -49,10 +49,10 @@ const AboutUs = () => {
                         <p className='xl:w-1/2 lg:w-1/3 w-full sm:text-lg mt-5 lg:mr-16 text-justify opacity-70 leading-9 sm:leading-10'>
                             ما با هم محیط زندگی و کار مردم را در حال حاضر و برای نسل های آینده بهبود می بخشیم.
                         </p>
-                        <p className="xl:w-1/2 lg:w-1/3 w-full sm:text-lg mt-5 lg:mr-16 text-justify opacity-70 leading-9 sm:leading-10">سیستم‌های باکیفیت ما سخت‌گیرانه‌ترین خواسته‌ها را از نظر راحتی، انرژی، امنیت، طراحی معماری و بهره‌وری انرژی برآورده می‌کنند.</p>
+                        {/* <p className="xl:w-1/2 lg:w-1/3 w-full sm:text-lg mt-5 lg:mr-16 text-justify opacity-70 leading-9 sm:leading-10">سیستم‌های باکیفیت ما سخت‌گیرانه‌ترین خواسته‌ها را از نظر راحتی، انرژی، امنیت، طراحی معماری و بهره‌وری انرژی برآورده می‌کنند.</p> */}
 
                     </div>
-                    {/* <Slider url={'/imageGallery'} slidesPerView={1} image1={banner} textSlider={false} /> */}
+                    <Slider url={'/imageGallery'} slidesPerView={1} image1={banner} textSlider={false} />
                     {/* <AboutSection2 /> */}
                     <div className='w-full flex justify-start mt-[-50px]'>
 
@@ -60,10 +60,10 @@ const AboutUs = () => {
                 </div>
 
             </div>
-            {/* <div className='w-[110%]'>
-                <WhyHanzHome />
+            <div className='w-full sm:w-[110%]'>
+                {/* <WhyHanzHome /> */}
                 <WhyHanzCarousel />
-            </div> */}
+            </div>
         </>
     )
 }
