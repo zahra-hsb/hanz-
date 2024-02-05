@@ -1,10 +1,8 @@
 import { useState } from "react";
-import profile1Image from "../../../../../public/image/profile-1.jpg"
-import profile2Image from "../../../../../public/image/profile-2.jpg"
-import profile3Image from "../../../../../public/image/profile-3.jpg"
-import Link from "next/link";
+import profile1Image from "../../../../../public/image/catalogue3d/profile-1.jpg"
+import profile2Image from "../../../../../public/image/catalogue3d/profile-2.jpg"
+import profile3Image from "../../../../../public/image/catalogue3d/profile-3.jpg"
 import Pagination from "../../../pagination/index"
-import Image from "next/image";
 import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
 
 const CatalogueHinge = () => {
