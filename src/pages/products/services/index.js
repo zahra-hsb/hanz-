@@ -7,7 +7,7 @@ import TERMALImage from "../../../../public/image/line/index.jpg"
 import ASSEMBLINGImage from "../../../../public/image/line/2022115113115655.jpg"
 import ServicesCardComponent from "./ServicesCardComponent";
 
-export default function services() {
+export default function Services() {
 
   const servicesData = [
     {

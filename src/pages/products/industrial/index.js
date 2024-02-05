@@ -6,7 +6,7 @@ import Profile from "@/components/prductsComponents/Profile";
 import ProfileProperties from "@/components/prductsComponents/ProfileProperties";
 import WhyHanz from "@/components/prductsComponents/WhyHanz";
 
-export default function industrial() {
+export default function Industrial() {
   return (
     <main className="flex flex-col justify-center items-center pb-[50px]">
       <Main title={'صنعتی'} bg={'bg-industrialSection'} height={'h-[390px]'} display={'hidden'} />
