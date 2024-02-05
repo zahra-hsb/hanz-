@@ -17,7 +17,7 @@ module.exports = {
         mainSection: 'url(../../public/image/cuh_banner.png)',
         aboutSection: 'url(../../public/image/whtb-banner-01-background.jpg)',
         gallerySection: 'url(../../public/image/sectors.banner.building-2000x560.jpg)',
-        productSection: 'url(../../public/image/wood-windows.jpg)',
+        productSection: 'url(../../public/image/banner/product-banner-2.jpg)',
         BuilingSection: 'url(../../public/image/building-banner.png)',
         industrialSection: 'url(../../public/image/industrial-banner.jpg)',
         servicesSection: 'url(../../public/image/services-banner.webp)',
