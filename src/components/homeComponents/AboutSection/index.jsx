@@ -7,9 +7,9 @@ const AboutSection = () => {
         <>
             <section className="flex flex-col pt-5 w-full my-20">
                 <div className="flex w-full lg:w-[90%] lg:m-auto flex-col lg:flex-row items-center justify-between">
-                    {/* <div>
+                    <div>
                         <Image src={picture} alt="hanz" />
-                    </div> */}
+                    </div>
                     <div className="p-8 lg:p-auto lg:w-[50%]">
                         <div>
                             <h4 className="text-2xl opacity-[76%]">
