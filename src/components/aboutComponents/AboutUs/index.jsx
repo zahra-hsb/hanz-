@@ -7,7 +7,7 @@ import banner from '../../../../public/image/cuh_banner.png'
 import AboutSection2 from '@/components/homeComponents/AboutSection2'
 import WhyHanz from '@/components/prductsComponents/WhyHanz'
 import WhyHanzHome from '@/components/homeComponents/WhyHanzHome'
-import WhyHanzCarousel from '@/components/WhyHanzCarousel'
+import WhyHanzCard from '@/components/WhyHanzCard'
 
 
 const AboutUs = () => {
@@ -58,11 +58,10 @@ const AboutUs = () => {
 
                     </div>
                 </div>
-
             </div>
-            <div className='w-full sm:w-[110%]'>
-                {/* <WhyHanzHome /> */}
-                <WhyHanzCarousel />
+            
+            <div className='w-full'>
+                <WhyHanzCard />
             </div>
         </>
     )
