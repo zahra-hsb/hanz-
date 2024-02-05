@@ -103,6 +103,12 @@ div.swiper-button-next::after {
   display: none!important;
 }
 
+#about-icons{
+  width: 250px;
+  text-align: center;
+}
+
+
 /* #WhyHanzHome-carousel .swiper-wrapper {
   display: flex!important;
   justify-content: space-between!important;
