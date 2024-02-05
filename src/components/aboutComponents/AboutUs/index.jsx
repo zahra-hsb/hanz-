@@ -60,7 +60,7 @@ const AboutUs = () => {
                 </div>
 
             </div>
-            <div className='w-[110%]'>
+            <div className='w-full sm:w-[110%]'>
                 {/* <WhyHanzHome /> */}
                 <WhyHanzCarousel />
             </div>

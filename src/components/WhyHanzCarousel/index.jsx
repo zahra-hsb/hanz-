@@ -16,7 +16,7 @@ const WhyHanzCarousel = () => {
     return (
         <>
             <div className="py-5 px-10" id="">
-                <Slider url={''} slidesPerView={4} slides={icons} textSlider={true} id={'about-icons'} />
+                <Slider url={''} slidesPerView={5} slides={icons} textSlider={true} textColor={'mb-5'} id={'about-icons'} />
             </div>
         </>
     )
