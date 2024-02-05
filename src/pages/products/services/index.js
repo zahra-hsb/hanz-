@@ -1,7 +1,5 @@
 import Main from "@/components/globalComponents/Main";
-import Image from "next/image";
-import Link from "next/link";
-import service1Image from "../../../../public/image/service-1.jpg"
+import aluminimDesign from "../../../../public/image/line/aluminim-design.jpg"
 import ExtrusionImage from "../../../../public/image/line/aluminum-extrusion.jpg"
 import WoodenImage from "../../../../public/image/line/Alluminium5.jpg"
 import PowdercoatingImage from "../../../../public/image/line/powdercoating.jpg"
@@ -15,7 +13,7 @@ export default function services() {
     {
       title: <div>واحد طراحی سیستم <br />(SYSTEM DESIGN LINE)</div>,
       description: 'شرکت هانز افتخار دارد در این واحد به کمک مهندسین مجرب و جوان کارآزموده با و با تکیه بر بررسی نیازهای بازار اقدام به طراحی و ساخت سیستم های مدرن و نوین در بخش صنعت ساختمان به خصوص نماهای مدرن و نوین ساختمان جهت پاسخگویی به انواع سلیقه های مشتریان و معماران عزیز می نماید.',
-      image: TERMALImage,
+      image: aluminimDesign,
     },
     {
       title: <div>واحد اکستروژن <br />(EXTRUSION LINE)</div>,
