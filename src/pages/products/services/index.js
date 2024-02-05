@@ -45,11 +45,11 @@ export default function Services() {
       description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
       image: ExtrusionImage,
     },
-    {
-      title: <div>واحد رنگ آنادایز <br />(ANODIZING LINE)</div>,
-      description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
-      image: PowdercoatingImage,
-    },
+    // {
+    //   title: <div>واحد رنگ آنادایز <br />(ANODIZING LINE)</div>,
+    //   description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
+    //   image: PowdercoatingImage,
+    // },
   ];
 
   return (
