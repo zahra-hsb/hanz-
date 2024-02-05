@@ -12,11 +12,11 @@ import TERMALImage from "../../../../public/image/line/index.jpg"
 import ASSEMBLINGImage from "../../../../public/image/presentationProducts/units/Untitled2.jpg"
 
 // products
-import slidingImg from "../../../../public/image/profile-1.jpg"
-import hingeImg from "../../../../public/image/profile-2.jpg"
+import slidingImg from "../../../../public/image/catalogue3d/profile-1.jpg"
+import hingeImg from "../../../../public/image/catalogue3d/profile-2.jpg"
 
 // accessory
-import profile1 from '../../../../public/image/profile-1.jpg'
+import profile1 from '../../../../public/image/catalogue3d/profile-1.jpg'
 import profileGh1 from '../../../../public/image/presentationProducts/profile-gh.jpg'
 import curtainWall1 from '../../../../public/image/presentationProducts/curtain.jpg'
 
