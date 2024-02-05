@@ -1,12 +1,14 @@
 import { useState } from "react";
-import profile1Image from "../../../../../public/image/profile-1.jpg"
+import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
+import profile1Image from "../../../../../public/image/catalogue3d/profile-1.jpg"
+import SL115TDoubleRial from "../../../../../public/image/catalogue3d/115.jpg"
 import ShaycoGhorfe from "../../../../../public/image/catalogue3d/Shayco-Ghorfe.png"
 import SL115TMono from "../../../../../public/image/catalogue3d/SL-115-T-Mono.png"
-import profile2Image from "../../../../../public/image/profile-2.jpg"
-import profile3Image from "../../../../../public/image/profile-3.jpg"
-import Link from "next/link";
+import profile2Image from "../../../../../public/image/catalogue3d/profile-2.jpg"
+import profile3Image from "../../../../../public/image/catalogue3d/profile-3.jpg"
+import SL140_4Image from "../../../../../public/image/catalogue3d/SL140-4.jpg"
 import Pagination from "../../../pagination/index"
-import Image from "next/image";
+
 import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
 
 const CatalogueSliding = () => {
@@ -16,47 +18,47 @@ const CatalogueSliding = () => {
         {
             title: <div>سیستم <span>SL 140 SLIM</span></div>,
             image: profile1Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            link: '#'
         },
         {
             title: <div>سیستم <span>SL 140 2CM</span></div>,
             image: ShaycoGhorfe,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            link: '#'
         },
         {
             title: <div>سیستم <span>SL 140 4CM</span></div>,
-            image: profile3Image,
+            image: SL140_4Image,
             link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 95 T</span></div>,
-            image: profile1Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: profile3Image,
+            link: '#'
         },
         {
             title: <div>سیستم <span>SL 95 T Mono</span></div>,
             image: profile2Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            link: '#'
         },
         {
             title: <div>سیستم <span>SL 95 N Mono</span></div>,
-            image: profile3Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: noneProfileImage,
+            link: '#'
         },
         {
             title: <div>سیستم <span>SL 115 T Mono</span></div>,
             image: SL115TMono,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            link: '#'
         },
         {
             title: <div>سیستم <span>SL 115 T Double Rial</span></div>,
-            image: profile3Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: SL115TDoubleRial,
+            link: '#'
         },
         {
             title: <div>سیستم <span>SL 60 N</span></div>,
-            image: profile1Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: noneProfileImage,
+            link: '#'
         },
     ];
 
@@ -79,22 +81,6 @@ const CatalogueSliding = () => {
                 </div>
 
                 <div className="py-10 flex justify-around flex-wrap w-[90%] sm:w-full m-auto">
-                    {/* {receivedDataSliding && receivedDataSliding.map((data, index) => (
-                        <div key={index} className="max-w-sm bg-white border border-gray-100 rounded-lg shadow-inner mb-10">
-                            <div>
-                                <Image className="rounded-t-lg" src={data.image} alt="" />
-                            </div>
-                            <div className="p-5 flex justify-between items-center">
-                                <h5 className="text-xl tracking-tight text-gray-800 opacity-[76%] basis-[58%]">{data.title}</h5>
-                                <Link href={data.link} target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green rounded-lg hover:opacity-[80%] outline-none">
-                                    نمایش کاتالوگ
-                                    <svg className="rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </Link>
-                            </div>
-                        </div>
-                    ))} */}
                     <CatalogueCardComponent receivedData={receivedDataSliding} />
                 </div>
             </div>

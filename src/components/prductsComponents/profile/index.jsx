@@ -1,7 +1,7 @@
 import Slider from "@/components/globalComponents/Slider";
-import profile1 from '../../../../public/image/profile-1.jpg'
-import profile2 from '../../../../public/image/profile-2.jpg'
-import profile3 from '../../../../public/image/profile-3.jpg'
+import profile1 from '../../../../public/image/catalogue3d/profile-1.jpg'
+import profile2 from '../../../../public/image/catalogue3d/profile-2.jpg'
+import profile3 from '../../../../public/image/catalogue3d/profile-3.jpg'
 import Button from "@/components/globalComponents/Main/button";
 
 

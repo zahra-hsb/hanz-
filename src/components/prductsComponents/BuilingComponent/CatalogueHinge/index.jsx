@@ -1,10 +1,9 @@
 import { useState } from "react";
-import profile1Image from "../../../../../public/image/profile-1.jpg"
-import profile2Image from "../../../../../public/image/profile-2.jpg"
-import profile3Image from "../../../../../public/image/profile-3.jpg"
-import Link from "next/link";
+import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
+import profile115TImage from "../../../../../public/image/catalogue3d/115-t.jpg"
+import profile60NImage from "../../../../../public/image/catalogue3d/60n.jpg"
+import profile77DImage from "../../../../../public/image/catalogue3d/77d.jpg"
 import Pagination from "../../../pagination/index"
-import Image from "next/image";
 import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
 
 const CatalogueHinge = () => {
@@ -13,38 +12,43 @@ const CatalogueHinge = () => {
     const catalogueDataHinge = [
         {
             title: <div>سیستم <span>115T</span></div>,
-            image: profile1Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: profile115TImage,
+            link: '#'
         },
         {
             title: <div>سیستم <span>60N</span></div>,
-            image: profile2Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: profile60NImage,
+            link: '#'
         },
         {
             title: <div>سیستم <span>68LUX</span></div>,
-            image: profile3Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: noneProfileImage,
+            link: '#'
         },
         {
             title: <div>سیستم <span>68Decorative</span></div>,
-            image: profile1Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: noneProfileImage,
+            link: '#'
         },
         {
             title: <div>سیستم <span>68ECO</span></div>,
-            image: profile2Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: noneProfileImage,
+            link: '#'
         },
         {
             title: <div>سیستم <span>64LUX</span></div>,
-            image: profile3Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: noneProfileImage,
+            link: '#'
         },
         {
             title: <div>سیستم <span>64ECO</span></div>,
-            image: profile1Image,
-            link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>77Decoral</span></div>,
+            image: profile77DImage,
+            link: '#'
         },
     ];
 
@@ -83,7 +87,7 @@ const CatalogueHinge = () => {
                             </div>
                         </div>
                     ))} */}
-                    <CatalogueCardComponent receivedData={receivedDataHinge}/>
+                    <CatalogueCardComponent receivedData={receivedDataHinge} />
                 </div>
             </div>
 

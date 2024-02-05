@@ -7,7 +7,7 @@ import TERMALImage from "../../../../public/image/line/index.jpg"
 import ASSEMBLINGImage from "../../../../public/image/line/2022115113115655.jpg"
 import ServicesCardComponent from "./ServicesCardComponent";
 
-export default function services() {
+export default function Services() {
 
   const servicesData = [
     {
@@ -45,11 +45,11 @@ export default function services() {
       description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
       image: ExtrusionImage,
     },
-    {
-      title: <div>واحد رنگ آنادایز <br />(ANODIZING LINE)</div>,
-      description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
-      image: PowdercoatingImage,
-    },
+    // {
+    //   title: <div>واحد رنگ آنادایز <br />(ANODIZING LINE)</div>,
+    //   description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
+    //   image: PowdercoatingImage,
+    // },
   ];
 
   return (
@@ -71,36 +71,8 @@ export default function services() {
           </div>
 
           <div className="py-10 flex justify-around flex-wrap">
-            {/* {servicesData.map((service, index) => (
-              <div key={index} className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 hover:bg-gray-100 mb-10">
-                <div
-                  className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-                  <Image
-                    src={service.image}
-                    alt="card-image" />
-                </div>
-                <div className="p-6">
-                  <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    {service.title}
-                  </h5>
-                  <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">{service.description}</p>
-                </div>
-              </div>
-            ))} */}
             <ServicesCardComponent servicesData={servicesData} />
           </div>
-          {/* <div className="mb-10">
-            <div className="flex flex-col items-center bg-white border border-gray-100 rounded-lg shadow-inner md:flex-row md:max-w-xl hover:bg-gray-100">
-              <Image className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={service1Image} alt="" />
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <h5 className="mb-5 text-xl font-bold tracking-tight text-gray-700 opacity-[80%]">واحد رنگ آنادایز <br />(ANODIZING LINE)</h5>
-                <div>
-                  <p className="mb-3 text-sm text-gray-600 opacity-[76%]">شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
         </div>
 
       </div>
