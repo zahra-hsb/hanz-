@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const InformationContact = () => {
     return (
         <>
@@ -19,7 +21,15 @@ const InformationContact = () => {
                     <div className="flex justify-start flex-col gap-3 mb-8 sm:mb-0">
                         <div className="flex gap-2 justify-start items-center sm:items-start flex-col">
                             <strong className="text-green">شماره تماس :</strong>
-                            <p className="text-gray-600 text-justify">021-65626443 - 021-65626449 <br /> 021-65626446 - 021-65626448</p>
+                            <p className="text-gray-600 text-justify">
+                                <Link href={'tel:02165626443'}  className='hover:text-green cursor-pointer'> 021-65626443 </Link>
+                                -
+                                <Link href={'tel:02165626449'}  className='hover:text-green cursor-pointer'> 021-65626449 </Link>
+                                <br />
+                                <Link href={'tel:02165626446'}  className='hover:text-green cursor-pointer'> 021-65626446 </Link>
+                                -
+                                <Link href={'tel:02165626448'}  className='hover:text-green cursor-pointer'> 021-65626448 </Link>
+                            </p>
                         </div>
                         <div className="flex gap-1 justify-start flex-col">
                             <strong className="text-green"> کدپستی :</strong>
@@ -41,11 +51,11 @@ const InformationContact = () => {
                             </svg>
                         </li>
                         {/* instagram */}
-                        <li className='group hover:border-none ml-2 w-[28px] h-[28px] border-[1px] border-gray-500 cursor-pointer hover:bg-green rounded-full flex justify-center items-center'>
+                        <Link href={'https://www.instagram.com/shaycogroup'} className='group hover:border-none ml-2 w-[28px] h-[28px] border-[1px] border-gray-500 cursor-pointer hover:bg-green rounded-full flex justify-center items-center'>
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.20497 0.144262C2.43343 0.144262 0.985352 1.59234 0.985352 3.35891V7.86737C0.985352 9.63393 2.43343 11.082 4.2 11.082H8.70846C10.475 11.082 11.9231 9.62895 11.9231 7.86239V3.34895C11.9231 1.57742 10.47 0.129333 8.70348 0.129333L4.20497 0.144262ZM4.20497 1.13951H8.71344C9.94256 1.13951 10.9328 2.12978 10.9328 3.35891V7.86737C10.9328 9.0965 9.93759 10.0868 8.70846 10.0868H4.19502C2.96091 10.0868 1.97064 9.09152 1.97064 7.86239V3.34895C1.97064 2.11485 2.96091 1.12458 4.19004 1.12458L4.20497 1.13951ZM9.39518 2.22433C9.14139 2.22433 8.94234 2.42337 8.94234 2.67219C8.94234 2.921 9.14139 3.12005 9.3902 3.12005C9.63901 3.12005 9.83806 2.91602 9.83806 2.66721C9.83806 2.41342 9.63404 2.21437 9.38523 2.21437L9.39518 2.22433ZM6.45423 2.6274C4.8071 2.6274 3.46849 3.96601 3.46849 5.61314C3.46849 7.25529 4.8071 8.59887 6.45423 8.59887C8.09638 8.59887 9.43996 7.25529 9.43996 5.61314C9.43996 3.96601 8.09638 2.6274 6.45423 2.6274ZM6.45423 3.62265C7.55895 3.62265 8.44472 4.50344 8.44472 5.61314C8.44472 6.71786 7.55895 7.60363 6.45423 7.60363C5.34453 7.60363 4.46374 6.71786 4.46374 5.61314C4.46374 4.50344 5.34453 3.62265 6.45423 3.62265Z" className="group-hover:fill-white fill-[#4b5563]"></path>
                             </svg>
-                        </li>
+                        </Link>
                         {/* linkedin */}
                         <li className='group hover:border-none ml-2 w-[28px] h-[28px] border-[1px] border-gray-500 cursor-pointer hover:bg-green rounded-full flex justify-center items-center'>
                             <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
