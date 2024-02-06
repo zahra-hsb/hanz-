@@ -33,12 +33,12 @@ const CatalogueSliding = () => {
         {
             title: <div>سیستم <span>SL 95 T</span></div>,
             image: profile3Image,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1XfL_JVOlZXzGQkNsKMkZU7RfIrgtLBot/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 95 T Mono</span></div>,
             image: profile2Image,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1BRjAD6pv4I74lQQhzpsmUvUea7dNO6ux/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 95 N Mono</span></div>,
