@@ -1,4 +1,3 @@
-import Button from "../../globalComponents/Main/button"
 import Slider from "../../globalComponents/Slider"
 import image1 from '../../../../public/image/Aluminium-Safety-children-1.jpg'
 import image2 from '../../../../public/image/Aluminium-acoustic-insulation-2.jpg'

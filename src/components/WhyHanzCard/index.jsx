@@ -1,4 +1,3 @@
-import Slider from "../globalComponents/Slider"
 import time from "../../../public/icons/about/time-svgrepo-com.svg"
 import timeCheck from "../../../public/icons/about/time-check-svgrepo-com.svg"
 import medal from "../../../public/icons/about/medal-ribbon-star-svgrepo-com.svg"
