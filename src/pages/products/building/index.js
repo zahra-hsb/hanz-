@@ -1,5 +1,5 @@
 import Main from "@/components/globalComponents/Main";
-import CatalogueComponent from "../../../components/prductsComponents/BuilingComponent/CatalogueComponent"
+import CatalogueComponent from "../../../components/prductsComponents/BuilingComponent/catalogueComponent"
 
 export default function Builing() {
 
