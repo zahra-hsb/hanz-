@@ -9,7 +9,7 @@ const Main = ({ title, text, bg, display, height }) => {
                             <h3 className="lg:text-4xl sm:text-2xl text-xl">
                                 {title}
                             </h3>
-                            <p className={`'${display} mt-4 text-justify lg:text-lg sm:text-sm text-xs hidden sm:block`}>
+                            <p className={`${display} mt-4 text-justify lg:text-lg sm:text-sm text-xs hidden sm:block`}>
                                 {text}
                             </p>
                         </div>
