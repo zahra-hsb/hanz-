@@ -5,7 +5,7 @@ import WoodenImage from "../../../../public/image/line/Alluminium5.jpg"
 import PowdercoatingImage from "../../../../public/image/line/powdercoating.jpg"
 import TERMALImage from "../../../../public/image/line/index.jpg"
 import ASSEMBLINGImage from "../../../../public/image/line/2022115113115655.jpg"
-import ServicesCardComponent from "./ServicesCardComponent";
+import ServicesCardComponent from "../ServicesCardComponent";
 
 export default function Services() {
 
