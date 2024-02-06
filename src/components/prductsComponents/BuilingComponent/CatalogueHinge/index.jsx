@@ -18,7 +18,7 @@ const CatalogueHinge = () => {
         {
             title: <div>سیستم <span>60N</span></div>,
             image: profile60NImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1NtpN7vk3antweBVJLGgTVYdLPjskS_UF/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>68LUX</span></div>,
