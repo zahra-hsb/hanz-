@@ -21,12 +21,15 @@ import profileGh1 from '../../../../public/image/presentationProducts/profile-gh
 import curtainWall1 from '../../../../public/image/presentationProducts/curtain.jpg'
 
 
+// none profile
+import noneProfile from '../../../../public/image/catalogue3d/none-profile.jpg'
+
 export default function MainSection() {
   const structuralArray = [
-    { image: slidingImg, text: 'نما' },
-    { image: slidingImg, text: 'پنجره' },
-    { image: slidingImg, text: 'جان پناه' },
-    { image: slidingImg, text: 'شاتر' },
+    { image: noneProfile, text: 'نما' },
+    { image: noneProfile, text: 'پنجره' },
+    { image: noneProfile, text: 'جان پناه' },
+    { image: noneProfile, text: 'شاتر' },
     { image: slidingImg, text: 'کشویی' },
     { image: hingeImg, text: 'لولایی' },
   ]
