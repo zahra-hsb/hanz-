@@ -9,7 +9,7 @@ import profile3Image from "../../../../../public/image/catalogue3d/profile-3.jpg
 import SL140_4Image from "../../../../../public/image/catalogue3d/SL140-4.jpg"
 import Pagination from "../../../pagination"
 
-import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
+import CatalogueCardComponent from "../CatalogueCardComponent";
 
 const CatalogueSliding = () => {
     const [receivedDataSliding, setReceivedDataSliding] = useState()
