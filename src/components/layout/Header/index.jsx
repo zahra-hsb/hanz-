@@ -54,6 +54,8 @@ const Header = ({ setSidebarShow, router }) => {
             setPageName('درباره ما');
         } else if (router.pathname === '/contactUs') {
             setPageName('تماس با ما');
+        } else if (router.pathname === '/agency') {
+            setPageName('نمایندگی')
         } else {
             setPageName('404')
         }
