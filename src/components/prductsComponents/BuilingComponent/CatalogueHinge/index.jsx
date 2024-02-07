@@ -38,16 +38,21 @@ const CatalogueHinge = () => {
         {
             title: <div>سیستم <span>64LUX</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1PkEFxaiBEPK48ZV-IckXGdJUg-2LJP1y/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>64ECO</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1NlqYqb7AO1H_TqB2Np74YfvWcenjaIva/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>77Decoral</span></div>,
             image: profile77DImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>70 Hidden</span></div>,
+            image: noneProfileImage,
             link: '#'
         },
     ];
