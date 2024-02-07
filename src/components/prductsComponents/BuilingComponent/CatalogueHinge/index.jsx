@@ -33,7 +33,7 @@ const CatalogueHinge = () => {
         {
             title: <div>سیستم <span>68ECO</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1DwBzoxFlUqAVm_sAmtHox7qcG41zAqnQ/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>64LUX</span></div>,
@@ -48,7 +48,7 @@ const CatalogueHinge = () => {
         {
             title: <div>سیستم <span>77Decoral</span></div>,
             image: profile77DImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/19OGSgkYjF3apjDsrFKHolLxHRUg6o-kR/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>70 Hidden</span></div>,
