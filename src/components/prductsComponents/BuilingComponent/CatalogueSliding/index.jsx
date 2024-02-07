@@ -63,7 +63,7 @@ const CatalogueSliding = () => {
         {
             title: <div>سیستم <br /><span>SL 140 Z Shoulder</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1CoxTpd4hN6UIt9zWvl1s-cEEe44LNnDz/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 150 Mono</span></div>,
