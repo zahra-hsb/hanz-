@@ -18,12 +18,12 @@ const CatalogueSliding = () => {
         {
             title: <div>سیستم <span>SL 140 SLIM</span></div>,
             image: profile1Image,
-            link: '#'
+            link: 'https://drive.google.com/file/d/135QmvPuij1SVuXAy0caLbiF2pFY-_M8O/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 140 2CM</span></div>,
             image: ShaycoGhorfe,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1IfsjIGxjpMZBkx_KfmrJbMlu2WWxFTVC/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 140 4CM</span></div>,
@@ -48,17 +48,17 @@ const CatalogueSliding = () => {
         {
             title: <div>سیستم <span>SL 115 T Mono</span></div>,
             image: SL115TMono,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1H4qJpeChRRAHzcP9BST0fAaAaEpM4ozo/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 115 T Double Rial</span></div>,
             image: SL115TDoubleRial,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1UeoxkU2isKpNFLhe7q1sYGhiG-bMXOhx/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 60 N</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1wU2MQCbobJFYW7E__xKpL0q_cVHRodRV/view?usp=sharing'
         },
         {
             title: <div>سیستم <br /><span>SL 140 Z Shoulder</span></div>,
