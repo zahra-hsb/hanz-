@@ -72,7 +72,7 @@ const AgencyForm = () => {
         <>
             <div className='max-w-md mx-auto'>
                 <div className='flex items-center lg:justify-start justify-center pb-5'>
-                    <h2 className='font-bold text-lg text-gray-600 '>فرم درخواست</h2>
+                    <h2 className='font-bold text-lg text-gray-600 '>فرم درخواست نمایندگی</h2>
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className="relative z-0 w-full mb-8 group">
