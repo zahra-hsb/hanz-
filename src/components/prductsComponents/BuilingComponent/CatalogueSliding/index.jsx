@@ -60,6 +60,16 @@ const CatalogueSliding = () => {
             image: noneProfileImage,
             link: '#'
         },
+        {
+            title: <div>سیستم <br /><span>SL 140 Z Shoulder</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>SL 150 Mono</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
     ];
 
     const handleDataFromChildSliding = (data) => {
