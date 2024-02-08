@@ -13,12 +13,12 @@ const CatalogueHinge = () => {
         {
             title: <div>سیستم <span>115T</span></div>,
             image: profile115TImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1SSAJIY2aouFROkVQWL8YJHj9QJXG7DGT/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>60N</span></div>,
             image: profile60NImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1NtpN7vk3antweBVJLGgTVYdLPjskS_UF/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>68LUX</span></div>,
@@ -33,21 +33,26 @@ const CatalogueHinge = () => {
         {
             title: <div>سیستم <span>68ECO</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1DwBzoxFlUqAVm_sAmtHox7qcG41zAqnQ/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>64LUX</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1PkEFxaiBEPK48ZV-IckXGdJUg-2LJP1y/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>64ECO</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1NlqYqb7AO1H_TqB2Np74YfvWcenjaIva/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>77Decoral</span></div>,
             image: profile77DImage,
+            link: 'https://drive.google.com/file/d/19OGSgkYjF3apjDsrFKHolLxHRUg6o-kR/view?usp=sharing'
+        },
+        {
+            title: <div>سیستم <span>70 Hidden</span></div>,
+            image: noneProfileImage,
             link: '#'
         },
     ];
