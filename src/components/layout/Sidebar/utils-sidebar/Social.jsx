@@ -4,7 +4,7 @@ const Social = () => {
     return (
         <div className="flex justify-between p-7">
 
-            <Link href='https://www.instagram.com/shaycogroup'>
+            <Link href='https://www.instagram.com/shaycogroup?igsh=em05NmJ1eDRodWdm'>
                 <div className='w-6 h-6 transition hover:-translate-y-[1px]'>
                     <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#00ae8e" />

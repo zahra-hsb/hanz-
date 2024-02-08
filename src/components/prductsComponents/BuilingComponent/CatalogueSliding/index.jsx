@@ -7,9 +7,9 @@ import SL115TMono from "../../../../../public/image/catalogue3d/SL-115-T-Mono.pn
 import profile2Image from "../../../../../public/image/catalogue3d/profile-2.jpg"
 import profile3Image from "../../../../../public/image/catalogue3d/profile-3.jpg"
 import SL140_4Image from "../../../../../public/image/catalogue3d/SL140-4.jpg"
-import Pagination from "../../../pagination/index"
+import Pagination from "../../../pagination"
 
-import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
+import CatalogueCardComponent from "../CatalogueCardComponent";
 
 const CatalogueSliding = () => {
     const [receivedDataSliding, setReceivedDataSliding] = useState()

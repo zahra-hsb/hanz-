@@ -1,6 +1,6 @@
 import Main from "@/components/globalComponents/Main";
 import Cratinwall from "@/components/prductsComponents/Cratinwall";
-import Profile from "@/components/prductsComponents/Profile";
+import Profile from "@/components/prductsComponents/profile";
 import ProfileProperties from "@/components/prductsComponents/ProfileProperties";
 
 export default function Accessory() {

@@ -1,9 +1,6 @@
 import MainSection from "../MainSection";
 import Main from "@/components/globalComponents/Main";
-import Profile from "../Profile";
-import ProfileProperties from "../ProfileProperties";
-import Cratinwall from "../Cratinwall";
-import WhyHanz from "../WhyHanz";
+
 
 
 export default function OurProducts() {

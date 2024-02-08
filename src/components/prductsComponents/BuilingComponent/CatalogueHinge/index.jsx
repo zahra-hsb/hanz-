@@ -4,7 +4,7 @@ import profile115TImage from "../../../../../public/image/catalogue3d/115-t.jpg"
 import profile60NImage from "../../../../../public/image/catalogue3d/60n.jpg"
 import profile77DImage from "../../../../../public/image/catalogue3d/77d.jpg"
 import Pagination from "../../../pagination/index"
-import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
+import CatalogueCardComponent from "../CatalogueCardComponent";
 
 const CatalogueHinge = () => {
     const [receivedDataHinge, setReceivedDataHinge] = useState()

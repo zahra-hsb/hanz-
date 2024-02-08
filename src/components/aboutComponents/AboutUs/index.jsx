@@ -1,12 +1,8 @@
 import Image from 'next/image'
 import pic from '../../../../public/image/cover.jpg'
 import pic2 from '../../../../public/image/about.jpg'
-import Logo from '@/components/layout/Sidebar/utils-sidebar/Logo'
 import Slider from '@/components/globalComponents/Slider'
 import banner from '../../../../public/image/cuh_banner.png'
-import AboutSection2 from '@/components/homeComponents/AboutSection2'
-import WhyHanz from '@/components/prductsComponents/WhyHanz'
-import WhyHanzHome from '@/components/homeComponents/WhyHanzHome'
 import WhyHanzCard from '@/components/WhyHanzCard'
 
 
