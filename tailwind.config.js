@@ -14,7 +14,7 @@ module.exports = {
         hoverColor: 'var(--hover-color)',
       },
       backgroundImage: {
-        mainSection: 'url(../../public/image/cuh_banner.png)',
+        mainSection: 'url(../../public/image/banner/MAINPAGE-banner.png)',
         aboutSection: 'url(../../public/image/whtb-banner-01-background.jpg)',
         gallerySection: 'url(../../public/image/sectors.banner.building-2000x560.jpg)',
         productSection: 'url(../../public/image/banner/product-banner-2.jpg)',
