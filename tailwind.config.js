@@ -20,7 +20,7 @@ module.exports = {
         productSection: 'url(../../public/image/banner/product-banner-2.jpg)',
         BuilingSection: 'url(../../public/image/building-banner.png)',
         industrialSection: 'url(../../public/image/industrial-banner.jpg)',
-        servicesSection: 'url(../../public/image/services-banner.webp)',
+        servicesSection: 'url(../../public/image/banner/khadamat.png)',
         profileSection: 'url(../../public/image/profile_aluminium.jpg)',
         agencySection: 'url(../../public/image/About-Us-Banner.jpg)'
       },
