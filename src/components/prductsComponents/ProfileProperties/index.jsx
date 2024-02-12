@@ -23,13 +23,13 @@ export default function ProfileProperties() {
                         <h2>متعلقات</h2>
                     </div>
 
-                    <div>
+                    {/* <div>
                         <Button title={'بیشتر'} url={'/products'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
-                    </div>
+                    </div> */}
                 </div>
                 <div id="home-carousel" className="w-full">
                     <Slider
-                        url='/products'
+                        url='/products/accessory#profile-properties'
                         slidesPerView={3}
                         slides={slides}
                         textSlider={true}

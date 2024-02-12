@@ -23,13 +23,13 @@ export default function Cratinwall() {
             <h2>کرتین وال</h2>
           </div>
 
-          <div>
+          {/* <div>
             <Button title={'بیشتر'} url={'/products'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
-          </div>
+          </div> */}
         </div>
         <div id="home-carousel" className="w-full">
           <Slider
-            url='/products'
+            url='/products/accessory#cratinwall'
             slidesPerView={3}
             slides={slides}
             textSlider={true}
