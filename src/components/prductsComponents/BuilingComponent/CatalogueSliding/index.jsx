@@ -43,7 +43,7 @@ const CatalogueSliding = () => {
         {
             title: <div>سیستم <span>SL 95 N Mono</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/10LG3TgrxBPKpuGJ3Xbwl3TbDl0Fu3e9w/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>SL 115 T Mono</span></div>,
@@ -67,6 +67,11 @@ const CatalogueSliding = () => {
         },
         {
             title: <div>سیستم <span>SL 150 Mono</span></div>,
+            image: noneProfileImage,
+            link: 'https://drive.google.com/file/d/1AuHRYyKeqSFfvgZNkMfS6ST9jiapo4rE/view?usp=sharing'
+        },
+        {
+            title: <div>سیستم <span>SL 70 T</span></div>,
             image: noneProfileImage,
             link: '#'
         },

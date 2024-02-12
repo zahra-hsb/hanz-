@@ -23,12 +23,12 @@ const CatalogueHinge = () => {
         {
             title: <div>سیستم <span>68LUX</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1Mvhcl12xuKt5p_8amfGv90FFVfvYtpHy/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>68Decorative</span></div>,
             image: noneProfileImage,
-            link: '#'
+            link: 'https://drive.google.com/file/d/1fKiA5p6TGgv4IawPGo7fIIkAOQJ9b6nU/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>68ECO</span></div>,
@@ -51,7 +51,47 @@ const CatalogueHinge = () => {
             link: 'https://drive.google.com/file/d/19OGSgkYjF3apjDsrFKHolLxHRUg6o-kR/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>70 Hidden</span></div>,
+            title: <div>سیستم <span>70Hidden</span></div>,
+            image: noneProfileImage,
+            link: 'https://drive.google.com/file/d/1z4ZPBgTmKT9MvQtOZRlv3Jt09kpkp1Yf/view?usp=sharing'
+        },
+        {
+            title: <div>سیستم <span>60T</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>55T</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>75T</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>48N</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>90N</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>77Flat</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>85T</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <span>60Hidden</span></div>,
             image: noneProfileImage,
             link: '#'
         },
