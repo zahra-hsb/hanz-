@@ -13,10 +13,10 @@ const Header = ({ setSidebarShow, router }) => {
     ]
 
     const menuItemForBuilding = [
-        { tab: 'view', label: 'نما' },
         { tab: 'sliding', label: 'کشویی' },
         { tab: 'Hinge', label: 'لولایی' },
         { tab: 'shelter', label: 'جان پناه' },
+        { tab: 'view', label: 'نما' },
         { tab: 'shutter', label: 'شاتر' },
     ]
 
