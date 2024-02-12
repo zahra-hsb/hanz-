@@ -2,6 +2,7 @@ import CatalogueView from "../CatalogueView";
 import CatalogueSliding from "../CatalogueSliding";
 import CatalogueHinge from "../CatalogueHinge";
 import CatalogueShelter from "../CatalogueShelter";
+import CatalogueShutter from "../CatalogueShutter";
 
 
 
@@ -25,6 +26,9 @@ const CatalogueComponent = () => {
                 <CatalogueShelter />
             </div>
             
+            <div id="shutter">
+                <CatalogueShutter />
+            </div>
         </>
     );
 }
