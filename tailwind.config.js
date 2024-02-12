@@ -14,13 +14,13 @@ module.exports = {
         hoverColor: 'var(--hover-color)',
       },
       backgroundImage: {
-        mainSection: 'url(../../public/image/cuh_banner.png)',
+        mainSection: 'url(../../public/image/banner/MAINPAGE-banner.png)',
         aboutSection: 'url(../../public/image/whtb-banner-01-background.jpg)',
         gallerySection: 'url(../../public/image/sectors.banner.building-2000x560.jpg)',
         productSection: 'url(../../public/image/banner/product-banner-2.jpg)',
         BuilingSection: 'url(../../public/image/building-banner.png)',
         industrialSection: 'url(../../public/image/industrial-banner.jpg)',
-        servicesSection: 'url(../../public/image/services-banner.webp)',
+        servicesSection: 'url(../../public/image/banner/khadamat.png)',
         profileSection: 'url(../../public/image/profile_aluminium.jpg)',
         agencySection: 'url(../../public/image/About-Us-Banner.jpg)'
       },
