@@ -26,7 +26,7 @@ const CatalogueShutter = () => {
                     <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
                     <div className="mx-8 flex items-center">
                         <h4 className="text-xl opacity-[76%]">
-                            کاتالوگ های جان پناه
+                            کاتالوگ های شاتر 
                         </h4>
                         <span className="text-3xl text-green opacity-1 mr-1">هانز</span>
                     </div>
