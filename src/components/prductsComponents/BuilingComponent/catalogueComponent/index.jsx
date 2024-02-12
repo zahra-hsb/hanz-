@@ -1,6 +1,7 @@
 import CatalogueView from "../CatalogueView";
 import CatalogueSliding from "../CatalogueSliding";
 import CatalogueHinge from "../CatalogueHinge";
+import CatalogueShelter from "../CatalogueShelter";
 
 
 
@@ -19,6 +20,11 @@ const CatalogueComponent = () => {
             <div id="Hinge">
                 <CatalogueHinge />
             </div>
+
+            <div id="shelter">
+                <CatalogueShelter />
+            </div>
+            
         </>
     );
 }
