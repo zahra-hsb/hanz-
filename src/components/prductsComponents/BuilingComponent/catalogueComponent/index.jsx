@@ -10,10 +10,6 @@ const CatalogueComponent = () => {
 
     return (
         <>
-            <div id="view">
-                <CatalogueView />
-            </div>
-
             <div id="sliding">
                 <CatalogueSliding />
             </div>
@@ -25,7 +21,11 @@ const CatalogueComponent = () => {
             <div id="shelter">
                 <CatalogueShelter />
             </div>
-            
+
+            <div id="view">
+                <CatalogueView />
+            </div>
+
             <div id="shutter">
                 <CatalogueShutter />
             </div>
