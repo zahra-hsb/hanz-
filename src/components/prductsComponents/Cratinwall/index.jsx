@@ -20,7 +20,7 @@ export default function Cratinwall() {
       <div className="w-full mb-20">
         <div className="mt-[90px] mb-10 flex justify-between items-center text-xl text-gray-600 w-[90%] sm:w-[100%] m-auto">
           <div>
-            <h2>کراتین وال</h2>
+            <h2>کرتین وال</h2>
           </div>
 
           <div>
