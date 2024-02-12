@@ -28,7 +28,7 @@ export default function Profile() {
         </div>
         <div id="home-carousel" className="w-full">
           <Slider
-            url='/products'
+            url='/products/accessory#profile'
             slidesPerView={3}
             slides={slides}
             textSlider={true}

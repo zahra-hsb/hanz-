@@ -45,9 +45,9 @@ const GalleryModal = ({ mainPic, closeModal, opacity, wrapperOpacity, galleryPro
         </div>
         <div className="pb-8 sm:pb-2 lg:p-1">
           <p className="text-start p-5 text-gray-900">
-            <span className="text-gray-50 text-shadow-lg">تعداد: </span>
-            {pictureCount}
-            مورد
+            <span className="text-gray-600 text-shadow-lg">تعداد تصاویر: </span>
+            {pictureCount}&#160; 
+             مورد 
           </p>
           <GallerySlider galleryProp={galleryProp} changePic={changePic} />
         </div>

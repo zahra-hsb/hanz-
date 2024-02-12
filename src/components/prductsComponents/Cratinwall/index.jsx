@@ -20,16 +20,16 @@ export default function Cratinwall() {
       <div className="w-full mb-20">
         <div className="mt-[90px] mb-10 flex justify-between items-center text-xl text-gray-600 w-[90%] sm:w-[100%] m-auto">
           <div>
-            <h2>کراتین وال</h2>
+            <h2>کرتین وال</h2>
           </div>
 
-          <div>
+          {/* <div>
             <Button title={'بیشتر'} url={'/products'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
-          </div>
+          </div> */}
         </div>
         <div id="home-carousel" className="w-full">
           <Slider
-            url='/products'
+            url='/products/accessory#cratinwall'
             slidesPerView={3}
             slides={slides}
             textSlider={true}

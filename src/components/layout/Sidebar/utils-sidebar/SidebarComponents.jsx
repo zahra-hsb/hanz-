@@ -29,7 +29,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
 
     return (
         <div className='flex flex-col justify-between fixed top-0 right-0 z-50 w-full lg:w-64 h-[100%] bg-white border-l'>
-            <div className='flex flex-col justify-start'>
+            <div className='flex flex-col justify-start overflow-auto height-[600px]'>
                 <div className='flex justify-between items-end'>
                     <Logo />
 
@@ -42,7 +42,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
                     <Search />
                 </div>
 
-                <div className="px-3 py-4 overflow-y-auto">
+                <div className="px-3 py-4 overflow-auto">
                     <Menu selectedTab={selectedTab} handleTabClick={handleTabClick} setSidebarShow={setSidebarShow} toggleOverflow={toggleOverflow} />
                 </div>
             </div>

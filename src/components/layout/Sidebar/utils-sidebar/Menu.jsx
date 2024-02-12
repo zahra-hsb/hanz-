@@ -38,7 +38,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
                     {item.tab === 'products' && (
                         <ul
                             id="dropdown-example"
-                            className={`${showChildMenu ? 'transition ease-in-out duration-300 transform translate-y-0' : 'hidden transition duration-300 transform translate-y-[-100%]' } py-2 space-y-2`}
+                            className={`${showChildMenu ? 'transition ease-in-out duration-300 transform translate-y-0' : 'hidden transition duration-300 transform translate-y-[-100%]' } py-2 space-y-2 bg-[#e5e7eb] rounded-lg`}
                         >
                             <li>
                                 <Link href="/products/building" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>ساختمانی</Link>

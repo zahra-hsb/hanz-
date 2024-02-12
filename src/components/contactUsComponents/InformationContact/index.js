@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TelInfo from "../TelInfo";
 
 const InformationContact = () => {
     return (
@@ -20,16 +21,7 @@ const InformationContact = () => {
                 <div>
                     <div className="flex justify-start flex-col gap-3 mb-8 sm:mb-0">
                         <div className="flex gap-2 justify-start items-center sm:items-start flex-col">
-                            <strong className="text-green">شماره تماس :</strong>
-                            <p className="text-gray-600 text-justify">
-                                <Link href={'tel:02165626443'}  className='hover:text-green cursor-pointer'> 021-65626443 </Link>
-                                -
-                                <Link href={'tel:02165626449'}  className='hover:text-green cursor-pointer'> 021-65626449 </Link>
-                                <br />
-                                <Link href={'tel:02165626446'}  className='hover:text-green cursor-pointer'> 021-65626446 </Link>
-                                -
-                                <Link href={'tel:02165626448'}  className='hover:text-green cursor-pointer'> 021-65626448 </Link>
-                            </p>
+                            <TelInfo />
                         </div>
                         <div className="flex gap-1 justify-start flex-col">
                             <strong className="text-green"> کدپستی :</strong>
