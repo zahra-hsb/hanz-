@@ -31,37 +31,37 @@ const CatalogueSliding = () => {
             link: 'https://drive.google.com/file/d/1RFnFfzeHH-TKMs4emLdflmKEC7wY4LJ8/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>SL 95 T</span></div>,
+            title: <div>سیستم <span>SL 95T</span></div>,
             image: profile3Image,
             link: 'https://drive.google.com/file/d/1XfL_JVOlZXzGQkNsKMkZU7RfIrgtLBot/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>SL 95 T Mono</span></div>,
+            title: <div>سیستم <span>SL 95T Mono</span></div>,
             image: profile2Image,
             link: 'https://drive.google.com/file/d/1BRjAD6pv4I74lQQhzpsmUvUea7dNO6ux/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>SL 95 N Mono</span></div>,
+            title: <div>سیستم <span>SL 95N Mono</span></div>,
             image: noneProfileImage,
             link: 'https://drive.google.com/file/d/10LG3TgrxBPKpuGJ3Xbwl3TbDl0Fu3e9w/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>SL 115 T Mono</span></div>,
+            title: <div>سیستم <span>SL 115T Mono</span></div>,
             image: SL115TMono,
             link: 'https://drive.google.com/file/d/1H4qJpeChRRAHzcP9BST0fAaAaEpM4ozo/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>SL 115 T Double Rial</span></div>,
+            title: <div>سیستم <br /><span>SL 115T Double Rial</span></div>,
             image: SL115TDoubleRial,
             link: 'https://drive.google.com/file/d/1UeoxkU2isKpNFLhe7q1sYGhiG-bMXOhx/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>SL 60 N</span></div>,
+            title: <div>سیستم <span>SL 60N</span></div>,
             image: noneProfileImage,
             link: 'https://drive.google.com/file/d/1wU2MQCbobJFYW7E__xKpL0q_cVHRodRV/view?usp=sharing'
         },
         {
-            title: <div>سیستم <br /><span>SL 140 Z Shoulder</span></div>,
+            title: <div>سیستم <br /><span>SL 140Z Shoulder</span></div>,
             image: noneProfileImage,
             link: 'https://drive.google.com/file/d/1CoxTpd4hN6UIt9zWvl1s-cEEe44LNnDz/view?usp=sharing'
         },
@@ -71,7 +71,22 @@ const CatalogueSliding = () => {
             link: 'https://drive.google.com/file/d/1AuHRYyKeqSFfvgZNkMfS6ST9jiapo4rE/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>SL 70 T</span></div>,
+            title: <div>سیستم <span>SL 70T</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <br /><span>SL 95N Double Rial</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <br /><span>SL 115T Mono Rail</span></div>,
+            image: noneProfileImage,
+            link: '#'
+        },
+        {
+            title: <div>سیستم <br /><span>SL 115T Double Rail 34</span></div>,
             image: noneProfileImage,
             link: '#'
         },
