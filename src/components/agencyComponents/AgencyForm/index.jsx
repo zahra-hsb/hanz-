@@ -33,7 +33,7 @@ const AgencyForm = () => {
                         address: '',
                         message: ''
                     });
-                    setStatus({ message: 'پیام شما با موفقیت ارسال شد', messageColor: 'text-green' })
+                    setStatus({ message: 'درخواست شما با موفقیت ارسال شد', messageColor: 'text-green' })
                 }, error => {
                     setStatus({ message: 'پیام ارسال نشد', messageColor: 'text-red-500' })
                 });
