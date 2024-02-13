@@ -22,6 +22,10 @@ const AboutUs = () => {
                         </div>
                         <div>
                             <p className='sm:text-lg mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
+                                شرکت هانز یکی از معتبرترین شرکت های طراحی و تولیدکننده سیستم های نوین آلومینیومی در کشور است که سابقه دیرینه و تجربه ی بی نظیری در تولید صنعت آلومینیوم دارد.
+
+                            </p>
+                            {/* <p className='sm:text-lg mt-2 text-justify opacity-70 leading-9 sm:leading-10'>
                                 از معتبرترین شرکت های
                                 طراحی و تولید کننده سیستم های نوین درب و پنجره و نمای ساختمان است که با
                                 استفاده از دانش روز و تکنولوژی برتر در کشور از سال 1384 ، با ظرفیت اولیه
@@ -29,8 +33,7 @@ const AboutUs = () => {
                                 متر مربع آن به سالن های تولیدی اختصاص دارد ، شروع به فعالیت نموده است.
                                 این واحد تولیدی در راستای الویت قرار
                                 دادن کیفیت در تولید محصولات موفق به دریافت گواهینامه ی ایزو 9008:9001 در مدیریت کیفیت شده است.
-                            </p>
-
+                            </p> */}
                         </div>
                     </div>
                     <div className='w-full flex items-center justify-center relative bottom-20 lg:bottom-20 lg:mt-46 mt-28 px-30'>
@@ -55,7 +58,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div className='w-full'>
                 <WhyHanzCard />
             </div>
