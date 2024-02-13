@@ -14,7 +14,7 @@ export default function Accessory() {
             <div>
               <h4 className="text-2xl opacity-[76%]">
                 محصولات
-                <span className="text-4xl text-green opacity-1"> صنعتی</span>
+                <span className="text-4xl text-green opacity-1"> اکسسوری</span>
               </h4>
             </div>
           </div>
