@@ -36,7 +36,7 @@ const WhyHanzCarousel = () => {
                                 </div>
                                 <div>
                                     <p class=" text-sm font-medium text-gray-600">
-                                        صرفه جویی در زمان
+                                        کیفیت عالی محصولات هانز
                                     </p>
                                     {/* <p class="text-lg font-semibold text-gray-700">
                                         19238
@@ -55,7 +55,7 @@ const WhyHanzCarousel = () => {
                                 </div>
                                 <div>
                                     <p class="text-sm font-medium text-gray-600">
-                                        زمان بندی مناسب
+                                        هانزبه مشتریان خود متعهد است
                                     </p>
                                     {/* <p class="text-lg font-semibold text-gray-700">
                                         120
@@ -73,7 +73,7 @@ const WhyHanzCarousel = () => {
                                 </div>
                                 <div>
                                     <p class="text-sm font-medium text-gray-600">
-                                        تعهد
+                                        سرعت بالای تحویل محصولات و صرفه جویی در زمان
                                     </p>
                                     {/* <p class="text-lg font-semibold text-gray-700">
                                         6389
@@ -92,7 +92,26 @@ const WhyHanzCarousel = () => {
                                 </div>
                                 <div>
                                     <p class="text-sm font-medium text-gray-600">
-                                        صرفه جویی در هزینه حمل و نقل
+                                        حمل و نقل با کیفیت با حداقل هزینه در هانز
+                                    </p>
+                                    {/* <p class="text-lg font-semibold text-gray-700">
+                                        828
+                                    </p> */}
+                                </div>
+                            </div>
+                            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs">
+                                <div
+                                    class="py-[10px] ml-4 text-yellow-500 bg-yellow-100 rounded-full">
+                                    {/* <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="8" r="7"></circle>
+                                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                    </svg> */}
+                                    <Image src={dollar} alt="" width={50} height={35} />
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">
+                                        حمل و نقل با کیفیت با حداقل هزینه در هانز
                                     </p>
                                     {/* <p class="text-lg font-semibold text-gray-700">
                                         828
