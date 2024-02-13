@@ -24,7 +24,7 @@ const WhyHanzCarousel = () => {
                             چرا هانز
                         </h2> */}
 
-                        <div class="grid gap-6 my-8 md:grid-cols-2 xl:grid-cols-4">
+                        <div class="grid gap-6 my-8 md:grid-cols-2 xl:grid-cols-5">
                             <div class="flex items-center p-4 bg-white rounded-lg shadow-xs">
                                 <div class="py-[11px] ml-2 text-blue-500 bg-blue-100 rounded-full">
                                     {/* <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -88,7 +88,7 @@ const WhyHanzCarousel = () => {
                                         <circle cx="12" cy="8" r="7"></circle>
                                         <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                                     </svg> */}
-                                    <Image src={dollar} alt="" width={50} height={35} />
+                                    <Image src={dollar} alt="" width={40} height={35} />
                                 </div>
                                 <div>
                                     <p class="text-sm font-medium text-gray-600">
@@ -107,7 +107,7 @@ const WhyHanzCarousel = () => {
                                         <circle cx="12" cy="8" r="7"></circle>
                                         <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                                     </svg> */}
-                                    <Image src={dollar} alt="" width={50} height={35} />
+                                    <Image src={dollar} alt="" width={40} height={35} />
                                 </div>
                                 <div>
                                     <p class="text-sm font-medium text-gray-600">
