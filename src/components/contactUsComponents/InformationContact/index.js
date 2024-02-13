@@ -4,7 +4,7 @@ import TelInfo from "../TelInfo";
 const InformationContact = () => {
     return (
         <>
-            <div>
+            {/* <div>
                 <p className="text-gray-600">
                     سوالی دارید؟
                     <br />
@@ -12,7 +12,7 @@ const InformationContact = () => {
                     <br />
                     از طریق تلفن، ایمیل یا فرم زیر با ما در ارتباط باشید. شما همچنین می توانید به ما مراجعه کنید
                 </p>
-            </div>
+            </div> */}
             <div className="my-5 sm:leading-10">
                 <div className="flex justify-start flex-col items-center sm:flex-row mb-8 sm:mb-0 sm:block">
                     <strong className="text-green">آدرس:</strong>
