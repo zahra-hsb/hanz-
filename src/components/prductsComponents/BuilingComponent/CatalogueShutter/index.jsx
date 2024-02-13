@@ -1,8 +1,7 @@
 import { useState } from "react";
 import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
 import Pagination from "../../../pagination/index"
-
-import CatalogueCardComponent from "../catalogueComponent/CatalogueCardComponent";
+import CatalogueCardComponent from "../CatalogueCardComponent";
 
 const CatalogueShutter = () => {
     const [receivedDataShutter, setReceivedDataShutter] = useState()
