@@ -23,7 +23,7 @@ export default function Profile() {
           </div>
 
           <div>
-            <Button title={'بیشتر'} url={'/products'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
+            {/* <Button title={'بیشتر'} url={'/products'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} /> */}
           </div>
         </div>
         <div id="home-carousel" className="w-full">
