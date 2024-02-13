@@ -40,11 +40,6 @@ export default function Services() {
       description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
       image: ExtrusionImage,
     },
-    // {
-    //   title: <div>واحد رنگ آنادایز <br />(ANODIZING LINE)</div>,
-    //   description: 'شرکت هانز با دارا بودن خط کامل آنادایزینگ همچنین دستگاه های پولیش و براش، تکمیل کننده سلایف مختلف مشتریان عزیز خواهد بود.',
-    //   image: PowdercoatingImage,
-    // },
   ];
 
   return (
@@ -53,16 +48,22 @@ export default function Services() {
       <div className="w-[90%] sm:w-[80%] m-auto">
 
         <div>
-
-          <div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
-            <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
-            <div className="mx-8">
-              <h4 className="text-xl opacity-[76%]">
-                واحدهای تولید
-                <span className="text-3xl text-green opacity-1">هانز</span>
-              </h4>
+          <div>
+            <div className="mt-20 mb-10 text-gray-600 flex justify-center items-center">
+              <div className="hidden md:flex border-b border-gray-200 w-full"></div>
+              <div className="mx-6 w-full text-center">
+                <h4 className="text-xl opacity-[76%]">
+                  واحدهای تولید
+                  <span className="text-3xl text-green opacity-1">هانز</span>
+                </h4>
+              </div>
+              <div className="hidden md:flex border-b border-gray-200 w-full"></div>
             </div>
-            <div className="hidden md:flex border-b border-gray-200 w-1/3"></div>
+            <div className="w-full text-center">
+              <p className="p-4 sm:px-10 text-gray-600 opacity-[76%] text-lg">
+                گروه صنعتی هانز با ارائه ی خدمات متعدد در زمینه طراحی قالب، خدمات اکسترود، رنگ پودری، ترمال بریک و مونتاژو غیره با بهره مندی از دانش و دستگاه های به روز دنیا به مشتریان عزیز می پردازد.
+              </p>
+            </div>
           </div>
 
           <div className="py-10 flex justify-around flex-wrap">
