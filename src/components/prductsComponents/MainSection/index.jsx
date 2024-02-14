@@ -34,9 +34,9 @@ export default function MainSection() {
     { image: hingeImg, text: 'لولایی' },
   ]
   const industrialArray = [
-    { image: hanzProfile1, text: 'گلخانه' },
-    { image: hanzProfile3, text: 'هیدسینگ' },
-    { image: hanzProfile2, text: 'الکترونیک' },
+    { image: hanzProfile1 },
+    { image: hanzProfile3 },
+    { image: hanzProfile2 },
   ]
   const servicesArray = [
     { image: TERMALImage, text: 'واحد طراحی سیستم' },
