@@ -13,12 +13,12 @@ const AgencyForm = () => {
         tel: '',
         company: '',
         address: '',
-        description: ''
+        message: ''
     });
     const [status, setStatus] = useState('');
     function handleSubmit(event) {
         event.preventDefault()
-        if (!isEmailValid || !isMobileValid) {
+        if (!isMobileValid) {
             setStatus({ message: 'لطفا ایمیل یا شماره تماس را به درستی وارد کنید.', messageColor: 'text-red-500' });
             console.log('not valid')
 
@@ -31,9 +31,9 @@ const AgencyForm = () => {
                         tel: '',
                         company: '',
                         address: '',
-                        description: ''
+                        message: ''
                     });
-                    setStatus({ message: 'پیام شما با موفقیت ارسال شد', messageColor: 'text-green' })
+                    setStatus({ message: 'درخواست شما با موفقیت ارسال شد', messageColor: 'text-green' })
                 }, error => {
                     setStatus({ message: 'پیام ارسال نشد', messageColor: 'text-red-500' })
                 });
@@ -85,8 +85,8 @@ const AgencyForm = () => {
                             <label htmlFor="floating_phone" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>شماره تماس</p><p className="text-red-500">*</p></label>
                         </div>
                         <div className="relative z-0 w-full mb-8 group">
-                            <input value={values.company} name='company' onChange={handleChange} type="text" id="floating_company" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required/>
-                            <label htmlFor="floating_company" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start items-center"><p>اسم شرکت</p><p className="text-red-500">*</p></label>
+                            <input value={values.company} name='company' onChange={handleChange} type="text" id="floating_company" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " required />
+                            <label htmlFor="floating_company" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start items-center"><p>نام شرکت</p><p className="text-red-500">*</p></label>
                         </div>
                     </div>
                     <div className="relative z-0 w-full mb-8 group">
@@ -94,15 +94,19 @@ const AgencyForm = () => {
                         <label htmlFor="floating_repeat_password" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>آدرس</p><p className="text-red-500">*</p></label>
                     </div>
                     <div className="relative z-0 w-full mb-8 group">
-                        <input  name='description' onChange={handleChange} type="text" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " />
+                        <input value={values.message} name='message' onChange={handleChange} type="text" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-green peer" placeholder=" " />
                         <label htmlFor="floating_repeat_password" className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 flex justify-start"><p>توضیحات</p><p className="text-gray-400 text-xs">(اختیاری)</p></label>
                     </div>
+                    {status && renderAlert(status)}
                     <button type="submit" className="text-green text-sm lg:text-md px-4 py-2 mt-[40px] rounded-3xl transition-colors text-white hover:text-green bg-green hover:bg-white font-medium w-full text-center border-2 border-green">ارسال درخواست</button>
-
                 </form>
             </div>
         </>
     )
 }
-
+const renderAlert = ({ message, messageColor }) => (
+    <div className={`px-4 py-3 leading-normal ${messageColor} bg-gray-200 rounded mb-5 text-center`}>
+        <p>{message}</p>
+    </div>
+)
 export default AgencyForm

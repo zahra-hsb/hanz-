@@ -27,16 +27,16 @@ const ProductCategory = ({ items = [], subCategory, text, url }) => {
             <div className="w-[90%] sm:w-[100%] m-auto my-10">
                 <div className="mt-20 mb-10 text-gray-600">
                     <div>
-                        <h4 className="text-2xl opacity-[76%]">
+                        <h4 className="text-2xl text-center sm:text-start opacity-[76%]">
                             {subCategory}
                         </h4>
                     </div>
                 </div>
-                <div className="w-full flex justify-between items-center">
-                    <p className="lg:w-5/6 text-justify text-gray-600 text-md">
+                <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-10 sm:gap-1">
+                    <p className="sm:w-5/6 text-justify text-gray-600 text-md">
                         {text}
                     </p>
-                    <Button url={`/products/${url}`} title={'بیشتر'} hover={'hover:bg-green hover:text-white'} border={'border-2 border-green !mt-0'}/>
+                    <Button url={`/products/${url}`} title={'بیشتر'} hover={'hover:bg-green hover:text-white sm:'} border={'border-2 border-green !mt-0'}/>
                 </div>
             </div>
 
