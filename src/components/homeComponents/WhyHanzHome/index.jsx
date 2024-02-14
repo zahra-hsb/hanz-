@@ -21,7 +21,7 @@ const WhyHanzHome = () => {
 
                 <div className="w-full">
                     <div className="bg-gray-100 rounded-lg mx-2 sm:mx-0">
-                        <div className="px-6 mb-10 flex justify-between items-center text-xl text-gray-600 w-[90%] sm:w-[100%] m-auto">
+                        <div className="sm:px-6 mb-10 flex justify-between items-center text-xl text-gray-600 w-[90%] sm:w-[100%] m-auto">
                             {/* <div>
                                 <h2>چرا هانز</h2>
                             </div> */}
@@ -31,12 +31,12 @@ const WhyHanzHome = () => {
                                 </div> */}
                                 <div className="pt-8 w-full">
                                     <div className="flex justify-between items-center">
-                                        <h4 className="text-2xl opacity-[85%]">
+                                        <h4 className="sm:text-2xl opacity-[85%]">
                                             چرا گروه
-                                            <span className="text-5xl text-green opacity-1"> هانز</span>
+                                            <span className="text-3xl sm:text-5xl text-green opacity-1"> هانز</span>
                                         </h4>
                                         <div>
-                                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green'} hover={'hover:bg-green hover:text-white'} />
+                                            <Button title={'درباره ما'} url={'/about'} border={'border-2 border-green !text-xs sm:!text-md'} hover={'hover:bg-green hover:text-white'} />
                                         </div>
                                     </div>
                                     <div className="lg:w-[60%]">
