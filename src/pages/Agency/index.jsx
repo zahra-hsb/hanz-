@@ -16,7 +16,7 @@ const Agency = () => {
                     <p className="py-10 text-sm">
                           در صورت داشتن سوال
                          با ما تماس بگیرید و سوالات خود را با ما در میان بگذارید. 
-                         <Link href={'/contactUs'} className="hover:text-green px-1">
+                         <Link href={'/contactUs'} className="hover:text-green px-1 underline">
                             اینجا کلیک کنید.
                         </Link> 
                     </p>

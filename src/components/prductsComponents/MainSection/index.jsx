@@ -34,9 +34,9 @@ export default function MainSection() {
     { image: hingeImg, text: 'لولایی' },
   ]
   const industrialArray = [
-    { image: hanzProfile1, text: 'گلخانه' },
-    { image: hanzProfile3, text: 'هیدسینگ' },
-    { image: hanzProfile2, text: 'الکترونیک' },
+    { image: hanzProfile1 },
+    { image: hanzProfile3 },
+    { image: hanzProfile2 },
   ]
   const servicesArray = [
     { image: TERMALImage, text: 'واحد طراحی سیستم' },
@@ -71,16 +71,16 @@ export default function MainSection() {
       </div>
 
       <ProductCategory items={structuralArray} subCategory={'ساختمانی'} 
-      text={'در شرکت ما تجهیزات ساختمانی باکیفیت ساخته می شود.'} url={'building'}/>
+      text={'گروه صنعتی هانز با استفاده از تکنولوژی روز دنیا و به پشتیبانی تیم مهندسی مجرب، محصولات آلومینیومی متنوع تولید می کند.'} url={'building'}/>
       <ProductCategory items={industrialArray} subCategory={'صنعتی'} 
-        text={'تجهیزات صنعتی هانز را در زیر می توانید ببینید'} url={'industrial'}
+        text={'گروه صنعتی هانز محصولات آلومینیومی متنوعی در صنایع الکترونیک، پزشکی، لوازم خانگی و ابزارهای صنعتی، آماده ی ارائه ی بهترین خدمات برای پاسخ به نیاز های متنوع مشتریان صنعتی است.'} url={'industrial'}
       />
       <ProductCategory items={servicesArray}
       subCategory={'خدمات'}
-      text={'شرکت هانز به کمک 7 واحد افتخار خدمت رسانی به شما عزیزان را دارد'} url={'services'} />
+      text={'گروه صنعتی هانز با ارائه ی خدمات متعدد در زمینه طراحی قالب، خدمات اکسترود، رنگ پودری، ترمال بریک و مونتاژو غیره با بهره مندی از دانش و دستگاه های به روز دنیا به مشتریان عزیز می پردازد.'} url={'services'} />
       <ProductCategory items={Accessories} 
       subCategory={'اکسسوری'}
-      text={'اکسسوری های هانز به سه دسته زیر تقسیم بندی می شوند.'} url={'accessory'}
+      text={'گروه صنعتی هانز با ارائه مجموعه ی کاملی از اکسسوری و یراق آلات از جمله انواع گونیا، لاستیک، چسب، پیچ و خدمات فنی و پشتیبانی مشتریان خود را در زمینه ی تهیه ی اکسسوری بی نیاز می کند.'} url={'accessory'}
       />
     </>
   );
