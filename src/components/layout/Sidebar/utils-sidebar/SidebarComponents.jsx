@@ -24,6 +24,10 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
             setSelectedTab('about');
         } else if (router.pathname === '/contactUs') {
             setSelectedTab('contactUs');
+        } else if (router.pathname === '/agency') {
+            setSelectedTab('agency');
+        } else if (router.pathname === '/assist') {
+            setSelectedTab('assist');
         }
     }, [router.pathname]);
 

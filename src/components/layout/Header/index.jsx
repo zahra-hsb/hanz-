@@ -56,6 +56,8 @@ const Header = ({ setSidebarShow, router }) => {
             setPageName('تماس با ما');
         } else if (router.pathname === '/agency') {
             setPageName('نمایندگی')
+        } else if (router.pathname === '/assist') {
+            setPageName('دعوت به همکاری')
         } else {
             setPageName('404')
         }
