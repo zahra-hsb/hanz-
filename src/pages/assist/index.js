@@ -12,7 +12,7 @@ const Assist = () => {
                 <div className="w-full sm:p-10 p-10 opacity-80 flex flex-col items-center justify-center text-justify">
                     <Image src={FormIcon} alt="form" />
                     <p className="leading-10">
-                        برای ارسال درخواست همکاری، فرم روبرو را لطفا با دقت پر کنید. پشتیبان های ما با شما تماس خواهند گرفت.
+                        برای ارسال درخواست همکاری، فرم روبرو را لطفا با دقت پر کنید و در صورت لزوم فایل رزومه خود را آپلود کنید. پشتیبان های ما با شما تماس خواهند گرفت.
                     </p>
                     <p className="py-10 text-sm">
                         در صورت داشتن سوال
