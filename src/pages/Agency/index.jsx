@@ -1,4 +1,4 @@
-import AgencyForm from "@/components/agencyComponents/AgencyForm"
+import AgencyForm from "@/components/agencyComponents/AssistForm"
 import Main from "@/components/globalComponents/Main"
 import Image from "next/image"
 import FormIcon from '../../../public/icons/noun-form-122196.svg'

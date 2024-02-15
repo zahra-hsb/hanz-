@@ -1,4 +1,4 @@
-import AssistForm from "@/components/agencyComponents/AgencyForm"
+import AssistForm from "@/components/agencyComponents/AssistForm"
 import Main from "@/components/globalComponents/Main"
 import Image from "next/image"
 import Link from "next/link"
