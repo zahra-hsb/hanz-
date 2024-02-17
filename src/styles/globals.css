@@ -82,7 +82,7 @@ div.swiper-button-next::after {
 }
 
 @media (max-width: 768px) {
-
+  
   div.swiper-button-prev,
   div.swiper-button-next {
     display: none !important;
@@ -93,7 +93,11 @@ div.swiper-button-next::after {
     text-align: center;
   }
 }
-
+@media (max-width: 1024px) {
+  #header{
+    width: 100% !important;
+  }
+}
 @media (min-width: 768px) {
 
   div.swiper-scrollbar-horizontal {

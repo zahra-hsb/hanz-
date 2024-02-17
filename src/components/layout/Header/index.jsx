@@ -68,7 +68,7 @@ const Header = ({ setSidebarShow, router }) => {
         <>
             <header className={`
             ${router.pathname === '/products' || router.pathname === '/products/building' || router.pathname === '/products/industrial' || router.pathname === '/products/services' || router.pathname === '/products/accessory' ? 'h-[80px] sm:h-[50px]' : 'h-[50px]'}
-            h-[50px] fixed bg-white z-50 flex justify-between items-center border-b`} id="header">
+            h-[50px] fixed bg-white z-50 flex justify-between items-center border-b w-full`} id="header">
                 <div className="flex flex-col sm:flex-row">
                     <div className="flex justify-start items-center">
                         <div
