@@ -6,7 +6,7 @@ const Notification = ({ handleClose }) => {
     
     return (
         <>
-            <div className="fixed w-screen h-screen bg-black opacity-50 top-0 left-0 z-[50] cursor-pointer"></div>
+            <div onClick={handleClose} className="fixed w-screen h-screen bg-black opacity-50 top-0 left-0 z-[50] cursor-pointer"></div>
             <span
                 className="w-[15px] fixed top-0 right-0 z-50 p-5 sm:p-10 lg:p-10 text-4xl text-white cursor-pointer hover:text-red"
                 onClick={handleClose}>

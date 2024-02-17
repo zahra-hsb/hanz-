@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { toggleOverflow } from "@/components/utils";
 import Link from "next/link";
+import FollowUsSection from "@/components/globalComponents/FollowUsSection";
 
 const Header = ({ setSidebarShow, router }) => {
     const [pageName, setPageName] = useState('');
@@ -67,7 +68,7 @@ const Header = ({ setSidebarShow, router }) => {
         <>
             <header className={`
             ${router.pathname === '/products' || router.pathname === '/products/building' || router.pathname === '/products/industrial' || router.pathname === '/products/services' || router.pathname === '/products/accessory' ? 'h-[80px] sm:h-[50px]' : 'h-[50px]'}
-            h-[50px] fixed bg-white z-50 flex justify-start items-center w-full border-b`}>
+            h-[50px] fixed bg-white z-50 flex justify-between items-center border-b`} id="header">
                 <div className="flex flex-col sm:flex-row">
                     <div className="flex justify-start items-center">
                         <div
@@ -190,6 +191,7 @@ const Header = ({ setSidebarShow, router }) => {
                         )}
                     </div>
                 </div>
+                <FollowUsSection />
             </header >
         </>
     )

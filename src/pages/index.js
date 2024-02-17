@@ -45,7 +45,7 @@ export default function Home() {
       {/* <Company /> */}
       {/* <FaQ /> */}
       {/* <Slider /> */}
-      {isOpenNotif && <Notification handleClose={handleClose} />}
+      {/* {isOpenNotif && <Notification handleClose={handleClose} />} */}
     </main>
   );
 }

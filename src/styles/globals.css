@@ -115,6 +115,9 @@ div.swiper-button-next::after {
   text-align: center;
 }
 
+#header{
+  width: calc(100% - 16rem);
+}
 
 /* #WhyHanzHome-carousel .swiper-wrapper {
   display: flex!important;
