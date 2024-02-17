@@ -52,7 +52,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
             </div>
 
             <div>
-                <Social />
+                {/* <Social /> */}
                 <Login />
             </div>
         </div>
