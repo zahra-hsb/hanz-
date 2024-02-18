@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Loading from './Loading/index';
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
+import Notification from "@/components/globalComponents/Notification";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -31,7 +32,7 @@ export default function App({ Component, pageProps }) {
   if (isLoading) {
     return <Loading />;
   }
-
+  
   return (
     <Layout>
       <Component {...pageProps} />

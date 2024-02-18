@@ -1,8 +1,9 @@
-import AgencyForm from "@/components/agencyComponents/AgencyForm"
+import AgencyForm from "@/components/agencyComponents/AssistForm"
 import Main from "@/components/globalComponents/Main"
 import Image from "next/image"
 import FormIcon from '../../../public/icons/noun-form-122196.svg'
 import Link from "next/link"
+import Form from "@/components/contactUsComponents/Form"
 const Agency = () => {
     return (
         <>
@@ -22,7 +23,8 @@ const Agency = () => {
                     </p>
                 </div>
                 <div className="w-full sm:p-20 py-20 p-10">
-                    <AgencyForm />
+                    {/* <AgencyForm /> */}
+                    <Form agency={true}/>
                 </div>
             </div>
         </>

@@ -9,9 +9,27 @@ import Design from "@/components/homeComponents/Design";
 import DesignTitle from "@/components/homeComponents/DesignTitle";
 import WhyHanzHome from "@/components/homeComponents/WhyHanzHome";
 import HanzUnits from "@/components/homeComponents/HanzUnits";
-
+import Notification from "@/components/globalComponents/Notification"
 
 export default function Home() {
+  const [isOpenNotif, setIsOpenNotif] = useState(false);
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      console.log('notif')
+      setIsOpenNotif(true)
+    }, 1000);
+
+  }, []);
+
+  function handleClose() {
+    setIsOpenNotif(false)
+  }
+
+  // if(isOpenNotif) {
+  //   return isClose && <Notification handleClose={handleClose} />
+  // }
 
   return (
     <main>
@@ -21,12 +39,13 @@ export default function Home() {
       {/* <AboutSection /> */}
       <WhyHanzHome />
       <HanzUnits />
+      {/* <Notification /> */}
       {/* <DesignTitle />
       <Design /> */}
       {/* <Company /> */}
       {/* <FaQ /> */}
       {/* <Slider /> */}
-
+      {/* {isOpenNotif && <Notification handleClose={handleClose} />} */}
     </main>
   );
 }

@@ -9,6 +9,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
         { tab: 'products', label: 'معرفی محصول' },
         { tab: 'imageGallery', label: 'گالری تصاویر' },
         { tab: 'agency', label: 'نمایندگی' },
+        { tab: 'assist', label: 'دعوت به همکاری' },
         { tab: 'about', label: 'درباره ما' },
         { tab: 'contactUs', label: 'تماس با ما' },
     ]
@@ -38,7 +39,7 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
                     {item.tab === 'products' && (
                         <ul
                             id="dropdown-example"
-                            className={`${showChildMenu ? 'transition ease-in-out duration-300 transform translate-y-0' : 'hidden transition duration-300 transform translate-y-[-100%]' } py-2 space-y-2 bg-[#e5e7eb] rounded-lg`}
+                            className={`${showChildMenu ? 'transition ease-in-out duration-300 transform translate-y-0' : 'hidden transition duration-300 transform translate-y-[-100%]'} py-2 space-y-2 bg-[#e5e7eb] rounded-lg`}
                         >
                             <li>
                                 <Link href="/products/building" className={`text-gray-500 flex items-center p-2 pr-8 rounded-lg hover:bg-gray-100 group hover:text-green`}>ساختمانی</Link>
@@ -64,14 +65,14 @@ const Menu = ({ selectedTab, handleTabClick, setSidebarShow, toggleOverflow }) =
 export default Menu;
 
 export const ArowDown = ({ showChildMenu, setShowChildMenu }) => {
-    
+
     return (
         <div
             className="px-2 py-3 rounded-lg hover:bg-gray-100 group hover:text-green cursor-pointer"
             onClick={(event) => {
                 event.stopPropagation()
                 setShowChildMenu(s => !s)
-                }}
+            }}
         >
             <svg
                 className={`w-3 h-3 text-gray-500 transition ease-in-out duration-300 transform ${showChildMenu ? 'rotate-180' : ''}`}

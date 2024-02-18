@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Social from './Social';
 import Login from './Login';
 import { toggleOverflow } from '@/components/utils';
+import Language from './Language';
 
 const SidebarComponents = ({ setSidebarShow, router }) => {
     const [selectedTab, setSelectedTab] = useState(null);
@@ -24,6 +25,10 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
             setSelectedTab('about');
         } else if (router.pathname === '/contactUs') {
             setSelectedTab('contactUs');
+        } else if (router.pathname === '/agency') {
+            setSelectedTab('agency');
+        } else if (router.pathname === '/assist') {
+            setSelectedTab('assist');
         }
     }, [router.pathname]);
 
@@ -48,7 +53,7 @@ const SidebarComponents = ({ setSidebarShow, router }) => {
             </div>
 
             <div>
-                <Social />
+                <Language />
                 <Login />
             </div>
         </div>

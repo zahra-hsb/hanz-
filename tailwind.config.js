@@ -22,7 +22,8 @@ module.exports = {
         industrialSection: 'url(../../public/image/industrial-banner.jpg)',
         servicesSection: 'url(../../public/image/banner/khadamat.png)',
         profileSection: 'url(../../public/image/profile_aluminium.jpg)',
-        agencySection: 'url(../../public/image/About-Us-Banner.jpg)'
+        agencySection: 'url(../../public/image/About-Us-Banner.jpg)',
+        assistSection: 'url(../../public/image/banner/close-investor-businessman-handshake-partner-260nw-573963445.jpg)'
       },
       boxShadow: {
         'shadow0' : '0 30px 0 0 #00AE8E'
