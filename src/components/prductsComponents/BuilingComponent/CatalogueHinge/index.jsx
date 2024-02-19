@@ -1,7 +1,7 @@
 import { useState } from "react";
 import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
-import profile115TImage from "../../../../../public/image/catalogue3d/115-t.jpg"
-import profile60NImage from "../../../../../public/image/catalogue3d/60n.jpg"
+// import profile115TImage from "../../../../../public/image/catalogue3d/115-t.jpg"
+import profile70HImage from "../../../../../public/image/catalogue3d/70-h.png"
 import profile77DImage from "../../../../../public/image/catalogue3d/77d.jpg"
 import Pagination from "../../../pagination/index"
 import CatalogueCardComponent from "../CatalogueCardComponent";
@@ -12,12 +12,12 @@ const CatalogueHinge = () => {
     const catalogueDataHinge = [
         {
             title: <div>سیستم <span>115T</span></div>,
-            image: profile115TImage,
+            image: noneProfileImage,
             link: 'https://drive.google.com/file/d/1SSAJIY2aouFROkVQWL8YJHj9QJXG7DGT/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>60N</span></div>,
-            image: profile60NImage,
+            image: noneProfileImage,
             link: 'https://drive.google.com/file/d/1NtpN7vk3antweBVJLGgTVYdLPjskS_UF/view?usp=sharing'
         },
         {
@@ -46,13 +46,13 @@ const CatalogueHinge = () => {
             link: 'https://drive.google.com/file/d/1NlqYqb7AO1H_TqB2Np74YfvWcenjaIva/view?usp=sharing'
         },
         {
-            title: <div>سیستم <span>77Decoral</span></div>,
+            title: <div>سیستم <span>77Decorative</span></div>,
             image: profile77DImage,
             link: 'https://drive.google.com/file/d/19OGSgkYjF3apjDsrFKHolLxHRUg6o-kR/view?usp=sharing'
         },
         {
             title: <div>سیستم <span>70Hidden</span></div>,
-            image: noneProfileImage,
+            image: profile70HImage,
             link: 'https://drive.google.com/file/d/1z4ZPBgTmKT9MvQtOZRlv3Jt09kpkp1Yf/view?usp=sharing'
         },
         {

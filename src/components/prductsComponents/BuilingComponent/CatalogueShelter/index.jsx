@@ -1,5 +1,7 @@
 import { useState } from "react";
 import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
+import ProfileHandRailImage from "../../../../../public/image/catalogue3d/hand-rail.png"
+import ProfilePartitionImage from "../../../../../public/image/catalogue3d/partition.png"
 import Pagination from "../../../pagination/index"
 
 import CatalogueCardComponent from "../CatalogueCardComponent";
@@ -10,12 +12,12 @@ const CatalogueShelter = () => {
     const catalogueDataShelter = [
         {
             title: <div>سیستم <span>Hand Rail</span></div>,
-            image: noneProfileImage,
+            image: ProfileHandRailImage,
             link: '#'
         },
         {
             title: <div>سیستم <span>Partition</span></div>,
-            image: noneProfileImage,
+            image: ProfilePartitionImage,
             link: '#'
         },
         {

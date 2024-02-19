@@ -1,6 +1,6 @@
 import Form from "@/components/contactUsComponents/Form";
 import InformationContact from "@/components/contactUsComponents/InformationContact";
-// import GoogleMapComponent from "@/components/googleMapComponent/index";
+import GoogleMapComponent from "@/components/googleMapComponent";
 
 export default function ContactUs() {
   return (
@@ -24,13 +24,13 @@ export default function ContactUs() {
           <InformationContact />
         </div>
 
-        <div className="sm:basis-[50%] mb-20 sm:mb-0">
+        <div className="sm:basis-[50%] mb-20">
           <Form />
         </div>
       </div>
-      {/* <div className="bg-red-300 my-10">
+      <div className="bg-gray-200 my-10 h-[300px]">
         <GoogleMapComponent />
-      </div> */}
+      </div>
     </main>
   );
 }
