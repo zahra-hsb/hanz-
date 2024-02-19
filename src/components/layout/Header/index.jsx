@@ -155,7 +155,7 @@ const Header = ({ setSidebarShow, router }) => {
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
                                         </Link>
                                     </li>
-                                ))} */}
+                                ))}
                             </ul>
                         )}
                     </div>
