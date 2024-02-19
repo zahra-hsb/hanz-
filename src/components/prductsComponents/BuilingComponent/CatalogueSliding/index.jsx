@@ -1,7 +1,9 @@
 import { useState } from "react";
 import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
 import profile1Image from "../../../../../public/image/catalogue3d/profile-1.jpg"
+import profileSL60NImage from "../../../../../public/image/catalogue3d/SL60n.jpg"
 import SL115TDoubleRial from "../../../../../public/image/catalogue3d/115.jpg"
+import SL115TDoubleRial34 from "../../../../../public/image/catalogue3d/115-t-double-rial-34.png"
 import ShaycoGhorfe from "../../../../../public/image/catalogue3d/Shayco-Ghorfe.png"
 import SL115TMono from "../../../../../public/image/catalogue3d/SL-115-T-Mono.png"
 import profile2Image from "../../../../../public/image/catalogue3d/profile-2.jpg"
@@ -57,7 +59,7 @@ const CatalogueSliding = () => {
         },
         {
             title: <div>سیستم <span>SL 60N</span></div>,
-            image: noneProfileImage,
+            image: profileSL60NImage,
             link: 'https://drive.google.com/file/d/1wU2MQCbobJFYW7E__xKpL0q_cVHRodRV/view?usp=sharing'
         },
         {
@@ -87,7 +89,7 @@ const CatalogueSliding = () => {
         },
         {
             title: <div>سیستم <br /><span>SL 115T Double Rail 34</span></div>,
-            image: noneProfileImage,
+            image: SL115TDoubleRial34,
             link: '#'
         },
     ];

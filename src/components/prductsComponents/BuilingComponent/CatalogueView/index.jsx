@@ -1,5 +1,6 @@
 import { useState } from "react";
 import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
+import ProfileSkyLightImage from "../../../../../public/image/catalogue3d/skylight.png"
 import Pagination from "../../../pagination/index"
 
 import CatalogueCardComponent from "../CatalogueCardComponent";
@@ -15,7 +16,7 @@ const CatalogueView = () => {
         },
         {
             title: <div>سیستم <span>SkyLight</span></div>,
-            image: noneProfileImage,
+            image: ProfileSkyLightImage,
             link: '#'
         },
         {

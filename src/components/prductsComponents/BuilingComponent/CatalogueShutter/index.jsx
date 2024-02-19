@@ -1,5 +1,5 @@
 import { useState } from "react";
-import noneProfileImage from "../../../../../public/image/catalogue3d/none-profile.jpg"
+import ProfileShutterImage from "../../../../../public/image/catalogue3d/shutter.png"
 import Pagination from "../../../pagination/index"
 import CatalogueCardComponent from "../CatalogueCardComponent";
 
@@ -9,7 +9,7 @@ const CatalogueShutter = () => {
     const catalogueDataShutter = [
         {
             title: <div>سیستم <span>Shutter</span></div>,
-            image: noneProfileImage,
+            image: ProfileShutterImage,
             link: '#'
         },
     ];
