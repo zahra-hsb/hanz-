@@ -1,18 +1,16 @@
 import Main from "@/components/globalComponents/Main";
 import ProductCategory from "@/components/prductsComponents/ProductCategory";
-import ProfileShutterImage from "../../../../public/image/catalogue3d/shutter.png"
-import ProfileSkyLightImage from "../../../../public/image/catalogue3d/skylight.png"
-import ProfileHandRailImage from "../../../../public/image/catalogue3d/hand-rail.png"
-import hingeImg from "../../../../public/image/catalogue3d/profile-2.jpg"
-import slidingImg from "../../../../public/image/catalogue3d/profile-1.jpg"
 import noneProfile from '../../../../public/image/catalogue3d/none-profile.jpg'
+import wallwasher from '../../../../public/image/industrial/وال واشر.png'
+import heatsink from '../../../../public/image/industrial/هیت سینگ.png'
+import greenhouse from '../../../../public/image/industrial/گلخانه.png'
 
 export default function Industrial() {
 
   const industrialArray = [
-    { image: noneProfile, text: 'وال واشر' },
-    { image: noneProfile, text: 'هیت سینک' },
-    { image: noneProfile, text: 'گلخانه' },
+    { image: wallwasher, text: 'وال واشر' },
+    { image: heatsink, text: 'هیت سینک' },
+    { image: greenhouse, text: 'گلخانه' },
     { image: noneProfile, text: 'الکترونیک' },
   ]
 
