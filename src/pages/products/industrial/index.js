@@ -20,7 +20,7 @@ export default function Industrial() {
       <div className="w-[100%] sm:w-[90%] m-auto">
 
         <div>
-          <div className="mt-20 mb-10 text-gray-600">
+          <div id="industrial" className="mt-20 mb-10 text-gray-600">
             <div>
               <h4 className="text-2xl opacity-[76%]">
                 تولید
@@ -34,7 +34,7 @@ export default function Industrial() {
           </div>
         </div>
         <ProductCategory items={industrialArray} display={'hidden'} subCategory={'صنعتی'}
-          text={'گروه صنعتی هانز با استفاده از تکنولوژی روز دنیا و به پشتیبانی تیم مهندسی مجرب، محصولات آلومینیومی متنوع تولید می کند.'} url={'#'} />
+          text={'گروه صنعتی هانز با استفاده از تکنولوژی روز دنیا و به پشتیبانی تیم مهندسی مجرب، محصولات آلومینیومی متنوع تولید می کند.'} url={'/industrial#industrial'} />
 
 
       </div>
