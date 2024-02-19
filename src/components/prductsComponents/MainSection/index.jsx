@@ -23,6 +23,9 @@ import curtainWall1 from '../../../../public/image/presentationProducts/curtain.
 
 // none profile
 import noneProfile from '../../../../public/image/catalogue3d/none-profile.jpg'
+
+
+// structural
 import ProfileShutterImage from "../../../../public/image/catalogue3d/shutter.png"
 import ProfileSkyLightImage from "../../../../public/image/catalogue3d/skylight.png"
 import ProfileHandRailImage from "../../../../public/image/catalogue3d/hand-rail.png"
