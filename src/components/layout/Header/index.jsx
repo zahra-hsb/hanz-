@@ -21,6 +21,13 @@ const Header = ({ setSidebarShow, router }) => {
         { tab: 'shutter', label: 'شاتر' },
     ]
 
+    const menuItemForIndustrial = [
+        { tab: 'heatSink', label: 'هیت سینک' },
+        { tab: 'greenhouse', label: 'گلخانه' },
+        { tab: 'electronic', label: 'الکترونیک' },
+        { tab: 'wallWasher', label: 'وال واشر' },
+    ]
+
     // const menuItemForServices = [
     //     { tab: 'color', label: 'رنگ' },
     //     { tab: 'ThermalBreak', label: 'ترمال بریک' },
@@ -134,13 +141,13 @@ const Header = ({ setSidebarShow, router }) => {
                     <div className={`${router.pathname === '/products/industrial' && 'border-t sm:border-none'}`}>
                         {router.pathname === '/products/industrial' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
-                                {menuItemForBuilding.map(item => (
+                                {menuItemForIndustrial.map(item => (
                                     <li
                                         key={item.tab}
                                     // onClick={() => handleScroll()}
                                     >
                                         <Link
-                                            href={item.tab === 'view' ? '#view' : (item.tab === 'window' ? '#window' : '#shelter')}
+                                            href={item.tab === 'heatSink' ? '#heatSink' : (item.tab === 'greenhouse' ? '#greenhouse' : (item.tab === 'electronic' ? '#electronic' : '#wallWasher'))}
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
