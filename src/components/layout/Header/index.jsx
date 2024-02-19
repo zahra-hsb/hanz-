@@ -142,18 +142,20 @@ const Header = ({ setSidebarShow, router }) => {
                         {router.pathname === '/products/industrial' && (
                             <ul className="mr-2 space-x-2 font-medium flex items-center">
                                 {menuItemForIndustrial.map(item => (
+
                                     <li
                                         key={item.tab}
                                     // onClick={() => handleScroll()}
                                     >
                                         <Link
                                             href={item.tab === 'heatSink' ? '#heatSink' : (item.tab === 'greenhouse' ? '#greenhouse' : (item.tab === 'electronic' ? '#electronic' : '#wallWasher'))}
+
                                             className={"text-gray-500 flex items-center p-2 rounded-lg hover:bg-gray-100 group hover:text-green text-sm"}
                                         >
                                             <span className="nav-link ms-3 pl-2">{item.label}</span>
                                         </Link>
                                     </li>
-                                ))}
+                                ))} */}
                             </ul>
                         )}
                     </div>
