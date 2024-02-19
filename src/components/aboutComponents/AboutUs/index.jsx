@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import pic from '../../../../public/image/cover.jpg'
+import pic from '../../../../public/image/about-image/_DSC5247.jpg'
 import pic2 from '../../../../public/image/about.jpg'
 import Slider from '@/components/globalComponents/Slider'
 import banner from '../../../../public/image/cuh_banner.png'
@@ -36,9 +36,11 @@ const AboutUs = () => {
                             </p> */}
                         </div>
                     </div>
-                    <div className='w-full flex items-center justify-center relative bottom-20 lg:bottom-20 lg:mt-46 mt-28 px-30'>
-                        <Image src={pic} alt='about hanz' />
-                        <Image src={pic2} alt='about pic' className='lg:w-[350px] sm:w-2/4 w-2/3 absolute bottom-[-100px] lg:bottom-[-100px] sm:bottom-[-17px] left-[-15px] sm:left-[-50px] lg:left-[-40px] 2xl:left-[10%] shadow-2xl' />
+                    <div className='w-[80%] m-auto flex items-center justify-center relative bottom-20 lg:bottom-20 lg:mt-46 mt-28 px-30'>
+                        <div className='w-full'>
+                            <Image src={pic} alt='about hanz' />
+                            <Image src={pic2} alt='about pic' className='lg:w-[350px] sm:w-2/4 w-2/3 absolute bottom-[-100px] lg:bottom-[-100px] sm:bottom-[-17px] left-[-15px] sm:left-[-50px] lg:left-[-40px] 2xl:left-[10%] shadow-2xl' />
+                        </div>
                     </div>
                     <div>
                         <p className='xl:w-1/2 lg:w-1/3 w-full sm:text-lg lg:mt-[-50px] lg:mr-16 mt-5 text-justify opacity-70 leading-9 sm:leading-10'>
