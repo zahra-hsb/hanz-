@@ -23,13 +23,17 @@ import curtainWall1 from '../../../../public/image/presentationProducts/curtain.
 
 // none profile
 import noneProfile from '../../../../public/image/catalogue3d/none-profile.jpg'
+import ProfileShutterImage from "../../../../public/image/catalogue3d/shutter.png"
+import ProfileSkyLightImage from "../../../../public/image/catalogue3d/skylight.png"
+import ProfileHandRailImage from "../../../../public/image/catalogue3d/hand-rail.png"
+import profile70HImage from "../../../../public/image/catalogue3d/70-h.png"
 
 export default function MainSection() {
   const structuralArray = [
-    { image: noneProfile, text: 'نما' },
-    { image: noneProfile, text: 'پنجره' },
-    { image: noneProfile, text: 'جان پناه' },
-    { image: noneProfile, text: 'شاتر' },
+    { image: ProfileSkyLightImage, text: 'نما' },
+    // { image: profile70HImage, text: 'پنجره' },
+    { image: ProfileHandRailImage, text: 'جان پناه' },
+    { image: ProfileShutterImage, text: 'شاتر' },
     { image: slidingImg, text: 'کشویی' },
     { image: hingeImg, text: 'لولایی' },
   ]
