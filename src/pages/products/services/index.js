@@ -1,10 +1,10 @@
 import Main from "@/components/globalComponents/Main";
 import aluminimDesign from "../../../../public/image/line/aluminim-design.jpg"
-import ExtrusionImage from "../../../../public/image/line/aluminum-extrusion.jpg"
+import ExtrusionImage from "../../../../public/image/line/اکستروژن.jpg"
 // import WoodenImage from "../../../../public/image/line/Alluminium5.jpg"
-import PowdercoatingImage from "../../../../public/image/line/powdercoating.jpg"
-import TERMALImage from "../../../../public/image/line/index.jpg"
-import ASSEMBLINGImage from "../../../../public/image/line/2022115113115655.jpg"
+import PowdercoatingImage from "../../../../public/image/line/رنگ پودری.png"
+import TERMALImage from "../../../../public/image/line/ترمال.png"
+import ASSEMBLINGImage from "../../../../public/image/line/منتاژ.jpg"
 import ServicesCardComponent from "../../../components/ServicesCardComponent";
 
 export default function Services() {
